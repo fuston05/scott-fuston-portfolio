@@ -1,5 +1,21 @@
-.fab{
+.siteCont{ // contains entire site, including header but NOT footer
+    position: relative;
+    .dFlex(row, flex-end, center);
+    max-width: 100%;
+    width: 100%;
+}
+
+.mainCont{ //contains all main content except for header and footer
+    width: 70%;
+    border-left: 3px solid @gray;
+}
+
+.contact .fab{
     font-size: 2.8rem;
+}
+
+#skills .fab{
+    font-size: 4.5rem;
 }
 
 section{
@@ -7,7 +23,7 @@ section{
     width: 100vw;
     max-width: 100%;
     height: 100vh;
-    border: 1px solid #333;
+    border-bottom: 1px solid #333;
     text-align: center;
     padding: 2%;
 
@@ -15,18 +31,15 @@ section{
 
 .section1{
 
-    background-color: gray;
 
 }//end section1
 
 .section2{
 
-    background-color: lightGray;
 
 }//end section2
 
 .section3{
 
-    background-color: lightBlue;
 
 }//end section3
