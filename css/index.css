@@ -202,12 +202,16 @@ input {
   padding: 2%;
 }
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
   width: 30%;
-  padding: 5% 1% 2% 1%;
+  padding: 5% 1%;
   background-color: #555555;
   background-image: url(../assets/images/abstract2.png);
   background-position: center;
@@ -248,7 +252,7 @@ header {
   color: #666;
 }
 nav {
-  margin: 8% 0 0 0;
+  margin: 8% 0 10% 0;
 }
 nav ul {
   display: flex;
@@ -268,6 +272,16 @@ nav ul li a {
 nav ul li a:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.socialMedia a {
+  margin: 0 8% 0 0%;
 }
 .siteCont {
   position: relative;
@@ -297,7 +311,7 @@ section {
   padding: 2%;
 }
 .section1 {
-  background-color: #979797;
+  background-color: #eee;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -325,7 +339,11 @@ section {
   margin: 0 0 3% 0;
 }
 footer {
-  background-color: #999;
+  background-color: #000;
+  width: 100%;
   padding: 2%;
   text-align: center;
+}
+footer p {
+  width: 100%;
 }

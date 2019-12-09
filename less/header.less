@@ -1,16 +1,16 @@
 header{
+    .dFlex(column, space-between, center);
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
     width: 30%;
-    padding: 5% 1% 2% 1%;
+    padding: 5% 1%;
     background-color: @gray;
     background-image: url(../assets/images/abstract2.png);
     background-position: center;
     background-size: cover;
     border-right: 5px solid @orange;
-    // background-blend-mode: overlay;
 
 }
 
@@ -49,7 +49,8 @@ header{
 }//end headerTop
 
 nav{
-    margin: 8% 0 0 0;
+    margin: 8% 0 10% 0;
+
     ul{
         .dFlex(row, space-between, center);
 
@@ -69,3 +70,13 @@ nav{
     }//end ul
 
 }//end nav
+
+.socialMedia{
+    .dFlex(row, flex-end, center);
+    width: 100%;
+
+    a{
+        margin: 0 8% 0 0%;
+    }
+
+}//end socialMedia
