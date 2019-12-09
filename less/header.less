@@ -1,34 +1,66 @@
 header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    padding: 5% 1% 2% 1%;
+    background-color: @gray;
+    background-image: url(../assets/images/abstract2.png);
+    background-position: center;
+    background-size: cover;
+    border-right: 5px solid @orange;
+    // background-blend-mode: overlay;
 
 }
 
-nav{
+.headerTop{
     .dFlex(column, center, center);
 
     .headerImg{
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 0 3% 0;
 
         img{
-
+            width: 100%;
         }
 
     }//end headerImg
 
     .headerText{
+        .dFlex(column, center, center);
+        width: 100%;
 
         h1{
-
+            font-size: @h4Size;
+            text-align: center;
+            margin: 0 0 3% 0;
+            color: @blue;
         }
-
         h2{
-
+            font-size: @small;
+            font-style: italic;
+            text-align: center;
+            color: @h1Color;
         }
 
     }//end headerText
+}//end headerTop
 
+nav{
+    margin: 8% 0 0 0;
     ul{
-        li{
+        .dFlex(row, space-between, center);
 
+        li{
+            .dFlex(row, space-between, center);
             a{
+                color: @h5Color;
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
 
             }//end a
 
