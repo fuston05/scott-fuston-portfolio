@@ -302,22 +302,21 @@ nav ul li a:hover {
   font-size: 2.8rem;
 }
 section {
-  width: 100vw;
-  max-width: 100%;
-  height: 100vh;
-  border-bottom: 1px solid #333;
-  text-align: center;
-  padding: 2%;
-}
-.section1 {
-  background-color: #eee;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  border-bottom: 1px dotted dodgerblue;
+  text-align: center;
+  padding: 5% 2%;
+}
+.section1 {
+  background-color: #eee;
 }
 .section1 .aboutTop {
-  padding: 5% 0;
   width: 100%;
   height: 50%;
 }
@@ -339,7 +338,7 @@ section {
   align-items: center;
 }
 .section1 .contact h3 {
-  margin: 0 0 3% 0;
+  margin: 5% 0 3% 0;
 }
 .section1 .contact .contactInfo {
   width: 100%;
@@ -352,11 +351,69 @@ section {
   font-size: 2.5rem;
   color: #333;
 }
-.section3 {
+.section2 {
+  height: 100%;
+}
+.section2 h3 {
+  margin: 0 0 3% 0;
+}
+.section2 .projectCont {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.section2 .projectCont .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  margin: 0 0 5% 0;
+}
+.section2 .projectCont .project a {
+  color: #999;
+  font-size: 1.8rem;
+}
+.section2 .projectCont .project a:hover {
+  text-decoration: underline;
+}
+.section2 .projectCont .project a .fas {
+  color: #999;
+}
+.section2 .projectCont .project h4 {
+  margin: 0 0 3% 0;
+}
+.section2 .projectCont .project p {
+  border-bottom: 1px solid #ddd;
+  padding: 0 0 3% 0;
+  margin: 0 0 5% 0;
+  width: 80%;
+}
+.section2 .projectCont .project .imgCont {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 3% 0;
+  position: relative;
+}
+.section2 .projectCont .project .imgCont span {
+  width: 100%;
+  background-color: #000;
+  color: #eee;
+  font-size: 2.5rem;
+  padding: 2%;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.section2 .projectCont .project .imgCont a img {
+  width: 100%;
+}
+.section3 {
+  background-color: #eee;
 }
 .section3 h3 {
   margin: 0 0 3% 0;
@@ -373,7 +430,7 @@ section {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 3% 0 0 0;
+  padding: 5% 0 0 0;
 }
 .section3 .skillCont .skill {
   width: 30%;

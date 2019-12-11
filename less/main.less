@@ -15,27 +15,26 @@
 }
 
 section{
+    .dFlex(column, space-evenly, center);
     width: 100vw;
     max-width: 100%;
     height: 100vh;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px dotted @blue;
     text-align: center;
-    padding: 2%;
-
+    padding: 5% 2%;
 }//end section
 
 .section1{
     background-color: @white;
-    .dFlex(column, space-evenly, center);
 
     .aboutTop{
-        padding: 5% 0;
         width: 100%;
         height: 50%;
 
         h3{
             margin: 0 0 3% 0;
         }
+
         p{
             width: 80%;
             margin: 0 auto;
@@ -50,7 +49,7 @@ section{
         .dFlex(column, flex-start, center);
 
         h3{
-            margin: 0 0 3% 0;
+            margin: 5% 0 3% 0;
         }
 
         .contactInfo{
@@ -66,12 +65,82 @@ section{
 }//end section1
 
 .section2{
+    height: 100%;
 
+    h3{
+        margin: 0 0 3% 0;
+    }
+
+    .projectCont{
+        .dFlex(row, space-evenly, center);
+        flex-wrap: wrap;
+        width: 100%;
+
+        .project{
+            .dFlex(column, center, center);
+            width: 45%;
+            margin: 0 0 5% 0;
+
+            a{
+                color: @h1Color;
+                font-size: @small;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+
+                .fas{
+                    color: @h1Color;
+                }
+
+            }
+
+            h4{
+                margin: 0 0 3% 0;
+            }
+        
+            p{
+                border-bottom: 1px solid #ddd;
+                padding: 0 0 3% 0;
+                margin: 0 0 5% 0;
+                width: 80%;
+            }
+        
+            .imgCont{
+                width: 100%;
+                overflow: hidden;
+                margin: 0 0 3% 0;
+                position: relative;
+
+                span{
+                    width: 100%;
+                    background-color: #000;
+                    color: #eee;
+                    font-size: @pSize;
+                    padding: 2%;
+                    opacity: 0.8;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                a{
+
+                    img{
+                        width: 100%;
+                    }
+        
+                }
+            }//end imgCont
+
+        }// end project
+
+    }//end projectCont
 
 }//end section2
 
 .section3{
-    .dFlex(column, space-evenly, center);
+    background-color: @white;
 
     h3{
         margin: 0 0 3% 0;
@@ -87,7 +156,7 @@ section{
         .dFlex(row, space-between, center);
         flex-wrap: wrap;
         width: 100%;
-        padding: 3% 0 0 0;
+        padding: 5% 0 0 0;
 
         .skill{
             width: 30%;
@@ -97,9 +166,6 @@ section{
                 font-size: 4.5rem;
                 margin: 0 0 3% 0;
             }
-
         }// end skill
-
     }//end skillCont
-
 }//end section3
