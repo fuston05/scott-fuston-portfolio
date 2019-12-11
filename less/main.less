@@ -14,10 +14,6 @@
     font-size: 2.8rem;
 }
 
-#skills .fab{
-    font-size: 4.5rem;
-}
-
 section{
     width: 100vw;
     max-width: 100%;
@@ -29,14 +25,13 @@ section{
 }//end section
 
 .section1{
-    background-color: rgb(151, 151, 151);
-    width: 100%;
-    .dFlex(column, space-between, center);
+    background-color: @white;
+    .dFlex(column, space-evenly, center);
 
     .aboutTop{
         padding: 5% 0;
         width: 100%;
-        border-bottom: 1px solid #ddd;
+        height: 50%;
 
         h3{
             margin: 0 0 3% 0;
@@ -44,24 +39,30 @@ section{
         p{
             width: 80%;
             margin: 0 auto;
-
+            padding: 0 0 3% 0;
+            border-bottom: 1px solid #ddd;
         }
     }//end aboutTop
 
     .contact{
         width: 100%;
-        height: 60%;
-        padding: 5% 0;
+        height: 30%;
+        .dFlex(column, flex-start, center);
 
         h3{
             margin: 0 0 3% 0;
         }
-        h4{
 
-        }
-
+        .contactInfo{
+            width: 100%;
+            .dFlex(row, space-evenly, center);
+    
+            address{
+                font-size: @pSize;
+                color: @pColor;
+            }
+        }//end contactInfo
     }//end contact
-
 }//end section1
 
 .section2{
@@ -70,6 +71,35 @@ section{
 }//end section2
 
 .section3{
+    .dFlex(column, space-evenly, center);
 
+    h3{
+        margin: 0 0 3% 0;
+    }
+
+    p{
+        border-bottom: 1px solid #ddd;
+        padding: 0 0 3% 0;
+        width: 80%;
+    }
+
+    .skillCont{
+        .dFlex(row, space-between, center);
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 3% 0 0 0;
+
+        .skill{
+            width: 30%;
+            margin: 0 0 5% 0;
+
+            .fab, .fas{
+                font-size: 4.5rem;
+                margin: 0 0 3% 0;
+            }
+
+        }// end skill
+
+    }//end skillCont
 
 }//end section3
