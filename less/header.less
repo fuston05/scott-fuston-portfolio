@@ -5,7 +5,7 @@ header{
     top: 0;
     height: 100%;
     width: 30%;
-    padding: 5% 1%;
+    padding: 5% 2%;
     background-color: @gray;
     background-image: url(../assets/images/abstract2.png);
     background-position: center;
@@ -50,17 +50,21 @@ header{
 
 nav{
     margin: 8% 0 10% 0;
+    width: 100%;
 
     ul{
         .dFlex(row, space-between, center);
+        width: 100%;
 
         li{
             .dFlex(row, space-between, center);
             a{
                 color: @h5Color;
+                font-size: @med;
                 &:hover{
                     cursor: pointer;
                     opacity: 0.8;
+                    color: @orange;
                 }
 
             }//end a
@@ -77,6 +81,10 @@ nav{
 
     a{
         margin: 0 8% 0 0%;
+
+        &:hover{
+            color: @h5Color;
+        }
     }
 
 }//end socialMedia
