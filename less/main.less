@@ -72,38 +72,17 @@ section{
     }
 
     .projectCont{
-        .dFlex(row, space-evenly, center);
+        .dFlex(row, space-evenly, flex-end);
         flex-wrap: wrap;
         width: 100%;
 
         .project{
             .dFlex(column, center, center);
-            width: 45%;
+            width: 23%;
             margin: 0 0 5% 0;
-
-            a{
-                color: @h1Color;
-                font-size: @small;
-
-                &:hover{
-                    text-decoration: underline;
-                }
-
-                .fas{
-                    color: @h1Color;
-                }
-
-            }
 
             h4{
                 margin: 0 0 3% 0;
-            }
-        
-            p{
-                border-bottom: 1px solid #ddd;
-                padding: 0 0 3% 0;
-                margin: 0 0 5% 0;
-                width: 80%;
             }
         
             .imgCont{
@@ -111,18 +90,57 @@ section{
                 overflow: hidden;
                 margin: 0 0 3% 0;
                 position: relative;
+                border-radius: 5px;
 
-                span{
+                .upperSpan{
+                    text-align: center;
+                    width: 100%;
+                    background-color: #000;
+                    color: @h1Color;
+                    font-size: @small;
+                    padding: 2% 0;
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 0;
+
+                    a{
+                        color: @h1Color;
+                        font-size: @small;
+                        text-decoration: underline;
+                    }
+                }//end upperSpan
+
+                .lowerSpan{
+                    text-align: center;
                     width: 100%;
                     background-color: #000;
                     color: #eee;
                     font-size: @pSize;
-                    padding: 2%;
-                    opacity: 0.8;
+                    padding: 0;
+                    opacity: 0.6;
                     position: absolute;
                     bottom: 0;
                     left: 0;
-                }
+                    height: 0;
+
+                    a{
+                        color: @h1Color;
+                        font-size: @small;
+                        text-decoration: underline;
+        
+                        &:hover{
+                            text-decoration: underline;
+                        }
+        
+                        .fas{
+                            color: @h1Color;
+                        }
+        
+                    }//end a
+
+                }// end lowerSpan
 
                 a{
 
