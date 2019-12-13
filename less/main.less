@@ -31,8 +31,20 @@ section{
         width: 100%;
         height: 40%;
 
+        @media @650{
+            height: 50%;
+        }
+
+        @media @mobile{
+            height: 60%;
+        }
+
         h3{
             margin: 0 0 3% 0;
+
+            @media @650{
+                margin: 0 0 8% 0;
+            }
         }
 
         p{
@@ -40,12 +52,16 @@ section{
             margin: 0 auto;
             padding: 0 0 3% 0;
             border-bottom: 1px solid #ddd;
+
+            @media @650{
+                padding: 0 0 8% 0;
+            }
         }
     }//end aboutTop
 
     .contact{
         width: 100%;
-        height: 40%;
+        height: auto;
         .dFlex(column, flex-start, center);
 
         h3{
@@ -53,6 +69,10 @@ section{
 
             @media @970{
                 margin: 0 0 5% 0;
+            }
+
+            @media @650{
+                margin: 8% 0 8% 0;
             }
         }
 
@@ -83,6 +103,10 @@ section{
 
     h3{
         margin: 0 0 3% 0;
+
+        @media @650{
+            margin: 0 0 8% 0;
+        }
     }
 
     .projectCont{
@@ -99,8 +123,16 @@ section{
                 width: 43%;
             }
 
+            @media @650{
+                width: 100%;
+            }
+
             h4{
                 margin: 0 0 3% 0;
+
+                @media @650{
+                    font-size: @h6Size;
+                }
             }
         
             .imgCont{
@@ -178,8 +210,16 @@ section{
 .section3{
     background-color: @white;
 
+    @media @850{
+        height: auto;
+    }
+
     h3{
         margin: 0 0 3% 0;
+
+        @media @650{
+            margin: 0 0 8% 0;
+        }
     }
 
     p{
@@ -194,9 +234,22 @@ section{
         width: 100%;
         padding: 5% 0 0 0;
 
+        @media @850{
+            .dFlex(row, space-evenly, flex-start);
+        }
+
         .skill{
             width: 30%;
             margin: 0 0 5% 0;
+
+            @media @850{
+                width: 40%;
+            }
+
+            @media @mobile{
+                width: 100%;
+                margin: 0 0 15% 0;
+            }
 
             .fab, .fas{
                 font-size: 4.5rem;
