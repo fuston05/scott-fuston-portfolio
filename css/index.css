@@ -373,6 +373,11 @@ section {
   width: 23%;
   margin: 0 0 5% 0;
 }
+@media (max-width: 970px) {
+  .section2 .projectCont .project {
+    width: 43%;
+  }
+}
 .section2 .projectCont .project h4 {
   margin: 0 0 3% 0;
 }
@@ -443,7 +448,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
   padding: 5% 0 0 0;
