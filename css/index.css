@@ -181,7 +181,7 @@ h4 {
   color: #666;
 }
 h5 {
-  font-size: 3.8rem;
+  font-size: 2.8rem;
   color: lightGray;
 }
 p {
@@ -328,8 +328,23 @@ section {
   width: 100%;
   height: 40%;
 }
+@media (max-width: 650px) {
+  .section1 .aboutTop {
+    height: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .section1 .aboutTop {
+    height: 60%;
+  }
+}
 .section1 .aboutTop h3 {
   margin: 0 0 3% 0;
+}
+@media (max-width: 650px) {
+  .section1 .aboutTop h3 {
+    margin: 0 0 8% 0;
+  }
 }
 .section1 .aboutTop p {
   width: 80%;
@@ -337,9 +352,14 @@ section {
   padding: 0 0 3% 0;
   border-bottom: 1px solid #ddd;
 }
+@media (max-width: 650px) {
+  .section1 .aboutTop p {
+    padding: 0 0 8% 0;
+  }
+}
 .section1 .contact {
   width: 100%;
-  height: 40%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -351,6 +371,11 @@ section {
 @media (max-width: 970px) {
   .section1 .contact h3 {
     margin: 0 0 5% 0;
+  }
+}
+@media (max-width: 650px) {
+  .section1 .contact h3 {
+    margin: 8% 0 8% 0;
   }
 }
 .section1 .contact .contactInfo {
@@ -383,6 +408,11 @@ section {
 .section2 h3 {
   margin: 0 0 3% 0;
 }
+@media (max-width: 650px) {
+  .section2 h3 {
+    margin: 0 0 8% 0;
+  }
+}
 .section2 .projectCont {
   display: flex;
   flex-direction: row;
@@ -404,8 +434,18 @@ section {
     width: 43%;
   }
 }
+@media (max-width: 650px) {
+  .section2 .projectCont .project {
+    width: 100%;
+  }
+}
 .section2 .projectCont .project h4 {
   margin: 0 0 3% 0;
+}
+@media (max-width: 650px) {
+  .section2 .projectCont .project h4 {
+    font-size: 2.3rem;
+  }
 }
 .section2 .projectCont .project .imgCont {
   width: 100%;
@@ -462,8 +502,18 @@ section {
 .section3 {
   background-color: #eee;
 }
+@media (max-width: 850px) {
+  .section3 {
+    height: auto;
+  }
+}
 .section3 h3 {
   margin: 0 0 3% 0;
+}
+@media (max-width: 650px) {
+  .section3 h3 {
+    margin: 0 0 8% 0;
+  }
 }
 .section3 p {
   border-bottom: 1px solid #ddd;
@@ -479,9 +529,28 @@ section {
   width: 100%;
   padding: 5% 0 0 0;
 }
+@media (max-width: 850px) {
+  .section3 .skillCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+}
 .section3 .skillCont .skill {
   width: 30%;
   margin: 0 0 5% 0;
+}
+@media (max-width: 850px) {
+  .section3 .skillCont .skill {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .section3 .skillCont .skill {
+    width: 100%;
+    margin: 0 0 15% 0;
+  }
 }
 .section3 .skillCont .skill .fab,
 .section3 .skillCont .skill .fas {
