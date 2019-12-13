@@ -257,6 +257,14 @@ nav ul {
   align-items: center;
   width: 100%;
 }
+@media (max-width: 970px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 nav ul li {
   display: flex;
   flex-direction: row;
@@ -318,7 +326,7 @@ section {
 }
 .section1 .aboutTop {
   width: 100%;
-  height: 50%;
+  height: 40%;
 }
 .section1 .aboutTop h3 {
   margin: 0 0 3% 0;
@@ -331,7 +339,7 @@ section {
 }
 .section1 .contact {
   width: 100%;
-  height: 30%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -340,12 +348,30 @@ section {
 .section1 .contact h3 {
   margin: 5% 0 3% 0;
 }
+@media (max-width: 970px) {
+  .section1 .contact h3 {
+    margin: 0 0 5% 0;
+  }
+}
 .section1 .contact .contactInfo {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 970px) {
+  .section1 .contact .contactInfo a {
+    margin: 0 0 2% 0;
+  }
+}
+@media (max-width: 970px) {
+  .section1 .contact .contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .section1 .contact .contactInfo address {
   font-size: 2.5rem;
