@@ -20,6 +20,10 @@
                 padding: 0;
         }
 
+        @media @mobile{
+                padding: 3% 2%;
+        }
+
         h1{
                 @media @560{
                         margin: 3% 0 3% 0;
@@ -40,12 +44,20 @@
                         opacity: 0;
                 }
 
+                @media @350{
+                        margin: 0 0 0 0;
+                }
+
                 ul{
                         .dFlex(row, space-evenly, center);
 
                         @media @560{
                                 .dFlex(column, space-evenly, centert);
                                 width: 100%;
+                        }
+
+                        @media @350{
+                                margin: 8% 0 0 0;
                         }
                         
                         li{
