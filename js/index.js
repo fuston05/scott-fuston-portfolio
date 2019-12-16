@@ -4,15 +4,18 @@
 // navigation /////////////////////////
 const mobileNavButton= document.querySelector('.nav-button');
 const mobileNav= document.querySelector('.mobile-header nav');
+const mobileNavLinks= document.querySelector('.mobile-header ul');
 
 mobileNavButton.addEventListener('click', (event) => {
-        if( mobileNav.style.height <= 0 ){
+        if( mobileNav.style.height <= '0px' ){
                 gsap.to( mobileNav, {duration: 0.5, height: '235px'} );
                 gsap.to( mobileNav, { duration: 0.6, ease: 'power3.in', opacity: 1 } );
+
         }else{
                 console.log('wth');
                 gsap.to( mobileNav, {duration: 0.5, height: 0} );
                 gsap.to( mobileNav, { duration: 0.3, ease: 'circ.out', opacity: 0 } );
+
         }//end if
         
 });//end event

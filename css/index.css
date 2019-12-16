@@ -337,6 +337,11 @@ input {
     margin: 3% 0 3% 0;
   }
 }
+@media (max-width: 350px) {
+  .mobile-header h1 {
+    margin: 3% 0 8% 0;
+  }
+}
 .mobile-header nav {
   width: 50%;
   margin: 0 1% 0 0;
@@ -372,11 +377,6 @@ input {
     justify-content: space-evenly;
     align-items: centert;
     width: 100%;
-  }
-}
-@media (max-width: 350px) {
-  .mobile-header nav ul {
-    padding: 10% 0 0 0;
   }
 }
 .mobile-header nav ul li {
