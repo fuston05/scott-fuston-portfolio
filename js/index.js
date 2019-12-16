@@ -1,7 +1,4 @@
 
-
-
-
 // portfolio section /////////////////////////
 const imgConts= document.querySelectorAll('.imgCont');
 const animationTimer1= 0.5;
@@ -40,3 +37,29 @@ imgConts.forEach( ele => {
 } );//end foreach
 
 
+// navigation /////////////////////////
+
+const mobileNavButton= document.querySelector('.nav-button');
+const mobileNav= document.querySelector('.mobile-header nav');
+const mobileNavList= document.querySelector('.mobile-header nav ul');
+
+mobileNavButton.addEventListener('click', (event) => {
+
+        if( mobileNav.style.height == '0px' ){
+                gsap.to( mobileNav, {duration: 0.5, height: '235px'} );
+                gsap.to( mobileNav, { duration: 0.6, ease: 'power3.in', opacity: 1 } );
+        }else{
+                gsap.to( mobileNav, {duration: 0.5, height: 0} );
+                gsap.to( mobileNav, { duration: 0.3, ease: 'circ.out', opacity: 0 } );
+        }//end if
+
+});//end event
+
+// function toggleFade(element){
+//         if(element.style.opacity == '0'){
+//                 console.log('no opacity');
+//                 gsap.to( element, { duration: 1, opacity: 1 } );
+//         }else{
+//                 gsap.to( element, { duration: 1, opacity: 0 } );      
+//         }//end if
+// }//end func
