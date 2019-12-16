@@ -1,6 +1,8 @@
 .mobile-header{
         background-color: lightblue;
         width: 100%;
+        max-width: 100%;
+        overflow: hidden;
         padding: 2%;
         background-color: @gray;
         background-image: url(../assets/images/abstract2.png);
@@ -43,18 +45,14 @@
 
                         @media @560{
                                 .dFlex(column, space-evenly, centert);
-                                width: 100%;;
+                                width: 100%;
                         }
                         
                         li{
                                 margin: 0 2% 0 0;
-
-                                @media @560{
-                                        .dFlex(column, space-evenly, centert);
-                                        width: 100%;;
-                                }
                                 
                                 @media @560{
+                                        .dFlex(column, space-evenly, centert);
                                         width: 100%;
                                         text-align: center;
                                         margin: 0 0 2% 0;

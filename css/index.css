@@ -301,6 +301,8 @@ input {
 .mobile-header {
   background-color: lightblue;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   padding: 2%;
   background-color: #555555;
   background-image: url(../assets/images/abstract2.png);
@@ -371,11 +373,6 @@ input {
     justify-content: space-evenly;
     align-items: centert;
     width: 100%;
-  }
-}
-@media (max-width: 560px) {
-  .mobile-header nav ul li {
-    width: 100%;
     text-align: center;
     margin: 0 0 2% 0;
   }
@@ -437,6 +434,7 @@ input {
 }
 .mainCont {
   width: 70%;
+  max-width: 100%;
   border-left: 3px solid #555555;
 }
 @media (max-width: 800px) {
@@ -462,6 +460,7 @@ section {
 }
 .section1 {
   background-color: #eee;
+  height: auto;
 }
 .section1 .aboutTop {
   width: 100%;
@@ -485,6 +484,11 @@ section {
     margin: 0 0 8% 0;
   }
 }
+@media (max-width: 350px) {
+  .section1 .aboutTop h3 {
+    margin: 10% 0 8% 0;
+  }
+}
 .section1 .aboutTop p {
   width: 80%;
   margin: 0 auto;
@@ -506,7 +510,7 @@ section {
 }
 @media (max-width: 350px) {
   .section1 .contact {
-    padding: 15% 0 0 0;
+    padding: 10% 0 0 0;
   }
 }
 .section1 .contact h3 {
@@ -555,6 +559,11 @@ section {
 @media (max-width: 650px) {
   .section2 h3 {
     margin: 0 0 8% 0;
+  }
+}
+@media (max-width: 350px) {
+  .section2 h3 {
+    margin: 10% 0 8% 0;
   }
 }
 .section2 .projectCont {
@@ -659,6 +668,11 @@ section {
     margin: 0 0 8% 0;
   }
 }
+@media (max-width: 350px) {
+  .section3 h3 {
+    margin: 10% 0 8% 0;
+  }
+}
 .section3 p {
   border-bottom: 1px solid #ddd;
   padding: 0 0 3% 0;
@@ -706,6 +720,11 @@ footer {
   width: 100%;
   padding: 2%;
   text-align: center;
+}
+@media (max-width: 350px) {
+  footer {
+    padding: 5% 2%;
+  }
 }
 footer p {
   width: 100%;

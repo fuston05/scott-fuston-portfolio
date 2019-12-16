@@ -11,6 +11,7 @@
 
 .mainCont{ //contains all main content except for header and footer
     width: 70%;
+    max-width: 100%;
     border-left: 3px solid @gray;
 
     @media @tablet{
@@ -35,6 +36,7 @@ section{
 
 .section1{
     background-color: @white;
+    height: auto;
 
     .aboutTop{
         width: 100%;
@@ -53,6 +55,10 @@ section{
 
             @media @650{
                 margin: 0 0 8% 0;
+            }
+
+            @media @350{
+                margin: 10% 0 8% 0;
             }
         }
 
@@ -74,7 +80,7 @@ section{
         .dFlex(column, flex-start, center);
 
         @media @350{
-            padding: 15% 0 0 0;
+            padding: 10% 0 0 0;
         }
 
         h3{
@@ -119,6 +125,10 @@ section{
 
         @media @650{
             margin: 0 0 8% 0;
+        }
+
+        @media @350{
+            margin: 10% 0 8% 0;
         }
     }
 
@@ -232,6 +242,9 @@ section{
 
         @media @650{
             margin: 0 0 8% 0;
+        }
+        @media @350{
+            margin: 10% 0 8% 0;
         }
     }
 
