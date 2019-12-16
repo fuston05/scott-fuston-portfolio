@@ -1,0 +1,58 @@
+.mobile-header{
+        background-color: lightblue;
+        width: 100%;
+        padding: 2%;
+        background-color: @gray;
+        background-image: url(../assets/images/abstract2.png);
+        background-position: center;
+        background-size: cover;
+        border-bottom: 5px solid @orange;
+
+
+        @media @tablet{
+                .dFlex(row, space-between, center); 
+        }
+
+        h1{
+
+        }
+
+        nav{
+                width: 50%;
+                margin: 0 1% 0 0;
+
+                ul{
+                        .dFlex(row, space-evenly, center);
+                        
+                        li{
+                                margin: 0 2% 0 0;
+
+                                a{
+                                        color: @white;
+                                        
+                                        &:hover{
+                                                cursor: pointer;
+                                                opacity: 0.8;
+                                                color: @orange;
+                                            }
+                                }
+                        }
+                }
+        }//end nav
+
+        .nav-button{
+                display: none;
+                font-size: @pSize;
+                color: @white;
+                border: 1px solid @white;
+                padding: 1%;
+                border-radius: 3px;
+
+                &:hover{
+                        cursor: pointer;
+                        opacity: 0.7;
+                }
+        }//end .nav-button
+
+
+}//end mobile-header

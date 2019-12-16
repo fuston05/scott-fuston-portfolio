@@ -1,7 +1,4 @@
 
-
-
-
 // portfolio section /////////////////////////
 const imgConts= document.querySelectorAll('.imgCont');
 const animationTimer1= 0.5;
@@ -39,4 +36,14 @@ imgConts.forEach( ele => {
         });//end event
 } );//end foreach
 
+
+// navigation /////////////////////////
+
+const mobileNavButton= document.querySelector('.nav-button');
+const mobileNav= document.querySelector('.mobile-header nav');
+const mobileNavLinks= document.querySelector('.mobile-header nav li');
+
+// mobileNavButton.addEventListener('click', (evnet) => {
+//         gsap.to( mobileNav, {duration: 1, width: 0} );
+// });//end event
 
