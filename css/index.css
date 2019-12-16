@@ -340,6 +340,7 @@ input {
 .mobile-header nav {
   width: 50%;
   margin: 0 1% 0 0;
+  height: 0px;
 }
 @media (max-width: 650px) {
   .mobile-header nav {
