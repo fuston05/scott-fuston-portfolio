@@ -375,7 +375,7 @@ input {
 }
 @media (max-width: 350px) {
   .mobile-header nav ul {
-    margin: 8% 0 0 0;
+    padding: 8% 0 0 0;
   }
 }
 .mobile-header nav ul li {
