@@ -32,7 +32,7 @@ const animationTimer2= 0.6;
 imgConts.forEach( ele => {
         let upperSpan1= ele.querySelector('.upperSpan');
         ele.addEventListener('mouseenter', (event) => {
-                gsap.to( upperSpan1, { duration: animationTimer1, height: '86.5%' } );
+                gsap.to( upperSpan1, { duration: animationTimer1, height: '84.5%' } );
                 gsap.to( upperSpan1, { duration: animationTimer2, opacity: '0.8' } );
         });//end event
 } );//end foreach
@@ -49,7 +49,8 @@ imgConts.forEach( ele => {
 imgConts.forEach( ele => {
         let lowerSpan= ele.querySelector('.lowerSpan');
         ele.addEventListener('mouseenter', (event) => {
-                gsap.to( lowerSpan, { duration: animationTimer1, height: '13%' } );
+                gsap.to( lowerSpan, { duration: animationTimer1, height: '15%' } );
+                // lowerSpan.style(padding-bottom, '10px');
         });//end event
 } );//end foreach
 
