@@ -343,7 +343,7 @@ input {
   }
 }
 .mobile-header nav {
-  width: 50%;
+  width: 60%;
   margin: 0 1% 0 0;
   height: 0px;
 }
@@ -369,6 +369,7 @@ input {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 }
 @media (max-width: 560px) {
   .mobile-header nav ul {
@@ -398,7 +399,7 @@ input {
 }
 .mobile-header nav ul li a {
   color: #eee;
-  padding: 2%;
+  padding: 2% 0;
 }
 @media (max-width: 560px) {
   .mobile-header nav ul li a {
@@ -534,7 +535,7 @@ section {
 }
 @media (max-width: 970px) {
   .section1 .contact h3 {
-    margin: 0 0 5% 0;
+    margin: 5% 0 5% 0;
   }
 }
 @media (max-width: 650px) {
