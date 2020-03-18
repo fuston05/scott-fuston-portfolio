@@ -1,7 +1,7 @@
 
 
 
-// navigation /////////////////////////
+// navigation ////////////////////////
 const mobileNavButton= document.querySelector('.nav-button');
 const mobileNav= document.querySelector('.mobile-header nav');
 const mobileNavLinks= document.querySelector('.mobile-header ul');
@@ -35,6 +35,7 @@ imgConts.forEach( ele => {
                 gsap.to( upperSpan1, { duration: animationTimer1, height: '84.5%' } );
                 gsap.to( upperSpan1, { duration: animationTimer2, opacity: '0.8' } );
         });//end event
+      
 } );//end foreach
 
 imgConts.forEach( ele => {
