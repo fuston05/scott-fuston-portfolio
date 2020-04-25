@@ -1,286 +1,323 @@
-.siteCont{ // contains entire site, including header but NOT footer
-    position: relative;
-    .dFlex(row, flex-end, center);
-    max-width: 100%;
+.siteCont {
+  // contains entire site, including header but NOT footer
+  position: relative;
+  .dFlex(row, flex-end, center);
+  max-width: 100%;
+  width: 100%;
+
+  @media @tablet {
+    .dFlex(column, center, center);
+  }
+}
+
+.mainCont {
+  //contains all main content except for header and footer
+  width: 70%;
+  max-width: 100%;
+  border-left: 3px solid @gray;
+
+  @media @tablet {
+    width: 100%;
+    border: none;
+  }
+}
+
+//end main container
+
+.contact .fab {
+  font-size: 2.8rem;
+}
+
+section {
+  .dFlex(column, space-evenly, center);
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  border-bottom: 1px dotted @blue;
+  text-align: center;
+  padding: 5% 2%;
+}
+
+//end section
+
+.section1 {
+  background-color: @white;
+  height: auto;
+
+  .aboutTop {
+    width: 100%;
+    height: 40%;
+
+    @media @650 {
+      height: 50%;
+    }
+
+    @media @mobile {
+      height: 60%;
+    }
+
+    h3 {
+      margin: 0 0 3% 0;
+
+      @media @650 {
+        margin: 0 0 8% 0;
+      }
+
+      @media @350 {
+        margin: 10% 0 8% 0;
+      }
+    }
+
+    p {
+      width: 80%;
+      margin: 0 auto;
+      padding: 0 0 3% 0;
+      border-bottom: 1px solid #ddd;
+
+      @media @650 {
+        padding: 0 0 8% 0;
+      }
+    }
+  }
+
+  //end aboutTop
+
+  .contact {
+    width: 100%;
+    height: auto;
+    .dFlex(column, flex-start, center);
+
+    @media @350 {
+      padding: 10% 0 0 0;
+    }
+
+    h3 {
+      margin: 5% 0 3% 0;
+
+      @media @970 {
+        margin: 5% 0 5% 0;
+      }
+
+      @media @650 {
+        margin: 8% 0 8% 0;
+      }
+    }
+
+    .contactInfo {
+      width: 100%;
+      .dFlex(row, space-evenly, center);
+
+      a {
+        @media @970 {
+          margin: 0 0 2% 0;
+        }
+      }
+
+      @media @970 {
+        .dFlex(column, center, center);
+      }
+
+      address {
+        font-size: @pSize;
+        color: @pColor;
+      }
+    }
+
+    //end contactInfo
+  }
+
+  //end contact
+}
+
+//end section1
+
+.section2 {
+  height: 100%;
+
+  h3 {
+    margin: 0 0 3% 0;
+
+    @media @650 {
+      margin: 0 0 8% 0;
+    }
+
+    @media @350 {
+      margin: 10% 0 8% 0;
+    }
+  }
+
+  .projectCont {
+    .dFlex(row, space-evenly, flex-end);
+    flex-wrap: wrap;
     width: 100%;
 
-    @media @tablet{
-        .dFlex(column, center, center);
-    }
-}
+    .project {
+      .dFlex(column, center, center);
+      width: 23%;
+      margin: 0 0 5% 0;
 
-.mainCont{ //contains all main content except for header and footer
-    width: 70%;
-    max-width: 100%;
-    border-left: 3px solid @gray;
+      @media @970 {
+        width: 43%;
+      }
 
-    @media @tablet{
+      @media @650 {
         width: 100%;
-        border: none;
-    }
-}//end main container
+      }
 
-.contact .fab{
-    font-size: 2.8rem;
-}
+      h4 {
+        margin: 0 0 3% 0;
 
-section{
-    .dFlex(column, space-evenly, center);
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    border-bottom: 1px dotted @blue;
-    text-align: center;
-    padding: 5% 2%;
-}//end section
+        @media @650 {
+          font-size: @h6Size;
+        }
+      }
 
-.section1{
-    background-color: @white;
-    height: auto;
-
-    .aboutTop{
+      .imgCont {
         width: 100%;
-        height: 40%;
+        height: 150px;
+        overflow: hidden;
+        margin: 0 0 3% 0;
+        position: relative;
+        border-radius: 5px;
 
-        @media @650{
-            height: 50%;
+        .upperSpan {
+          text-align: center;
+          width: 100%;
+          background-color: #000;
+          color: @h1Color;
+          font-size: @small;
+          padding: 2% 0;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 0;
+
+          a {
+            color: @h1Color;
+            font-size: @small;
+            text-decoration: underline;
+          }
         }
 
-        @media @mobile{
-            height: 60%;
-        }
+        //end upperSpan
 
-        h3{
-            margin: 0 0 3% 0;
+        .lowerSpan {
+          text-align: center;
+          width: 100%;
+          background-color: #000;
+          color: #eee;
+          font-size: @pSize;
+          padding: 0;
+          opacity: 0.6;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 0;
 
-            @media @650{
-                margin: 0 0 8% 0;
+          a {
+            color: @h1Color;
+            font-size: @small;
+            text-decoration: underline;
+
+            &:hover {
+              text-decoration: underline;
             }
 
-            @media @350{
-                margin: 10% 0 8% 0;
-            }
-        }
-
-        p{
-            width: 80%;
-            margin: 0 auto;
-            padding: 0 0 3% 0;
-            border-bottom: 1px solid #ddd;
-
-            @media @650{
-                padding: 0 0 8% 0;
-            }
-        }
-    }//end aboutTop
-
-    .contact{
-        width: 100%;
-        height: auto;
-        .dFlex(column, flex-start, center);
-
-        @media @350{
-            padding: 10% 0 0 0;
-        }
-
-        h3{
-            margin: 5% 0 3% 0;
-
-            @media @970{
-                margin: 5% 0 5% 0;
+            .fas {
+              color: @h1Color;
             }
 
-            @media @650{
-                margin: 8% 0 8% 0;
-            }
+          }
+
+          //end a
+
         }
 
-        .contactInfo{
+        // end lowerSpan
+
+        a {
+
+          img {
             width: 100%;
-            .dFlex(row, space-evenly, center);
+          }
 
-            a{
-                @media @970{
-                    margin: 0 0 2% 0;
-                }
-            }
-
-            @media @970{
-                .dFlex(column, center, center);
-            }
-    
-            address{
-                font-size: @pSize;
-                color: @pColor;
-            }
-        }//end contactInfo
-    }//end contact
-}//end section1
-
-.section2{
-    height: 100%;
-
-    h3{
-        margin: 0 0 3% 0;
-
-        @media @650{
-            margin: 0 0 8% 0;
         }
+      }
 
-        @media @350{
-            margin: 10% 0 8% 0;
-        }
+      //end imgCont
+
     }
 
-    .projectCont{
-        .dFlex(row, space-evenly, flex-end);
-        flex-wrap: wrap;
+    // end project
+
+  }
+
+  //end projectCont
+
+}
+
+//end section2
+
+.section3 {
+  background-color: @white;
+
+  @media @850 {
+    height: auto;
+  }
+
+  h3 {
+    margin: 0 0 3% 0;
+
+    @media @650 {
+      margin: 0 0 8% 0;
+    }
+
+    @media @350 {
+      margin: 10% 0 8% 0;
+    }
+  }
+
+  p {
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 3% 0;
+    width: 80%;
+  }
+
+  .skillCont {
+    .dFlex(row, space-between, flex-start);
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5% 0 0 0;
+
+    @media @850 {
+      .dFlex(row, space-evenly, flex-start);
+    }
+
+    .skill {
+      width: 30%;
+      margin: 0 0 5% 0;
+
+      @media @850 {
+        width: 40%;
+      }
+
+      @media @mobile {
         width: 100%;
+        margin: 0 0 15% 0;
+      }
 
-        .project{
-            .dFlex(column, center, center);
-            width: 23%;
-            margin: 0 0 5% 0;
-
-            @media @970{
-                width: 43%;
-            }
-
-            @media @650{
-                width: 100%;
-            }
-
-            h4{
-                margin: 0 0 3% 0;
-
-                @media @650{
-                    font-size: @h6Size;
-                }
-            }
-        
-            .imgCont{
-                width: 100%;
-                overflow: hidden;
-                margin: 0 0 3% 0;
-                position: relative;
-                border-radius: 5px;
-
-                .upperSpan{
-                    text-align: center;
-                    width: 100%;
-                    background-color: #000;
-                    color: @h1Color;
-                    font-size: @small;
-                    padding: 2% 0;
-                    opacity: 0;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 0;
-
-                    a{
-                        color: @h1Color;
-                        font-size: @small;
-                        text-decoration: underline;
-                    }
-                }//end upperSpan
-
-                .lowerSpan{
-                    text-align: center;
-                    width: 100%;
-                    background-color: #000;
-                    color: #eee;
-                    font-size: @pSize;
-                    padding: 0;
-                    opacity: 0.6;
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    height: 0;
-
-                    a{
-                        color: @h1Color;
-                        font-size: @small;
-                        text-decoration: underline;
-        
-                        &:hover{
-                            text-decoration: underline;
-                        }
-        
-                        .fas{
-                            color: @h1Color;
-                        }
-        
-                    }//end a
-
-                }// end lowerSpan
-
-                a{
-
-                    img{
-                        width: 100%;
-                    }
-        
-                }
-            }//end imgCont
-
-        }// end project
-
-    }//end projectCont
-
-}//end section2
-
-.section3{
-    background-color: @white;
-
-    @media @850{
-        height: auto;
-    }
-
-    h3{
+      .fab,
+      .fas {
+        font-size: 4.5rem;
         margin: 0 0 3% 0;
-
-        @media @650{
-            margin: 0 0 8% 0;
-        }
-        @media @350{
-            margin: 10% 0 8% 0;
-        }
+      }
     }
 
-    p{
-        border-bottom: 1px solid #ddd;
-        padding: 0 0 3% 0;
-        width: 80%;
-    }
+    // end skill
+  }
 
-    .skillCont{
-        .dFlex(row, space-between, flex-start);
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 5% 0 0 0;
+  //end skillCont
+}
 
-        @media @850{
-            .dFlex(row, space-evenly, flex-start);
-        }
-
-        .skill{
-            width: 30%;
-            margin: 0 0 5% 0;
-
-            @media @850{
-                width: 40%;
-            }
-
-            @media @mobile{
-                width: 100%;
-                margin: 0 0 15% 0;
-            }
-
-            .fab, .fas{
-                font-size: 4.5rem;
-                margin: 0 0 3% 0;
-            }
-        }// end skill
-    }//end skillCont
-}//end section3
+//end section3
