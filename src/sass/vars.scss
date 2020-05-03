@@ -5,6 +5,7 @@ $transBlack: rgba(0, 0, 0, 0.8);
 $gray: darkGray;
 $darkGray: #666;
 $black: #333;
+$white: #ddd;
 
 
 // ********************* FONTS ********************* //
@@ -13,9 +14,9 @@ $black: #333;
 $pColor: $gray;
 $aColor: $blue;
 
-$h1Color: $orange;
+$h1Color: $white;
 $h2Color: $blue;
-$h3Color: $gray;
+$h3Color: $white;
 $h4Color: $gray;
 $h5Color: $gray;
 
@@ -27,7 +28,7 @@ $inputColor: $darkGray;
 $pSize: 1.6rem;
 $aSize: 1.4rem;
 
-$h1Size: 4rem;
+$h1Size: 3.5rem;
 $h2Size: 2.5rem;
 $h3Size: 1.8rem;
 $h4Size: 1.4rem;
