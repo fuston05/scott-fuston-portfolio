@@ -1,12 +1,14 @@
 import React from 'react';
 
 //styles
-import './About.scss';
+import './Contact.scss';
 
 const Contact = () => {
   return (
     <div className= 'contactCont'>
-      Hi I am the contact section
+      {/* eslint-disable-next-line */}
+      <a id= 'contact'></a>
+      <h4 className= 'sectionTitle'>Contact Me</h4>
     </div>
   )
 }//end contact

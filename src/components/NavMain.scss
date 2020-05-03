@@ -10,6 +10,7 @@
   margin: 0 auto;
 
   .slogan{
+    font-style: italic;
     margin-bottom: 10px;
   }
 
@@ -30,7 +31,7 @@
       list-style-type: none;
 
       li{
-        margin-right: 10px;
+        margin-right: 15px;
         @include dFlex(row, space-evenly, center);
 
         &:last-child{

@@ -6,7 +6,9 @@ import './Portfolio.scss';
 const Portfolio = () => {
   return (
     <div className= 'portfolioCont'>
-      Hi I am the portfolio
+      {/* eslint-disable-next-line */}
+      <a id= 'portfolio'></a>
+      <h4 className= 'sectionTitle'>Portfolio</h4>
     </div>
   )
 }//end Portfolio
