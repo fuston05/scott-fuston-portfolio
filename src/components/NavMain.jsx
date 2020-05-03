@@ -11,10 +11,9 @@ const NavMain = () => {
       <div className= 'slogan'><h3>Endless Possibilities</h3></div>
       <nav>
         <ul>
-          <li> <a href="#">Link_1</a> </li>
-          <li> <a href="#">Link_2</a> </li>
-          <li> <a href="#">Link_3</a> </li>
-          <li> <a href="#">Link_4</a> </li>
+          <li> <a href="#">Portfolio</a> </li>
+          <li> <a href="#">About</a> </li>
+          <li> <a href="#">Contact</a> </li>
         </ul>
       </nav>
     </div>

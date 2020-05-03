@@ -11,10 +11,9 @@ import NavMain from './NavMain';
 const Header = () => {
   return (
     <div className='headerCont'>
-        <NavMain />
-
+      <NavMain />
       <Particles />
-      </div>
+    </div>
   )
 }//end Header
 
