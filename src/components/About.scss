@@ -1,5 +1,14 @@
+@import '../sass/mix-ins.scss';
+
 .aboutCont{
   min-height: 100vh;
   min-width: 100%;
   background-color: #f7f7f7;
-}
+  @include dFlex(column, flex-start, center);
+
+  .aboutText{
+    width: 50%;
+
+  }//end aboutText
+
+}// end aboutCont
