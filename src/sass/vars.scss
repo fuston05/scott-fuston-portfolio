@@ -1,23 +1,25 @@
 // THEME COLORS ******
-$blue: rgb(131, 165, 190);
+$blue: #292C36;
 $orange: #B16B46;
 $transBlack: rgba(0, 0, 0, 0.8);
-$gray: darkGray;
+$gray: darkGray; //p color
 $darkGray: #666;
-$black: #333;
-$white: #ddd;
+$black: #222; //top section background
+$white: #ddd; //h1 color, anything white
+$green: rgb(0, 99, 0); // h4 and link color
+$greenHover: rgb(118, 202, 118);
 
 
 // ********************* FONTS ********************* //
 
 // FONT COLORS *****
 $pColor: $gray;
-$aColor: $blue;
+$aColor: $green;
 
 $h1Color: $white;
 $h2Color: $blue;
 $h3Color: $white;
-$h4Color: $blue;
+$h4Color: $green;
 $h5Color: $gray;
 
 $labelColor: $black;
@@ -25,11 +27,11 @@ $inputColor: $darkGray;
 
 
 //  FONT SIZES *****
-$pSize: 1.6rem;
+$pSize: 1.8rem;
 $aSize: 1.8rem;
 
 $h1Size: 4rem;
 $h2Size: 2.5rem;
 $h3Size: 1.8rem;
-$h4Size: 1.8rem;
+$h4Size: 2.4rem;
 $h5Size: 1.4rem;

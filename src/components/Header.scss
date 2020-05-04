@@ -1,8 +1,10 @@
+@import '../sass/vars.scss';
+
 .headerCont {
     z-index: 2;
     height: 75vh;
     width: 100%;
-    background-color: #292C36;
+    background-color: $black;
     position: relative;
     overflow: hidden;
 }

@@ -37,6 +37,11 @@
         &:last-child{
           margin-right: 0;
         }
+
+        a:hover{
+          // color: rgb(81, 163, 81);
+          color: $greenHover;
+        }
       }//end li
     }//end ul
   }//end nav
