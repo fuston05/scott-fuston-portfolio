@@ -1,0 +1,48 @@
+@import '../sass/vars.scss';
+@import '../sass/mix-ins.scss';
+
+.navMainCont{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  width: 50%;
+  height: 40%;
+  margin: 0 auto;
+
+  .slogan{
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  hr {
+    background-image: linear-gradient(90deg,transparent, white, transparent);
+    border: 0;
+    height: 1px;
+    margin: 10px auto;
+    width: 60%;
+  }
+
+  nav{
+    width: 100%;
+    
+    ul{
+      width: 100%;
+      @include dFlex(row, center, center);
+      list-style-type: none;
+
+      li{
+        margin-right: 15px;
+        @include dFlex(row, space-evenly, center);
+
+        &:last-child{
+          margin-right: 0;
+        }
+
+        a:hover{
+          // color: rgb(81, 163, 81);
+          color: $greenHover;
+        }
+      }//end li
+    }//end ul
+  }//end nav
+}//end navMainCont

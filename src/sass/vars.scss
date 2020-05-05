@@ -1,0 +1,38 @@
+// THEME COLORS ******
+$blue: #292C36;
+$orange: #B16B46;
+$transBlack: rgba(0, 0, 0, 0.8);
+$gray: rgb(150, 150, 150); //p color
+$darkGray: rgb(97, 96, 96);
+$black: #222; //top section background
+$white: #ddd; //h1 color, anything white
+// $green: rgb(0, 99, 0); // h4 and link color
+$green: rgb(118, 202, 118);
+$greenHover: rgb(0, 99, 0);
+
+
+// ********************* FONTS ********************* //
+
+// FONT COLORS *****
+$pColor: $gray;
+$aColor: $green;
+
+$h1Color: $white;
+$h2Color: $blue;
+$h3Color: $white;
+$h4Color: $green; 
+$h5Color: $gray;
+
+$labelColor: $black;
+$inputColor: $darkGray;
+
+
+//  FONT SIZES *****
+$pSize: 2rem;
+$aSize: 2rem;
+
+$h1Size: 4rem;
+$h2Size: 2.5rem;
+$h3Size: 1.8rem;
+$h4Size: 2.8rem; // fieldset legned also use this
+$h5Size: 1.4rem;
