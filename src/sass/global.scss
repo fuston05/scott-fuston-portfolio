@@ -3,7 +3,7 @@
 @import './mix-ins.scss';
 
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'font-family: 'Roboto', sans-serif;';
   min-height: 100vh;
   max-width: 100%;
 }
@@ -27,7 +27,6 @@ a{
 h1{
   color: $h1Color;
   font-size: $h1Size;
-  font-family: 'Abril Fatface', cursive;
 }
 
 h2 {

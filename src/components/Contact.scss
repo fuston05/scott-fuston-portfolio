@@ -1,4 +1,34 @@
-.contactCont{
+@import '../sass/vars.scss';
+@import '../sass/mix-ins.scss';
+
+.contactCont {
   min-height: 100vh;
   min-width: 100%;
+
+  .contactIcon {
+    font-size: 2.4rem;
+    margin-right: 5px;
+
+  }//end contactIcon
+
+  .contactSideBar {
+    @include dFlex(column, center, center);
+    text-align: left;
+
+    ul {
+      list-style-type: none;
+    }
+  }//end contactSideBar
+
+  a.contactLinks {
+    color: $pColor;
+    font-size: $aSize;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
 }
+
+//end contactCont
