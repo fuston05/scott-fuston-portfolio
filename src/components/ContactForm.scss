@@ -1,0 +1,13 @@
+@import '../sass/vars.scss';
+@import '../sass/mix-ins.scss';
+
+form{
+  width: 70%;
+}//end form
+
+fieldset{
+  @include dFlex(column, center, center);
+  width: 100%;
+  font-size: $h4Size;
+  color: $pColor;
+}

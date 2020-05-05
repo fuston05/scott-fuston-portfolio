@@ -53,11 +53,23 @@ h5 {
 
 input{
   padding: 8px;
+  margin: 0 0 10px 0;
   border-radius: 5px;
   border: 1px solid #aaa;
   font-size: $pSize;
   color: $pColor;
+  width: 100%;
+}
 
+textarea{
+  padding: 8px;
+  margin: 0 0 10px 0;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  font-size: $pSize;
+  color: $pColor;
+  width: 100%;
+  resize: none;
 }
 
 form{
