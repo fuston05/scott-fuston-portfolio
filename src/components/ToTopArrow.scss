@@ -1,0 +1,22 @@
+.topArrowCont {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+
+  .topArrow {
+    width: 100%;
+    z-index: 4;
+    color: #ddd;
+    font-size: 4rem;
+
+    &:hover{
+      color: rgb(93, 209, 122);
+    }
+  }
+
+}
+
+//end top arrowCont

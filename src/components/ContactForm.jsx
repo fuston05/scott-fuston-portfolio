@@ -23,7 +23,6 @@ const ContactForm = () => {
   }//end handleSubmit
 
   const handleChange = e => {
-    console.log('handleChange: ', e.target.value);
     setFormValue({
       ...formValue,
       [e.target.name]: e.target.value
@@ -66,7 +65,6 @@ const ContactForm = () => {
           <button type='submit'>Submit</button>
         </fieldset>
       </form>
-      {console.log('formValue: ', formValue)}
     </>
   )
 }//end ContactForm
