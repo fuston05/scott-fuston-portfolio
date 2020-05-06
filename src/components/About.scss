@@ -2,16 +2,17 @@
 
 .aboutCont{
   min-height: 100vh;
-  min-width: 100%;
+  width: 100%;
   background-color: #f7f7f7;
   @include dFlex(column, flex-start, center);
+  padding: 0 25px;
 
   .aboutText{
-    width: 50%;
+    width: 700px;
+    max-width: 100%;
 
     p{
       text-align: left;
     }
   }//end aboutText
-
 }// end aboutCont
