@@ -12,8 +12,8 @@ const ContactForm = () => {
   });
 
   const handleSubmit = e => {
-    console.log('submitted');
     e.preventDefault();
+    //resets the form
     setFormValue({
       name: '',
       email: '',
@@ -23,6 +23,7 @@ const ContactForm = () => {
   }//end handleSubmit
 
   const handleChange = e => {
+    //add form values to state
     setFormValue({
       ...formValue,
       [e.target.name]: e.target.value

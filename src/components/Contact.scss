@@ -7,6 +7,7 @@
   min-width: 100%;
   padding: 0 25px;
   margin: 0 0 50px 0;
+  background-color: #f7f7f7;
   
   .contactContentCont {
     @include dFlex(row, space-evenly, flex-start);

@@ -1,0 +1,22 @@
+{
+  "Styling": [
+    "CSS",
+    "LESS",
+    "SASS",
+    "React Styled-Components"
+  ],
+  "Front-End": [
+    "HTML",
+    "ReactJS",
+    "JavaScript",
+    "URQL"
+  ],
+  "Back-End": [
+    "NodeJS",
+    "expressJS",
+    "GraphQL",
+    "Prisma",
+    "Apollo Server"
+  ]
+  
+}
