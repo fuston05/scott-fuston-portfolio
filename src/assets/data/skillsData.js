@@ -1,22 +1,21 @@
-{
-  "Styling": [
+export const stylingSkills= [
     "CSS",
     "LESS",
     "SASS",
     "React Styled-Components"
-  ],
-  "Front-End": [
-    "HTML",
+]
+
+export const frontEndSkills= [
+  "HTML",
     "ReactJS",
     "JavaScript",
     "URQL"
-  ],
-  "Back-End": [
-    "NodeJS",
+]
+
+export const backEndSkills= [
+  "NodeJS",
     "expressJS",
     "GraphQL",
     "Prisma",
     "Apollo Server"
-  ]
-  
-}
+]
