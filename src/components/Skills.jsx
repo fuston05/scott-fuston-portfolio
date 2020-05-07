@@ -14,15 +14,15 @@ const Skills = () => {
       {/* eslint-disable-next-line */}
       <a id= 'skills'></a>
       <h4 className= 'sectionTitle'>Skills</h4>
-      { 
-        skillsList.keys().map(skill => {
-          return(
-            <div key= { Math.Random() * (Date.now()*Math.random()) }>
-              <p>{skill}</p>
-            </div>
-          )
-        })
-      }
+        {/* { 
+          skillsList.keys().map(skill => {
+            return(
+              <div key= { Math.Random() * (Date.now()*Math.random()) }>
+                <p>{skill}</p>
+              </div>
+            )
+          })
+        } */}
     </div>
   )
 }//end Skills
