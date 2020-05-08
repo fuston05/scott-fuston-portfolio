@@ -25,6 +25,17 @@ const Skills = () => {
   }, [stSkills, feSkills, beSkills, othSkills ]);
 
 
+  //controls alternating colors for skills list items
+  let count= 0;
+  let colorName;
+  const chooseColor= () => {
+    count % 2 === 0 ? colorName= 'dark' :
+    colorName= 'light';
+    count++;
+    return colorName;
+  }
+
+  //random key for skills map
   const keyGen= () => Math.random() *  (Date.now() * Math.random());
 
   return (
@@ -36,13 +47,16 @@ const Skills = () => {
 
       <div className= 'skills'>
         <div className= 'styling'>
-          <span className= 'skillsIcon'><i class="fab fa-css3"></i></span>
+          <span className= 'skillsIcon'><i className="fab fa-css3"></i></span>
           <h5>Styling Technologies</h5>
           <ul>
             {
-              stSkills && stSkills.map(skill => {
+              stSkills && stSkills.map((skill) => {
+                colorName= chooseColor();
                 return(
-                  <li key= {keyGen()}>{skill}</li>
+                  <li 
+                    className= {colorName} 
+                    key= {keyGen()}>{skill}</li>
                 )
               })
             }
@@ -50,13 +64,16 @@ const Skills = () => {
         </div>
   
         <div className= 'frontEnd'>
-          <span className= 'skillsIcon'><i class="fab fa-react"></i></span>
+          <span className= 'skillsIcon'><i className="fab fa-react"></i></span>
           <h5>Front-End Technologies</h5>
           <ul>
             {
               feSkills && feSkills.map(skill => {
+                colorName= chooseColor();
                 return(
-                <li key= {keyGen()}>{skill}</li>
+                <li 
+                  className= {colorName}
+                  key= {keyGen()}>{skill}</li>
                 )
               })
             }
@@ -64,26 +81,32 @@ const Skills = () => {
         </div>
   
         <div className= 'backeEnd'>
-          <span className= 'skillsIcon'><i class="fab fa-node-js"></i></span>
+          <span className= 'skillsIcon'><i className="fab fa-node-js"></i></span>
           <h5>Back-End Technologies</h5>
           <ul>
             {
               beSkills && beSkills.map(skill => {
+                colorName= chooseColor();
                 return(
-                <li key= {keyGen()}>{skill}</li>
+                <li 
+                  className= {colorName}
+                  key= {keyGen()}>{skill}</li>
                 )
               })
             }
           </ul>
         </div>
         <div className= 'otherSkills'>
-          <span className= 'skillsIcon'><i class="fas fa-code-branch"></i></span>
+          <span className= 'skillsIcon'><i className="fas fa-code-branch"></i></span>
           <h5>Other Skills</h5>
           <ul>
             {
               othSkills && othSkills.map(skill => {
+                colorName= chooseColor();
                 return(
-                <li key= {keyGen()}>{skill}</li>
+                <li 
+                  className= {colorName}
+                  key= {keyGen()}>{skill}</li>
                 )
               })
             }
