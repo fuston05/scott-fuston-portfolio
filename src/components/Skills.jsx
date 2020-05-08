@@ -38,7 +38,6 @@ const Skills = () => {
         <div className= 'styling'>
           <h5>Styling Technologies</h5>
           <ul>
-            {console.log('skills: ', frontEndSkills)}
             {
               stSkills && stSkills.map(skill => {
                 return(

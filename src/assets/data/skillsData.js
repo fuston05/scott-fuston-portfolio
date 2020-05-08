@@ -13,6 +13,7 @@ export const frontEndSkills = [
 ]
 
 export const backEndSkills = [
+  "Restful API",
   "NodeJS",
   "expressJS",
   "GraphQL",
@@ -20,11 +21,12 @@ export const backEndSkills = [
   "Apollo Server"
 ]
 
-export const otherSkills= [
+export const otherSkills = [
   "Git",
   "GitHub",
   "Zoom",
   "Slack",
   "Trello",
-  "Cross-Functional Team Collaboration"
+  "Cross-Functional Team Collaboration",
+  "Agile Development"
 ]

@@ -1,0 +1,25 @@
+@import '../sass/mix-ins.scss';
+
+.projectCard{
+  width: 30%;
+  margin-bottom: 30px;
+  border: 1px solid Green;
+  border-radius: 5px;
+
+  h5{
+
+  }
+
+  a{
+
+  }
+
+  img{
+    width: 100%;
+  }
+  
+  .linksCont{
+    width: 100%;
+    @include dFlex(row, space-evenly, center);
+  }
+}
