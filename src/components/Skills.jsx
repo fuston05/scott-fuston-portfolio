@@ -1,9 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
+
+// ** utils **
+//used in skills map for unique keys
+import keyGen from '../utils/keyGen';
+//alternates light and dark BG on skills lists in map below
+import alternateColor from '../utils/alternateColor';
 
 //data
 import {
-  frontEndSkills, 
-  stylingSkills, 
+  frontEndSkills,
+  stylingSkills,
   backEndSkills,
   otherSkills
 } from '../assets/data/skillsData';
@@ -12,106 +18,102 @@ import {
 import './Skills.scss';
 
 const Skills = () => {
-  const [stSkills, setStSkills]= useState();
-  const [feSkills, setFeSkills]= useState();
-  const [beSkills, setBeSkills]= useState();
-  const [othSkills, setOthSkills]= useState();
+  //skills from skillsData.js file
+  const [stSkills, setStSkills] = useState();
+  const [feSkills, setFeSkills] = useState();
+  const [beSkills, setBeSkills] = useState();
+  const [othSkills, setOthSkills] = useState();
 
   useEffect(() => {
+    //set skills state on load
     setStSkills(stylingSkills);
     setFeSkills(frontEndSkills);
     setBeSkills(backEndSkills);
     setOthSkills(otherSkills);
-  }, [stSkills, feSkills, beSkills, othSkills ]);
-
-
-  //controls alternating colors for skills list items
-  let count= 0;
-  let colorName;
-  const chooseColor= () => {
-    count % 2 === 0 ? colorName= 'dark' :
-    colorName= 'light';
-    count++;
-    return colorName;
-  }
-
-  //random key for skills map
-  const keyGen= () => Math.random() *  (Date.now() * Math.random());
+  }, [stSkills, feSkills, beSkills, othSkills]);
 
   return (
-    <div className= 'skillsCont'>
+    <div className='skillsCont'>
       {/* eslint-disable-next-line */}
-      <a id= 'skills'></a>
+      <a id='skills'></a>
 
-      <h4 className= 'sectionTitle'>Skills</h4>
+      <h4 className='sectionTitle'>Skills</h4>
 
-      <div className= 'skills'>
-        <div className= 'styling'>
-          <span className= 'skillsIcon'><i className="fab fa-css3"></i></span>
+      <div className='skills'>
+        <div className='styling'>
+          {/* FontAwesome Icon */}
+          <span className='skillsIcon'><i className="fab fa-css3"></i></span>
           <h5>Styling Technologies</h5>
           <ul>
             {
               stSkills && stSkills.map((skill) => {
-                colorName= chooseColor();
-                return(
-                  <li 
-                    className= {colorName} 
-                    key= {keyGen()}>{skill}</li>
+                //alternates light and dark list BG
+                let colorName = alternateColor();
+                return (
+                  <li
+                    className={colorName}
+                    key={keyGen()}>{skill}</li>
                 )
               })
             }
           </ul>
         </div>
-  
-        <div className= 'frontEnd'>
-          <span className= 'skillsIcon'><i className="fab fa-react"></i></span>
+
+        <div className='frontEnd'>
+          {/* FontAwesome Icon */}
+          <span className='skillsIcon'><i className="fab fa-react"></i></span>
           <h5>Front-End Technologies</h5>
           <ul>
             {
               feSkills && feSkills.map(skill => {
-                colorName= chooseColor();
-                return(
-                <li 
-                  className= {colorName}
-                  key= {keyGen()}>{skill}</li>
+                //alternates light and dark list BG
+                let colorName = alternateColor();
+                return (
+                  <li
+                    className={colorName}
+                    key={keyGen()}>{skill}</li>
                 )
               })
             }
           </ul>
         </div>
-  
-        <div className= 'backeEnd'>
-          <span className= 'skillsIcon'><i className="fab fa-node-js"></i></span>
+
+        <div className='backeEnd'>
+          {/* FontAwesome Icon */}
+          <span className='skillsIcon'><i className="fab fa-node-js"></i></span>
           <h5>Back-End Technologies</h5>
           <ul>
             {
               beSkills && beSkills.map(skill => {
-                colorName= chooseColor();
-                return(
-                <li 
-                  className= {colorName}
-                  key= {keyGen()}>{skill}</li>
+                //alternates light and dark list BG
+                let colorName = alternateColor();
+                return (
+                  <li
+                    className={colorName}
+                    key={keyGen()}>{skill}</li>
                 )
               })
             }
           </ul>
         </div>
-        <div className= 'otherSkills'>
-          <span className= 'skillsIcon'><i className="fas fa-code-branch"></i></span>
+        <div className='otherSkills'>
+          {/* FontAwesome Icon */}
+          <span className='skillsIcon'><i className="fas fa-code-branch"></i></span>
           <h5>Other Skills</h5>
           <ul>
             {
               othSkills && othSkills.map(skill => {
-                colorName= chooseColor();
-                return(
-                <li 
-                  className= {colorName}
-                  key= {keyGen()}>{skill}</li>
+                //alternates light and dark list BG
+                let colorName = alternateColor();
+                return (
+                  <li
+                    className={colorName}
+                    key={keyGen()}>{skill}</li>
                 )
               })
             }
           </ul>
-          </div>
+        </div>
       </div>
     </div> //end skillsCont
   )
