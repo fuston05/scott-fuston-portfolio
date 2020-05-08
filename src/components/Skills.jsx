@@ -36,6 +36,7 @@ const Skills = () => {
 
       <div className= 'skills'>
         <div className= 'styling'>
+          <span className= 'skillsIcon'><i class="fab fa-css3"></i></span>
           <h5>Styling Technologies</h5>
           <ul>
             {
@@ -49,6 +50,7 @@ const Skills = () => {
         </div>
   
         <div className= 'frontEnd'>
+          <span className= 'skillsIcon'><i class="fab fa-react"></i></span>
           <h5>Front-End Technologies</h5>
           <ul>
             {
@@ -62,6 +64,7 @@ const Skills = () => {
         </div>
   
         <div className= 'backeEnd'>
+          <span className= 'skillsIcon'><i class="fab fa-node-js"></i></span>
           <h5>Back-End Technologies</h5>
           <ul>
             {
@@ -74,6 +77,7 @@ const Skills = () => {
           </ul>
         </div>
         <div className= 'otherSkills'>
+          <span className= 'skillsIcon'><i class="fas fa-code-branch"></i></span>
           <h5>Other Skills</h5>
           <ul>
             {

@@ -11,6 +11,13 @@
     width: 100%;
     @include dFlex(row, space-evenly, flex-start);
     flex-wrap: wrap;
+
+    .skillsIcon{
+      width: 100%;
+      @include dFlex(row, center, center);
+      font-size: $h4Size;
+      color: $h4Color;
+    }
   }
 
   div{
@@ -18,6 +25,10 @@
     width: 40%;
     padding: 0 10px;
     margin: 25px;
+
+    h5{
+      text-align: center;
+    }
   }
 
   ul{
