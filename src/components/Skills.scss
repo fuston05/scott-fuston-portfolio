@@ -11,6 +11,13 @@
     width: 100%;
     @include dFlex(row, space-evenly, flex-start);
     flex-wrap: wrap;
+
+    .skillsIcon{
+      width: 100%;
+      @include dFlex(row, center, center);
+      font-size: $h1Size;
+      color: $h4Color;
+    }
   }
 
   div{
@@ -18,17 +25,34 @@
     width: 40%;
     padding: 0 10px;
     margin: 25px;
-  }
 
-  ul{
-    list-style-type: circle;
-    list-style-position: inside;
-    text-align: left;
+    ul{
+      list-style-type: none;
+      text-align: left;
+      border: 1px solid #aaa;
+      border-radius: 5px;
 
-    li{
-      font-size: $pSize;
-      color: $pColor;
+      .dark{
+        background-color: $gray;
+        color: $white;
+      }
+
+     .light{
+       background-color: $white;
+       color: $gray;
+     }
+  
+      li{
+        text-align: center;
+        font-size: $pSize;
+        color: $pColor;
+      }
+    }
+
+    h5{
+      text-align: center;
     }
   }
+
 
 }
