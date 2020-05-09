@@ -10,8 +10,14 @@
   margin: 0 auto;
 
   .slogan{
+    max-width: 100%;
     font-style: italic;
     margin-bottom: 10px;
+
+    @include media(380px){
+      width: 70%;
+      margin: 0 auto;
+    }
   }
 
   hr {
