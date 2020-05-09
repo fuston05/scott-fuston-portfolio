@@ -20,3 +20,10 @@
     opacity: 0.8;
   }
 }//end buttonStyles
+
+//media queries
+@mixin media($width) {
+  @media only screen and (max-width: $width){
+    @content
+  }
+}

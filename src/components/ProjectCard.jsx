@@ -22,7 +22,7 @@ const ProjectCard = () => {
             href="https://github.com/fuston05/nasa-photo-of-the-day"
             target='_blank'
             rel='noreferrer noopener'
-          >GitHub
+          >View My Code
             </a>
           <a
             href="https://nasa-apod-fun.netlify.app/"

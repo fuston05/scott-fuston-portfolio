@@ -40,9 +40,9 @@ const Skills = () => {
       <h4 className='sectionTitle'>Skills</h4>
 
       <div className='skills'>
-        <div className='styling'>
+        <div className='skill styling'>
           {/* FontAwesome Icon */}
-          <span className='skillsIcon'><i className="fab fa-css3"></i></span>
+          <span className=' skillsIcon'><i className="fab fa-css3"></i></span>
           <h5>Styling Technologies</h5>
           <ul>
             {
@@ -59,7 +59,7 @@ const Skills = () => {
           </ul>
         </div>
 
-        <div className='frontEnd'>
+        <div className=' skill frontEnd'>
           {/* FontAwesome Icon */}
           <span className='skillsIcon'><i className="fab fa-react"></i></span>
           <h5>Front-End Technologies</h5>
@@ -78,7 +78,7 @@ const Skills = () => {
           </ul>
         </div>
 
-        <div className='backeEnd'>
+        <div className=' skill backeEnd'>
           {/* FontAwesome Icon */}
           <span className='skillsIcon'><i className="fab fa-node-js"></i></span>
           <h5>Back-End Technologies</h5>
@@ -96,7 +96,7 @@ const Skills = () => {
             }
           </ul>
         </div>
-        <div className='otherSkills'>
+        <div className=' skill otherSkills'>
           {/* FontAwesome Icon */}
           <span className='skillsIcon'><i className="fas fa-code-branch"></i></span>
           <h5>Other Skills</h5>
