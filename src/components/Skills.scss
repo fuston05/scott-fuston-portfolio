@@ -8,7 +8,7 @@
   @include dFlex(column, flex-start, center);
 
   .skills {
-    width: 100%;
+    max-width: 100%;
     @include dFlex(row, space-evenly, flex-start);
     flex-wrap: wrap;
 
@@ -25,7 +25,6 @@
     width: 40%;
     padding: 0 10px;
     margin: 25px;
-    background-color: green;
 
     @include media(760px){
       min-width: 300px;

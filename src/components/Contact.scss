@@ -8,16 +8,28 @@
   padding: 0 10px 25px 10px;
   margin: 0 0 50px 0;
   background-color: #f7f7f7;
+
+  @include media(650px){
+    padding: 0 10px 130px 10px;
+  }
   
   .contactContentCont {
     @include dFlex(row, space-evenly, flex-start);
     width: 100%;
+
+    @include media(750px){
+      @include dFlex(column, center, center);
+    }
 
     
     .contactLeft {
       @include dFlex(column, flex-start, center);
       text-align: left;
       width: 30%;
+
+      @include media(750px){
+        width: 100%;
+      }
       
       .contactIcon {
         font-size: 2.4rem;
@@ -25,10 +37,16 @@
       }//end contactIcon
 
       ul {
+        width: 100%;
         list-style-type: none;
 
+        @include media(750px){
+          @include dFlex(row, space-evenly, center);
+          flex-wrap: wrap;
+        }
+
         li{
-          margin-bottom: 10px;
+          margin: 0 10px 10px 0;
 
           a.contactLinks {
             color: $pColor;
@@ -47,6 +65,11 @@
     .contactRight {
       width: 70%;
       @include dFlex(column, flex-start, center);
+
+      @include media(750px){
+        width: 100%;
+        margin: 25px 0 0 0;
+      }
     }//end contactRight
 
   }//end contactContentCont
