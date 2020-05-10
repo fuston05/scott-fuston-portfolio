@@ -96,6 +96,7 @@ const Skills = () => {
             }
           </ul>
         </div>
+        
         <div className=' skill otherSkills'>
           {/* FontAwesome Icon */}
           <span className='skillsIcon'><i className="fas fa-code-branch"></i></span>
@@ -114,6 +115,7 @@ const Skills = () => {
             }
           </ul>
         </div>
+
       </div>
     </div> //end skillsCont
   )

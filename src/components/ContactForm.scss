@@ -3,6 +3,11 @@
 
 form{
   width: 70%;
+
+  @include media(650px){
+    width: 100%;
+  }
+
 }//end form
 
 fieldset{
