@@ -5,12 +5,12 @@
   @include dFlex(column, flex-start, center);
   min-height: calc(100vh + 150px);
   min-width: 100%;
-  padding: 0 10px 25px 10px;
+  padding: 0 25px 25px 25px;
   margin: 0 0 50px 0;
   background-color: #f7f7f7;
 
   @include media(650px){
-    padding: 0 10px 130px 10px;
+    padding: 0 25px 130px 25px;
   }
   
   .contactContentCont {
