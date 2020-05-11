@@ -1,7 +1,7 @@
 @import '../sass/mix-ins.scss';
 
 .aboutCont {
-  min-height: 100vh;
+  height: auto;
   width: 100%;
   background-color: #f7f7f7;
   @include dFlex(column, flex-start, center);
