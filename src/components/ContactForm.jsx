@@ -17,16 +17,17 @@ const ContactForm = () => {
       .join("&");
   }
 
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: encode({ "form-name": "contact", ...this.state })
-  })
-    .then(() => alert("Success!"))
-    .catch(error => alert(error));
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
 
-  e.preventDefault();
-};//handleSubmit
+    e.preventDefault();
+  };
 
   const handleChange = e => {
     //add form values to state
