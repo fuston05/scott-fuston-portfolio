@@ -11,16 +11,22 @@ const ContactForm = () => {
     message: ''
   });
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    //resets the form
-    setFormValue({
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
-    });
-  }//end handleSubmit
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encode({ "form-name": "contact", ...this.state })
+  })
+    .then(() => alert("Success!"))
+    .catch(error => alert(error));
+
+  e.preventDefault();
+};//handleSubmit
 
   const handleChange = e => {
     //add form values to state
