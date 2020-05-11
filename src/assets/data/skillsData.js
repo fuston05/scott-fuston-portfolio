@@ -8,8 +8,9 @@ export const stylingSkills = [
 export const frontEndSkills = [
   "HTML",
   "ReactJS",
-  "JavaScript",
-  "URQL"
+  "JavaScript(ES6)",
+  "URQL",
+  "GSAP"
 ]
 
 export const backEndSkills = [
