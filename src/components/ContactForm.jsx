@@ -39,7 +39,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form name= 'contact' onSubmit={handleSubmit}>
         <fieldset>
           <legend>Message Me</legend>
           <input type="text" placeholder='Name'
