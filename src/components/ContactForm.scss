@@ -2,17 +2,16 @@
 @import '../sass/mix-ins.scss';
 
 form{
-  width: 70%;
-
-  @include media(650px){
-    width: 100%;
-  }
-
+  width: 100%;
 }//end form
 
 fieldset{
   @include dFlex(column, center, center);
   width: 100%;
-  font-size: $h4Size;
+  font-size: $h4Large;
   color: $pColor;
+
+  @include media(1600px){
+    font-size: $h4Size;
+  }
 }

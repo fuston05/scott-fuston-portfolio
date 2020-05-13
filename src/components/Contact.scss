@@ -3,9 +3,9 @@
 
 .contactCont {
   @include dFlex(column, flex-start, center);
-  min-height: calc(100vh + 150px);
+  min-height: calc(100vh + 200px);
   min-width: 100%;
-  padding: 0 25px 25px 25px;
+  padding: 0 100px 25px 100px;
   margin: 0 0 50px 0;
   background-color: #f7f7f7;
 
@@ -25,15 +25,19 @@
     .contactLeft {
       @include dFlex(column, flex-start, center);
       text-align: left;
-      width: 30%;
+      width: 50%;
 
       @include media(750px){
         width: 100%;
       }
       
       .contactIcon {
-        font-size: 2.4rem;
+        font-size: 4rem;
         margin-right: 5px;
+
+        @include media(1600px){
+          font-size: 2.4rem;
+        }
       }//end contactIcon
 
       ul {
@@ -46,11 +50,15 @@
         }
 
         li{
-          margin: 0 10px 10px 0;
+          margin: 0 10px 50px 0;
 
           a.contactLinks {
             color: $pColor;
-            font-size: $aSize;
+            font-size: $aLarge;
+
+            @include media(1600px){
+              font-size: $aSize;
+            }
       
             &:hover {
               cursor: pointer;
@@ -63,7 +71,7 @@
     }//end contactSideBar
 
     .contactRight {
-      width: 70%;
+      width: 50%;
       @include dFlex(column, flex-start, center);
 
       @include media(750px){

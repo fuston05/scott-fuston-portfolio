@@ -10,55 +10,92 @@ body{
 
 p{
   color: $pColor;
-  font-size: $pSize;
+  font-size: $pLarge;
+
+  @include media(1600px){
+    font-size: $pSize;
+  }
 }
 
 a{
   color: $aColor;
-  font-size: $aSize;
+  font-size: $aLarge;
+
+  @include media(1600px){
+    font-size: $aSize;
+  }
 
   &:hover{
     cursor: pointer;
     opacity: 0.8;
-    color: $greenHover;
+    color: $darkBlue;
   }
 }
 
 h1{
   color: $h1Color;
-  font-size: $h1Size;
+  font-size: $h1Large;
+
+  @include media(1600px){
+    font-size: $h1Size;
+  }
 }
 
 h2 {
   color: $h2Color;
-  font-size: $h2Size;
+  font-size: $h2Large;
+
+  @include media(1600px){
+    font-size: $h2Size;
+  }
 }
 
 h3 {
   color: $h3Color;
-  font-size: $h3Size;
+  font-size: $h3Large;
+
+  @include media(1600px){
+    font-size: $h3Size;
+  }
 }
 
 h4 {
   color: $h4Color;
-  font-size: $h4Size;
+  font-size: $h4Large;
+
+  @include media(1600px){
+    font-size: $h4Size;
+  }
 }
 
 h5 {
   color: $h5Color;
-  font-size: $h5Size;
+  font-size: $h5Large;
+
+  @include media(1600px){
+    font-size: $h5Size;
+  }
 }
 
 // form styles //
 
-input, button{
+input, button[type='submit']{
   padding: 8px;
   margin: 0 0 10px 0;
   border-radius: 5px;
   border: 1px solid #aaa;
-  font-size: $pSize;
+  font-size: $pLarge;
   color: $pColor;
   width: 100%;
+
+  @include media(1600px){
+    font-size: $pSize;
+  }
+}
+
+button[type='submit']{
+  background-color: $blue;
+  color: $black;
 }
 
 textarea{
@@ -66,17 +103,25 @@ textarea{
   margin: 0 0 10px 0;
   border-radius: 5px;
   border: 1px solid #aaa;
-  font-size: $pSize;
+  font-size: $pLarge;
   color: $pColor;
   width: 100%;
   resize: none;
+
+  @include media(1600px){
+    font-size: $pSize;
+  }
 }
 
 form{
 
   label{
-    font-size: $pSize;
+    font-size: $pLarge;
     color: $labelColor;
+
+    @include media(1600px){
+      font-size: $pSize;
+    }
   }
 
   button{

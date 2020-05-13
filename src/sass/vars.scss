@@ -1,5 +1,8 @@
+@import './mix-ins.scss';
+
 // THEME COLORS ******
-$blue: #292C36;
+$blue: rgb(137, 156, 216);
+$darkBlue: rgb(128, 157, 255);
 $orange: #B16B46;
 $transBlack: rgba(0, 0, 0, 0.8);
 $gray: rgb(150, 150, 150); //p color
@@ -15,12 +18,12 @@ $greenHover: rgb(0, 99, 0);
 
 // FONT COLORS *****
 $pColor: $gray;
-$aColor: $green;
+$aColor: $blue;
 
 $h1Color: $white;
 $h2Color: $blue;
 $h3Color: $white;
-$h4Color: $green; 
+$h4Color: $blue; 
 $h5Color: $gray;
 
 $labelColor: $black;
@@ -29,10 +32,19 @@ $inputColor: $darkGray;
 
 //  FONT SIZES *****
 $pSize: 2rem;
+$pLarge: 3rem;
 $aSize: 2rem;
+$aLarge: 3rem;
 
 $h1Size: 4rem;
+$h1Large: 6.2rem;
 $h2Size: 2.5rem;
+$h2Large: 4.6rem;
 $h3Size: 1.8rem;
+$h3Large: 3rem;
 $h4Size: 2.8rem; // fieldset legned also use this
+$h4Large: 5rem;
+//was 2.8rem @ 1280 x 800px
+
 $h5Size: 2.6rem;
+$h5Large: 4.8rem;
