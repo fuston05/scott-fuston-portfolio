@@ -48,12 +48,8 @@
 
       li {
         text-align: center;
-        font-size: $pLarge;
+        font-size: $pSize;
         color: $pColor;
-
-        @include media(1600px){
-          font-size: $pSize;
-        }
       }
     }
 

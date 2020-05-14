@@ -54,11 +54,7 @@
 
           a.contactLinks {
             color: $pColor;
-            font-size: $aLarge;
-
-            @include media(1600px){
-              font-size: $aSize;
-            }
+            font-size: $aSize;
       
             &:hover {
               cursor: pointer;

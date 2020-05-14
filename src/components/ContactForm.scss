@@ -8,10 +8,6 @@ form{
 fieldset{
   @include dFlex(column, center, center);
   width: 100%;
-  font-size: $h4Large;
+  font-size: $h4Size;
   color: $pColor;
-
-  @include media(1600px){
-    font-size: $h4Size;
-  }
 }
