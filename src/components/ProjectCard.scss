@@ -2,7 +2,7 @@
 
 .projectCard{
   width: 30%;
-  min-width: 250px;
+  min-width: 30%;
   margin-bottom: 30px;
   border: 1px solid Green;
   border-radius: 5px;
@@ -15,14 +15,6 @@
   @include media(610px){
     width: 100%;
     margin: 0 auto 30px auto;
-  }
-
-  h5{
-
-  }
-
-  a{
-
   }
 
   img{

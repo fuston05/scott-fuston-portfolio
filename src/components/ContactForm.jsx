@@ -17,7 +17,7 @@ const ContactForm = () => {
       .join("&");
   }
 
-  handleSubmit = e => {
+  const handleSubmit = e => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -27,6 +27,12 @@ const ContactForm = () => {
       .catch(error => alert(error));
 
     e.preventDefault();
+    setFormValue({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    })
   };
 
   const handleChange = e => {

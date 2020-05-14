@@ -2,12 +2,7 @@
 @import '../sass/mix-ins.scss';
 
 form{
-  width: 70%;
-
-  @include media(650px){
-    width: 100%;
-  }
-
+  width: 100%;
 }//end form
 
 fieldset{

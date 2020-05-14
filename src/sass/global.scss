@@ -20,7 +20,7 @@ a{
   &:hover{
     cursor: pointer;
     opacity: 0.8;
-    color: $greenHover;
+    color: $darkBlue;
   }
 }
 
@@ -51,7 +51,7 @@ h5 {
 
 // form styles //
 
-input, button{
+input, button[type='submit']{
   padding: 8px;
   margin: 0 0 10px 0;
   border-radius: 5px;
@@ -59,6 +59,11 @@ input, button{
   font-size: $pSize;
   color: $pColor;
   width: 100%;
+}
+
+button[type='submit']{
+  background-color: $blue;
+  color: $black;
 }
 
 textarea{
