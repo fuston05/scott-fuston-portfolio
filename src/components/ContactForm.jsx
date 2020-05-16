@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 //styles
 import './ContactForm.scss';
@@ -18,15 +19,36 @@ const ContactForm = () => {
   }
 
   const handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formValue })
+    let showMessage= document.querySelector('.snackBar');
+
+    const templateParams = {
+      from_name: formValue.name,
+      reply_to: formValue.email,
+      message_html: formValue.message + 'Phone: ' + formValue.phone
+  };
+
+  emailjs.send(
+    process.env.REACT_APP_SERVICE_ID, 
+    process.env.REACT_APP_TEMPLATE_ID,
+    templateParams,
+    process.env.REACT_APP_USER_ID
+    )
+    .then(response => {
+      console.log('SUCCESS!', response.status, response.text);
+      showMessage.classList.remove('hide');
+      window.setTimeout(() => {
+        showMessage.classList.add('hide');
+      }, 3000)
+    }, err => {
+      console.log('FAILED...', err);
+      showMessage.classList.remove('hide');
+      window.setTimeout(() => {
+        showMessage.classList.add('hide');
+      }, 3000)
     })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
 
     e.preventDefault();
+    //reset the form
     setFormValue({
       name: '',
       email: '',
