@@ -26,10 +26,10 @@ const ContactForm = () => {
   };
 
   emailjs.send(
-    'scott_a_fuston_gmail_com', 
-    'template_lRAkjBq1',
+    process.env.REACT_APP_SERVICE_ID, 
+    process.env.REACT_APP_TEMPLATE_ID,
     templateParams,
-    'user_OmnELXQpZACwMtK9jkTqj'
+    process.env.REACT_APP_USER_ID
     )
     .then(response => {
       console.log('SUCCESS!', response.status, response.text);
