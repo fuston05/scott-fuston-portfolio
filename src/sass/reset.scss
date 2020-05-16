@@ -7,9 +7,6 @@ Twitter: @rich_clark
 Customized By: Scott Fuston - scott.a.fuston@gmail.com - scottfuston.com
 */
 
-@import './vars.scss';
-@import './mix-ins.scss';
-
 *,
 *::before,
 *::after {
@@ -94,10 +91,10 @@ video {
 }
 
 html{
-  font-size: calc($baseFontSize*1.5);
+  font-size: calc(62.5% * 1.5);
   
   @include media(1650px){
-    font-size: $baseFontSize;
+    font-size: 62.5%;
   }
 }
 
