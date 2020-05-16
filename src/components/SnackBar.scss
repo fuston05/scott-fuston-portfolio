@@ -1,0 +1,33 @@
+@import '../sass/vars.scss';
+@import '../sass/mix-ins.scss';
+
+.snackBar{
+  @include dFlex(row, center, center);
+  position: absolute;
+  bottom: 180px;
+  left: 50px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  background-color: rgba($black, 0.8);
+  z-index: 3;
+
+  p{
+    font-size: $pSize;
+    color: $white;
+  }
+
+  .closeSnack{
+    @include dFlex(row, center, center);
+    padding: 0 4px;
+    color: $black;
+    background-color: $red;
+    border-radius: 5px;
+    margin-left: 10px;
+
+    &:hover{
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}

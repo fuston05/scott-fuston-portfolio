@@ -22,8 +22,7 @@ const ContactForm = () => {
     const templateParams = {
       from_name: formValue.name,
       reply_to: formValue.email,
-      phone: formValue.phone,
-      message_html: formValue.message
+      message_html: formValue.message + 'Phone: ' + formValue.phone
   };
 
   emailjs.send(

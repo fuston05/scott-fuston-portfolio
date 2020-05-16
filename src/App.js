@@ -6,6 +6,7 @@ import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
+import SnackBar from './components/SnackBar';
 import Footer from './components/Footer';
 import ToTopArrow from './components/ToTopArrow';
 
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Skills />
       <Contact />
+      <SnackBar />
       <Footer />
       <ToTopArrow />
     </div>
