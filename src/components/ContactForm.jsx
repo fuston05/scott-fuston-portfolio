@@ -19,6 +19,8 @@ const ContactForm = () => {
   }
 
   const handleSubmit = e => {
+    let showMessage= document.querySelector('.snackBar');
+
     const templateParams = {
       from_name: formValue.name,
       reply_to: formValue.email,
@@ -33,8 +35,16 @@ const ContactForm = () => {
     )
     .then(response => {
       console.log('SUCCESS!', response.status, response.text);
+      showMessage.classList.remove('hide');
+      window.setTimeout(() => {
+        showMessage.classList.add('hide');
+      }, 3000)
     }, err => {
       console.log('FAILED...', err);
+      showMessage.classList.remove('hide');
+      window.setTimeout(() => {
+        showMessage.classList.add('hide');
+      }, 3000)
     })
 
     e.preventDefault();

@@ -3,9 +3,9 @@ import React from 'react';
 //styles
 import './SnackBar.scss';
 
-const SnackBar = ({snackMessage='what the poop is all this crap'}) => {
+const SnackBar = ({snackMessage='Message sent successfully!'}) => {
   return (
-    <div className= 'snackBar'>
+    <div className= 'snackBar hide'>
       <p>{snackMessage}</p>
       <span className= 'closeSnack'>X</span>
     </div>

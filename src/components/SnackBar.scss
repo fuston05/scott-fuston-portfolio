@@ -4,7 +4,7 @@
 .snackBar{
   @include dFlex(row, center, center);
   position: absolute;
-  bottom: 180px;
+  bottom: 280px;
   left: 50px;
   padding: 5px 15px;
   border-radius: 5px;
@@ -30,4 +30,8 @@
       opacity: 0.8;
     }
   }
+}
+
+.hide{
+  display: none;
 }
