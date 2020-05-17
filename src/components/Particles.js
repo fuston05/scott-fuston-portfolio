@@ -25,11 +25,11 @@ const Canvas = () => {
             "polygon": {
               "nb_sides": 4
             },
-            "image": {
-              "src": "img/github.svg",
-              "width": 100,
-              "height": 100
-            }
+            // "image": {
+            //   "src": "img/github.svg",
+            //   "width": 100,
+            //   "height": 100
+            // }
           },
           "opacity": {
             "value": 0.4008530152163807,
