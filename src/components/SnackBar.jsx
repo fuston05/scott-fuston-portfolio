@@ -3,11 +3,10 @@ import React from 'react';
 //styles
 import './SnackBar.scss';
 
-const SnackBar = ({snackMessage='Message sent successfully!'}) => {
+const SnackBar = ({snackMessage}) => {
   return (
     <div className= 'snackBar hide'>
       <p>{snackMessage}</p>
-      <span className= 'closeSnack'>X</span>
     </div>
   )
 }//end snackBar

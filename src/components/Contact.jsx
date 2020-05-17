@@ -6,7 +6,7 @@ import './Contact.scss';
 //components
 import ContactForm from './ContactForm';
 
-const Contact = () => {
+const Contact = ({sendEmail, message, setMessage}) => {
   return (
     <div className='contactCont'>
       {/* eslint-disable-next-line */}
@@ -65,7 +65,11 @@ const Contact = () => {
           </ul>
         </div> {/* end contactSideBar */}
         <div className='contactRight'>
-          <ContactForm />
+          <ContactForm 
+            sendEmail= {sendEmail}
+            message= {message}
+            setMessage= {setMessage}  
+          />
         </div>
       </div>
     </div>

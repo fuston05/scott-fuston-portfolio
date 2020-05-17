@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
 
 //styles
 import './ContactForm.scss';
 
-const ContactForm = () => {
+const ContactForm = ({sendEmail, message, setMessage}) => {
   const [formValue, setFormValue] = useState({
     name: '',
     email: '',
@@ -12,42 +11,21 @@ const ContactForm = () => {
     message: ''
   });
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  }
+  let showMessage = document.querySelector('.snackBar');
 
-  const handleSubmit = e => {
-    let showMessage= document.querySelector('.snackBar');
-
-    const templateParams = {
-      from_name: formValue.name,
-      reply_to: formValue.email,
-      message_html: formValue.message + 'Phone: ' + formValue.phone
-  };
-
-  emailjs.send(
-    process.env.REACT_APP_SERVICE_ID, 
-    process.env.REACT_APP_TEMPLATE_ID,
-    templateParams,
-    process.env.REACT_APP_USER_ID
-    )
-    .then(response => {
-      console.log('SUCCESS!', response.status, response.text);
-      showMessage.classList.remove('hide');
-      window.setTimeout(() => {
-        showMessage.classList.add('hide');
-      }, 3000)
-    }, err => {
-      console.log('FAILED...', err);
-      showMessage.classList.remove('hide');
-      window.setTimeout(() => {
-        showMessage.classList.add('hide');
-      }, 3000)
-    })
-
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    let resMessage= await sendEmail(formValue, showMessage);
+    setMessage(
+      resMessage
+    );
+    if(resMessage){
+      console.log('resMessage: ', resMessage);
+      if(showMessage){
+        showMessage.textContent= resMessage;
+      }
+    }
+    
     //reset the form
     setFormValue({
       name: '',
@@ -67,7 +45,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <form name= 'contact' onSubmit={handleSubmit}>
+      <form name='contact' onSubmit={handleSubmit}>
         <fieldset>
           <legend>Message Me</legend>
           <input type="text" placeholder='Name'
