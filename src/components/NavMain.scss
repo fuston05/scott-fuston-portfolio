@@ -9,6 +9,10 @@
   height: 40%;
   margin: 0 auto;
 
+  @include media(475px){
+    top: 10%;
+  }
+
   .slogan{
     max-width: 100%;
     font-style: italic;
