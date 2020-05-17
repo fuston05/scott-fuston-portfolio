@@ -11,12 +11,12 @@
     width: 70%;
     max-width: 100%;
 
+    @include media(600px){
+      width: 100%;
+    }
+
     p {
       text-align: left;
     }
-  }
-
-  //end aboutText
-}
-
-// end aboutCont
+  }//end aboutText
+}// end aboutCont
