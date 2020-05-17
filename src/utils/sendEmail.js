@@ -1,13 +1,14 @@
 import emailjs from 'emailjs-com';
 
-function sendEmail(formValue, showMessage){
+async function sendEmail(formValue, showMessage){
+  let resMessage= '';
   const templateParams = {
     from_name: formValue.name,
     reply_to: formValue.email,
     message_html: formValue.message + 'Phone: ' + formValue.phone
   };
 
-  emailjs.send(
+  await emailjs.send(
     process.env.REACT_APP_SERVICE_ID,
     process.env.REACT_APP_TEMPLATE_ID,
     templateParams,
@@ -15,20 +16,21 @@ function sendEmail(formValue, showMessage){
   )
     .then(response => {
       // console.log('SUCCESS!', response.status, response.text);
-      showMessage.classList.remove('hide');
+      resMessage= 'Message Sent Successfully';
+      showMessage && showMessage.classList.remove('hide');
       window.setTimeout(() => {
-        showMessage.classList.add('hide');
+        showMessage && showMessage.classList.add('hide');
       }, 3000);
-      return 'Message Sent Successfully';
     }, err => {
       console.log('FAILED...', err);
-      showMessage.classList.remove('hide');
+      resMessage= 'Error Sending Message';
+      showMessage && showMessage.classList.remove('hide');
       window.setTimeout(() => {
-        showMessage.classList.add('hide');
+        showMessage && showMessage.classList.add('hide');
       }, 3000);
-      return 'Error Sending Message';
     })
-
+    console.log('res from sendEmail: ', resMessage);
+    return resMessage;
 }//end sendEmail
 
 export default sendEmail;

@@ -31,7 +31,7 @@ function App() {
         setMessage= {setMessage}
       />
       <SnackBar 
-        
+        message= {message}
       />
       <Footer />
       <ToTopArrow />

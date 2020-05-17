@@ -13,13 +13,18 @@ const ContactForm = ({sendEmail, message, setMessage}) => {
 
   let showMessage = document.querySelector('.snackBar');
 
-  const handleSubmit = e => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    let response= sendEmail(formValue, showMessage);
+    let resMessage= await sendEmail(formValue, showMessage);
     setMessage(
-      response
+      resMessage
     );
-    response && showMessage.textContent(message);
+    if(resMessage){
+      console.log('resMessage: ', resMessage);
+      if(showMessage){
+        showMessage.textContent= resMessage;
+      }
+    }
     
     //reset the form
     setFormValue({
