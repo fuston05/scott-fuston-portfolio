@@ -9,9 +9,19 @@
   height: 40%;
   margin: 0 auto;
 
+  @include media(475px){
+    top: 20%;
+  }
+
   .slogan{
+    max-width: 100%;
     font-style: italic;
     margin-bottom: 10px;
+
+    @include media(380px){
+      width: 70%;
+      margin: 0 auto;
+    }
   }
 
   hr {
@@ -40,7 +50,7 @@
 
         a:hover{
           // color: rgb(81, 163, 81);
-          color: $greenHover;
+          color: $darkBlue;
         }
       }//end li
     }//end ul

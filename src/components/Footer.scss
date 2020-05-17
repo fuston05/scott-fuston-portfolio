@@ -17,7 +17,7 @@
     @include dFlex(row, center, center);
 
     span{
-      color: $blue;
+      color: gray;
       font-size: $pSize+1;
       margin-right: 5px;
     }

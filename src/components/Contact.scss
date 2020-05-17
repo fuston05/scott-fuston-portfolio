@@ -2,33 +2,79 @@
 @import '../sass/mix-ins.scss';
 
 .contactCont {
-  min-height: 100vh;
+  @include dFlex(column, flex-start, center);
+  min-height: calc(100vh + 200px);
   min-width: 100%;
+  padding: 0 100px 25px 100px;
+  margin: 0 0 50px 0;
+  background-color: #f7f7f7;
 
-  .contactIcon {
-    font-size: 2.4rem;
-    margin-right: 5px;
-
-  }//end contactIcon
-
-  .contactSideBar {
-    @include dFlex(column, center, center);
-    text-align: left;
-
-    ul {
-      list-style-type: none;
-    }
-  }//end contactSideBar
-
-  a.contactLinks {
-    color: $pColor;
-    font-size: $aSize;
-
-    &:hover {
-      cursor: pointer;
-      opacity: 0.8;
-    }
+  @include media(650px){
+    padding: 0 25px 130px 25px;
   }
-}
+  
+  .contactContentCont {
+    @include dFlex(row, space-evenly, flex-start);
+    width: 100%;
 
-//end contactCont
+    @include media(750px){
+      @include dFlex(column, center, center);
+    }
+
+    
+    .contactLeft {
+      @include dFlex(column, flex-start, center);
+      text-align: left;
+      width: 50%;
+
+      @include media(750px){
+        width: 100%;
+      }
+      
+      .contactIcon {
+        font-size: 4rem;
+        margin-right: 5px;
+
+        @include media(1600px){
+          font-size: 2.4rem;
+        }
+      }//end contactIcon
+
+      ul {
+        width: 100%;
+        list-style-type: none;
+
+        @include media(750px){
+          @include dFlex(row, space-evenly, center);
+          flex-wrap: wrap;
+        }
+
+        li{
+          margin: 0 10px 50px 0;
+
+          a.contactLinks {
+            color: $pColor;
+            font-size: $aSize;
+      
+            &:hover {
+              cursor: pointer;
+              color: #333;
+            }
+          }
+        }//end li
+
+      }//end ul
+    }//end contactSideBar
+
+    .contactRight {
+      width: 50%;
+      @include dFlex(column, flex-start, center);
+
+      @include media(750px){
+        width: 100%;
+        margin: 25px 0 0 0;
+      }
+    }//end contactRight
+
+  }//end contactContentCont
+}//end contactCont

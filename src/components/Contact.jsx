@@ -3,62 +3,74 @@ import React from 'react';
 //styles
 import './Contact.scss';
 
-const Contact = () => {
+//components
+import ContactForm from './ContactForm';
+
+const Contact = ({sendEmail, message, setMessage}) => {
   return (
     <div className='contactCont'>
       {/* eslint-disable-next-line */}
       <a id='contact'></a>
       <h4 className='sectionTitle'>Contact Me</h4>
-      <div>
-        <div className='contactSideBar'>
+      <div className= 'contactContentCont'>
+        <div className='contactLeft'>
           <ul>
-            <li>
-              <i class="contactIcon fab fa-linkedin"></i>
-              <a
-                className= 'contactLinks'
-                href="https://www.linkedin.com/in/scott-fuston/"
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                LinkedIn
-            </a>
-            </li>
-            <li>
-              <i class=" contactIcon fas fa-mobile-alt"></i>
-              <a
-                className= 'contactLinks'
-                href="tel:765-891-0712"
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                (765)891-0712
-              </a>
-            </li>
-            <li>
-            <i class="contactIcon fab fa-github"></i>
+          <li>
               <a
                 className= 'contactLinks'
                 href="https://github.com/fuston05"
                 target='_blank'
                 rel='noopener noreferrer'
               >
+                <i className="contactIcon fab fa-github"></i>
                 GitHub
               </a>
             </li>
+
             <li>
-            <i class="contactIcon fas fa-envelope-open-text"></i>
+              <a
+                className= 'contactLinks'
+                href="https://www.linkedin.com/in/scott-fuston/"
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <i className="contactIcon fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+            </li>
+
+            <li>
+              <a
+                className= 'contactLinks'
+                href="tel:765-891-0712"
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <i className=" contactIcon fas fa-mobile-alt"></i>
+                (765)891-0712
+              </a>
+            </li>
+
+            <li>
               <a
                 className= 'contactLinks'
                 href="mailto:scott.a.fuston@gmail.com"
                 target='_blank'
                 rel='noopener noreferrer'
               >
+                <i className="contactIcon fas fa-envelope-open-text"></i>
                 scott.a.fuston@gmail.com
               </a>
             </li>
           </ul>
         </div> {/* end contactSideBar */}
-        <div className='contactMain'></div>
+        <div className='contactRight'>
+          <ContactForm 
+            sendEmail= {sendEmail}
+            message= {message}
+            setMessage= {setMessage}  
+          />
+        </div>
       </div>
     </div>
   )
