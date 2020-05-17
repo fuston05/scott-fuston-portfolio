@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className='headerCont'>
       <NavMain />
-      <Particles />
+      {/* <Particles /> */}
     </div>
   )
 }//end Header

@@ -1,4 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
+
+//utils
+import sendEmail from './utils/sendEmail';
 
 //components
 import Header from './components/Header';
@@ -11,6 +14,8 @@ import Footer from './components/Footer';
 import ToTopArrow from './components/ToTopArrow';
 
 function App() {
+  const [message, setMessage]= useState('');
+
   return (
     <div className="App">
       {/* anchor used by the 'to top' arrow */}
@@ -20,8 +25,14 @@ function App() {
       <Portfolio />
       <About />
       <Skills />
-      <Contact />
-      <SnackBar />
+      <Contact 
+        sendEmail= {sendEmail}
+        message= {message}
+        setMessage= {setMessage}
+      />
+      <SnackBar 
+        
+      />
       <Footer />
       <ToTopArrow />
     </div>
