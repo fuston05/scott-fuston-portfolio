@@ -23,7 +23,7 @@ export const backEndSkills = [
 ]
 
 export const otherSkills = [
-    "Python"
+    "Python 3",
     "Git",
     "GitHub",
     "Zoom",
