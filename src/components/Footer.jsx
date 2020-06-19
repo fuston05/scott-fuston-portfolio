@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className= 'footerCont'>
       <div className= 'copyCont'><span>&copy;</span> <p>Copyright Scott Fuston 2020</p></div>
-      <Particles />
+      {/* <Particles /> */}
     </div>
   )
 }//end Footer

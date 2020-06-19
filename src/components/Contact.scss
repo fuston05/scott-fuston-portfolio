@@ -8,6 +8,7 @@
   padding: 0 100px 25px 100px;
   margin: 0 0 50px 0;
   background-color: #f7f7f7;
+  position: relative;
 
   @include media(650px){
     padding: 0 25px 130px 25px;

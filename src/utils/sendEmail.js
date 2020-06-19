@@ -18,9 +18,9 @@ async function sendEmail(formValue, showMessage){
       // console.log('SUCCESS!', response.status, response.text);
       resMessage= 'Message Sent Successfully';
       showMessage && showMessage.classList.remove('hide');
-      window.setTimeout(() => {
-        showMessage && showMessage.classList.add('hide');
-      }, 3000);
+      // window.setTimeout(() => {
+      //   showMessage && showMessage.classList.add('hide');
+      // }, 3000);
     }, err => {
       console.log('FAILED...', err);
       resMessage= 'Error Sending Message';

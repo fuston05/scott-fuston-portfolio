@@ -25,13 +25,13 @@ function App() {
       <Portfolio />
       <About />
       <Skills />
+      <SnackBar 
+        snackMessage= {message}
+      />
       <Contact 
         sendEmail= {sendEmail}
         message= {message}
         setMessage= {setMessage}
-      />
-      <SnackBar 
-        message= {message}
       />
       <Footer />
       <ToTopArrow />

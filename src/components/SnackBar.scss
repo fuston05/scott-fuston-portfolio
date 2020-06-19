@@ -4,18 +4,16 @@
 .snackBar{
   @include dFlex(row, center, center);
   position: absolute;
-  bottom: 280px;
+  // bottom: 280px;
+  bottom: 40vh;
   left: 50px;
   padding: 5px 15px;
   border-radius: 5px;
   border: 1px solid blue;
   background-color: rgba($black, 0.8);
   z-index: 3;
-
-  p{
-    font-size: $pSize;
-    color: $white;
-  }
+  font-size: $pSize;
+  color: $white;
 }
 
 .hide{
