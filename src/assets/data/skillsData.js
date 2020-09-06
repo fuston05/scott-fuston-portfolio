@@ -2,7 +2,8 @@ export const stylingSkills = [
     "CSS",
     "LESS",
     "SASS",
-    "React Styled-Components"
+    "React Styled-Components",
+    "Ant Design",
 ]
 
 export const frontEndSkills = [
@@ -10,7 +11,7 @@ export const frontEndSkills = [
     "ReactJS",
     "JavaScript(ES6)",
     "URQL",
-    "GSAP"
+    "GSAP",
 ]
 
 export const backEndSkills = [
@@ -19,7 +20,7 @@ export const backEndSkills = [
     "expressJS",
     "GraphQL",
     "Prisma",
-    "Apollo Server"
+    "Apollo Server",
 ]
 
 export const otherSkills = [
@@ -30,5 +31,5 @@ export const otherSkills = [
     "Slack",
     "Trello",
     "Cross-Functional Team Collaboration",
-    "Agile Development"
+    "Agile Development",
 ]
