@@ -1,11 +1,11 @@
 export const stylingSkills = [
-    "CSS",
-    "LESS",
-    "SASS",
-    "React Styled-Components"
+  "CSS",
+  "LESS",
+  "SASS",
+  "React Styled-Components"
 ]
 
-export const proficientSkills= [
+export const proficientSkills = [
   "ReactJS",
   "JavaScript(ES6)",
   "Python",
@@ -21,7 +21,7 @@ export const proficientSkills= [
   "Agile Development"
 ];
 
-export const midSkills= [
+export const midSkills = [
   "Redux",
   "NodeJs",
   "Express",
@@ -29,35 +29,39 @@ export const midSkills= [
   "Ant Design",
 ];
 
-export const lowSkills= [
+export const lowSkills = [
   "GraphQL",
   "PostgreSQL"
 ];
 
+"React Styled-Components",
+  "Ant Design",
+]
+
 export const frontEndSkills = [
-    "HTML",
-    "ReactJS",
-    "JavaScript(ES6)",
-    "URQL",
-    "GSAP"
+  "HTML",
+  "ReactJS",
+  "JavaScript(ES6)",
+  "URQL",
+  "GSAP"
 ]
 
 export const backEndSkills = [
-    "Restful API",
-    "NodeJS",
-    "expressJS",
-    "GraphQL",
-    "Prisma",
-    "Apollo Server"
+  "Restful API",
+  "NodeJS",
+  "expressJS",
+  "GraphQL",
+  "Prisma",
+  "Apollo Server"
 ]
 
 export const otherSkills = [
-    "Python 3",
-    "Git",
-    "GitHub",
-    "Zoom",
-    "Slack",
-    "Trello",
-    "Cross-Functional Team Collaboration",
-    "Agile Development"
+  "Python 3",
+  "Git",
+  "GitHub",
+  "Zoom",
+  "Slack",
+  "Trello",
+  "Cross-Functional Team Collaboration",
+  "Agile Development"
 ]
