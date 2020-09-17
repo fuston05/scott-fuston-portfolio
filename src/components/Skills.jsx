@@ -39,24 +39,84 @@ const Skills = () => {
 
       <h4 className='sectionTitle'>Skills</h4>
 
-      <div className='topSkills'>
-        <h3>Proficient Skills</h3>
-        <span>
-          'React | JavaScript | HTML/CSS | Python '
-        </span>
+      <div className='skills'>
+        <div className='skill styling'>
+          {/* FontAwesome Icon */}
+          <span className=' skillsIcon'><i className="fab fa-css3"></i></span>
+          <h5>Styling Technologies</h5>
+          <ul>
+            {
+              stSkills && stSkills.map((skill) => {
+                //alternates light and dark list BG
+                let colorName = alternateColor();
+                return (
+                  <li
+                    className={colorName}
+                    key={keyGen()}>{skill}</li>
+                )
+              })
+            }
+          </ul>
+        </div>
+
+        <div className=' skill frontEnd'>
+          {/* FontAwesome Icon */}
+          <span className='skillsIcon'><i className="fab fa-react"></i></span>
+          <h5>Front-End Technologies</h5>
+          <ul>
+            {
+              feSkills && feSkills.map(skill => {
+                //alternates light and dark list BG
+                let colorName = alternateColor();
+                return (
+                  <li
+                    className={colorName}
+                    key={keyGen()}>{skill}</li>
+                )
+              })
+            }
+          </ul>
+        </div>
+
+        <div className=' skill backeEnd'>
+          {/* FontAwesome Icon */}
+          <span className='skillsIcon'><i className="fab fa-node-js"></i></span>
+          <h5>Back-End Technologies</h5>
+          <ul>
+            {
+              beSkills && beSkills.map(skill => {
+                //alternates light and dark list BG
+                let colorName = alternateColor();
+                return (
+                  <li
+                    className={colorName}
+                    key={keyGen()}>{skill}</li>
+                )
+              })
+            }
+          </ul>
+        </div>
+
+        <div className=' skill otherSkills'>
+          {/* FontAwesome Icon */}
+          <span className='skillsIcon'><i className="fas fa-code-branch"></i></span>
+          <h5>Other Skills</h5>
+          <ul>
+            {
+              othSkills && othSkills.map(skill => {
+                //alternates light and dark list BG
+                let colorName = alternateColor();
+                return (
+                  <li
+                    className={colorName}
+                    key={keyGen()}>{skill}</li>
+                )
+              })
+            }
+          </ul>
+        </div>
+
       </div>
-
-      <div className='medSkills'>
-        <h3>Intermediate Skills(<span>Used a several times</span>)</h3>
-        'Redux | NodeJs | Express | RESTful API | Ant Design'
-      </div>
-
-      <div className='lowSkills'>
-        <h3>Beginner Skills(<span>Used once or twice</span>)</h3>
-        'GraphQL | Apollo-Server | URQL | GSAP'
-      </div>
-
-
     </div> //end skillsCont
   )
 }
