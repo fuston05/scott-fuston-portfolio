@@ -3,7 +3,7 @@ export const stylingSkills = [
   "LESS",
   "SASS",
   "React Styled-Components"
-]
+];
 
 export const proficientSkills = [
   "ReactJS",
@@ -31,12 +31,11 @@ export const midSkills = [
 
 export const lowSkills = [
   "GraphQL",
-  "PostgreSQL"
+  "PostgreSQL",
+  "React Styled-Components",
+  "Ant Design",
 ];
 
-"React Styled-Components",
-  "Ant Design",
-]
 
 export const frontEndSkills = [
   "HTML",
