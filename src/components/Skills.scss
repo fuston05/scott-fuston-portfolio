@@ -50,8 +50,8 @@
         width: 100%;
       }
 
-      @include media('2000px'){
-        font-size: $pLarge;
+      @include mediaMin('2056px'){
+        font-size:  + 3rem;
       }
       
       .skill {

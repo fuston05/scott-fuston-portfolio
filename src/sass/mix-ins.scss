@@ -5,7 +5,9 @@
   flex-direction: $dir;
   justify-content: $just;
   align-items: $align;
-}//end dFlex
+}
+
+//end dFlex
 
 @mixin buttonStyles {
   width: 100%;
@@ -15,15 +17,23 @@
   font-size: $pSize;
   z-index: 2;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
     opacity: 0.8;
   }
-}//end buttonStyles
+}
+
+//end buttonStyles
 
 //media queries
 @mixin media($width) {
-  @media only screen and (max-width: $width){
+  @media only screen and (max-width: $width) {
+    @content
+  }
+}
+
+@mixin mediaMin($width) {
+  @media only screen and (min-width: $width) {
     @content
   }
 }

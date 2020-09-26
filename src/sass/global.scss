@@ -11,10 +11,6 @@ body {
 p {
   color: $pColor;
   font-size: $pSize;
-
-  @include media('2000px') {
-    font-size: $pLarge;
-  }
 }
 
 a {
@@ -53,8 +49,13 @@ h5 {
   font-size: $h5Size;
 }
 
-// form styles //
+p, a, h1, h2, h3, h4, h5{
+  @include mediaMin('2056px'){
+    font-size:  + 3rem;
+  }
+}
 
+// form styles //
 input,
 button[type='submit'] {
   padding: 8px;
