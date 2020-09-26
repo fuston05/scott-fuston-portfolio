@@ -49,6 +49,10 @@
       @include media('500px'){
         width: 100%;
       }
+
+      @include media('2000px'){
+        font-size: calc($pSize +0.3rem);
+      }
       
       .skill {
         display: inline-table;
