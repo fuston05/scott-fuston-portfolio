@@ -105,7 +105,8 @@ const Canvas = () => {
         },
         style: {
           position: "relative",
-          height: "100%",
+          height: "100vh",
+          width: '100%'
         },
         "retina_detect": true
       }} />
