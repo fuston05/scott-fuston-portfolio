@@ -17,6 +17,10 @@
 
     p {
       text-align: center;
+
+      @include media('2000px'){
+        font-size: $pLarge;
+      }
     }
   }//end aboutText
 }// end aboutCont
