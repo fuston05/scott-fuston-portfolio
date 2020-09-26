@@ -2,29 +2,33 @@
 @import './vars.scss';
 @import './mix-ins.scss';
 
-body{
+body {
   font-family: 'font-family: 'Roboto', sans-serif;';
   min-height: 100vh;
   max-width: 100%;
 }
 
-p{
+p {
   color: $pColor;
   font-size: $pSize;
+
+  @include media('2000px') {
+    font-size: $pLarge;
+  }
 }
 
-a{
+a {
   color: $aColor;
   font-size: $aSize;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
     opacity: 0.8;
     color: $darkBlue;
   }
 }
 
-h1{
+h1 {
   color: $h1Color;
   font-size: $h1Size;
 }
@@ -51,7 +55,8 @@ h5 {
 
 // form styles //
 
-input, button[type='submit']{
+input,
+button[type='submit'] {
   padding: 8px;
   margin: 0 0 10px 0;
   border-radius: 5px;
@@ -61,12 +66,12 @@ input, button[type='submit']{
   width: 100%;
 }
 
-button[type='submit']{
+button[type='submit'] {
   background-color: $blue;
   color: $black;
 }
 
-textarea{
+textarea {
   padding: 8px;
   margin: 0 0 10px 0;
   border-radius: 5px;
@@ -77,14 +82,18 @@ textarea{
   resize: none;
 }
 
-form{
+form {
 
-  label{
+  label {
     font-size: $pSize;
     color: $labelColor;
   }
 
-  button{
+  button {
     @include buttonStyles;
-  }//end button
-}//end form
+  }
+
+  //end button
+}
+
+//end form
