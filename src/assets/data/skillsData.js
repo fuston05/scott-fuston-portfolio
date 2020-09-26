@@ -5,37 +5,34 @@ export const stylingSkills = [
   "React Styled-Components"
 ];
 
-export const proficientSkills = [
+export const topSkills = [
   "ReactJS",
   "JavaScript(ES6)",
   "Python",
   "HTML",
   "CSS/LESS/SCSS",
-  "React Styled-Components",
+  "React Styled Components",
+  "Ant Design",
   "Git",
   "GitHub",
   "Zoom",
   "Slack",
   "Trello",
-  "Cross-Functional Team Collaboration",
-  "Agile Development"
-];
-
-export const midSkills = [
-  "Redux",
+  "Cross Functional Team Collaboration",
+  "Agile Development",
   "NodeJs",
   "Express",
   "RESTful API",
-  "Ant Design",
 ];
 
-export const lowSkills = [
+export const skills = [
+  "Redux",
+  "Context",
+  "Reciol",
   "GraphQL",
+  "Apollo Server",
   "PostgreSQL",
-  "React Styled-Components",
-  "Ant Design",
 ];
-
 
 export const frontEndSkills = [
   "HTML",

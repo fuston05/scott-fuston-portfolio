@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 //utils
 import sendEmail from './utils/sendEmail';
@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 import ToTopArrow from './components/ToTopArrow';
 
 function App() {
-  const [message, setMessage]= useState('');
+  const [message, setMessage] = useState('');
 
   return (
     <div className="App">
@@ -25,13 +25,13 @@ function App() {
       <Portfolio />
       <About />
       <Skills />
-      <SnackBar 
-        snackMessage= {message}
+      <SnackBar
+        snackMessage={message}
       />
-      <Contact 
-        sendEmail= {sendEmail}
-        message= {message}
-        setMessage= {setMessage}
+      <Contact
+        sendEmail={sendEmail}
+        message={message}
+        setMessage={setMessage}
       />
       <Footer />
       <ToTopArrow />

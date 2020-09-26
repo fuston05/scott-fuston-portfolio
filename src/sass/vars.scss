@@ -8,7 +8,7 @@ $transBlack: rgba(0, 0, 0, 0.8);
 $gray: rgb(150, 150, 150); //p color
 $darkGray: rgb(97, 96, 96);
 $black: #222; //top section background
-$white: #ddd; //h1 color, anything white
+$white: #ccc; //h1 color, anything white
 $red: red;
 
 
@@ -30,6 +30,7 @@ $inputColor: $darkGray;
 
 //  FONT SIZES *****
 
+$pSizeSmall: 1.6rem;
 $pSize: 2rem;
 $pLarge: 3rem;
 
@@ -42,7 +43,7 @@ $h1Large: 6.2rem;
 $h2Size: 4.2rem;
 $h2Large: 4.6rem;
 
-$h3Size: 2.2rem;
+$h3Size: 2.6rem;
 $h3Large: 3rem;
 
 $h4Size: 3.5rem; // fieldset legned also use this
