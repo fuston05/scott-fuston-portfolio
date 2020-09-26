@@ -1,6 +1,7 @@
 import React from 'react';
 import Particles from '../components/Particles';
 
+
 //styles
 import './Header.scss';
 

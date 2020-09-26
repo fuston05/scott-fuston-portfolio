@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 
 //styles
 import './ToTopArrow.scss';
@@ -24,9 +25,10 @@ const ToTopArrow = () => {
     <>
     {/* if scroll then render the arrow */}
       {scroll === true ?
-        (<a href= '#top' title= 'Back To Top' className='topArrowCont'>
+        (<Link to= 'top' smooth= {true}
+        href= '#top' title= 'Back To Top' className='topArrowCont'>
           <i className="topArrow far fa-arrow-alt-circle-up"></i>
-        </a>) : null}
+        </Link>) : null}
     </>
   )
 }//end ToTopArrow
