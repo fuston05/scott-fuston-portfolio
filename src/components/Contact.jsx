@@ -6,18 +6,18 @@ import './Contact.scss';
 //components
 import ContactForm from './ContactForm';
 
-const Contact = ({sendEmail, message, setMessage}) => {
+const Contact = ({ sendEmail, message, setMessage }) => {
   return (
     <div className='contactCont'>
       {/* eslint-disable-next-line */}
       <a id='contact'></a>
       <h4 className='sectionTitle'>Contact Me</h4>
-      <div className= 'contactContentCont'>
+      <div className='contactContentCont'>
         <div className='contactLeft'>
           <ul>
-          <li>
+            <li>
               <a
-                className= 'contactLinks'
+                className='contactLinks'
                 href="https://github.com/fuston05"
                 target='_blank'
                 rel='noopener noreferrer'
@@ -29,7 +29,7 @@ const Contact = ({sendEmail, message, setMessage}) => {
 
             <li>
               <a
-                className= 'contactLinks'
+                className='contactLinks'
                 href="https://www.linkedin.com/in/scott-fuston/"
                 target='_blank'
                 rel='noopener noreferrer'
@@ -41,19 +41,19 @@ const Contact = ({sendEmail, message, setMessage}) => {
 
             <li>
               <a
-                className= 'contactLinks'
-                href="tel:765-891-0712"
+                className='contactLinks'
+                href="tel:765-326-0293"
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 <i className=" contactIcon fas fa-mobile-alt"></i>
-                (765)891-0712
+                (765)326-0293
               </a>
             </li>
 
             <li>
               <a
-                className= 'contactLinks'
+                className='contactLinks'
                 href="mailto:scott.a.fuston@gmail.com"
                 target='_blank'
                 rel='noopener noreferrer'
@@ -65,10 +65,10 @@ const Contact = ({sendEmail, message, setMessage}) => {
           </ul>
         </div> {/* end contactSideBar */}
         <div className='contactRight'>
-          <ContactForm 
-            sendEmail= {sendEmail}
-            message= {message}
-            setMessage= {setMessage}  
+          <ContactForm
+            sendEmail={sendEmail}
+            message={message}
+            setMessage={setMessage}
           />
         </div>
       </div>

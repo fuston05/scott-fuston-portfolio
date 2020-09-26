@@ -36,13 +36,13 @@ const Skills = () => {
       <div className='skills'>
         <span className='skillsHeader'>
           {/* FontAwesome Icon */}
-          <i className="fab fa-css3 skillsIcon"></i>
+          <i class="fab fa-git-alt skillsIcon"></i>
 
           <h3>Top Skills</h3>
           <i className="fab fa-react skillsIcon"></i>
         </span>
 
-        <div className= 'skillSection'>
+        <div className='skillSection'>
           {
             tSkills && tSkills.map((skill) => {
               //alternates light and dark list BG
@@ -63,10 +63,12 @@ const Skills = () => {
 
       <div className='skills'>
         <span className='skillsHeader'>
+          <i class="fab fa-js-square skillsIcon"></i>
           <h3>Other Skills</h3>
+          <i class="fab fa-node-js skillsIcon"></i>
         </span>
 
-        <div className= 'skillSection'>
+        <div className='skillSection'>
           {
             sk && sk.map((skill) => {
               //alternates light and dark list BG
