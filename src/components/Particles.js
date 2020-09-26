@@ -18,18 +18,9 @@ const Canvas = () => {
           },
           "shape": {
             "type": "circle",
-            // "stroke": {
-            //   "width": 2,
-            //   "color": "#000000"
-            // },
             "polygon": {
               "nb_sides": 4
             },
-            // "image": {
-            //   "src": "img/github.svg",
-            //   "width": 100,
-            //   "height": 100
-            // }
           },
           "opacity": {
             "value": 0.4008530152163807,
@@ -114,7 +105,7 @@ const Canvas = () => {
         },
         style: {
           position: "relative",
-          height: "100%"
+          height: "100%",
         },
         "retina_detect": true
       }} />

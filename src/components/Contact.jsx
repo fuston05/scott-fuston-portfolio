@@ -12,7 +12,9 @@ const Contact = ({ sendEmail, message, setMessage }) => {
       {/* eslint-disable-next-line */}
       <a id='contact'></a>
       <h4 className='sectionTitle'>Contact Me</h4>
+      
       <div className='contactContentCont'>
+
         <div className='contactLeft'>
           <ul>
             <li>
@@ -63,6 +65,7 @@ const Contact = ({ sendEmail, message, setMessage }) => {
               </a>
             </li>
           </ul>
+
         </div> {/* end contactSideBar */}
         <div className='contactRight'>
           <ContactForm
