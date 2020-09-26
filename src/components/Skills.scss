@@ -51,7 +51,7 @@
       }
 
       @include media('2000px'){
-        font-size: $pSize +0.3rem;
+        font-size: $pLarge;
       }
       
       .skill {
