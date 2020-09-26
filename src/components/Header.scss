@@ -9,6 +9,7 @@
     margin-bottom: 5%;
     position: relative;
     overflow: hidden;
+    @include dFlex(row, center, center);
 
     @include media('600px'){
       height: 40vh;
