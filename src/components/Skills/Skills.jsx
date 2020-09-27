@@ -36,7 +36,7 @@ const Skills = () => {
       <div className='skills'>
         <span className='skillsHeader'>
           {/* FontAwesome Icon */}
-          <i class="fab fa-git-alt skillsIcon"></i>
+          <i className="fab fa-git-alt skillsIcon"></i>
 
           <h3>Top Skills</h3>
           <i className="fab fa-react skillsIcon"></i>
@@ -63,9 +63,9 @@ const Skills = () => {
 
       <div className='skills'>
         <span className='skillsHeader'>
-          <i class="fab fa-js-square skillsIcon"></i>
+          <i className="fab fa-js-square skillsIcon"></i>
           <h3>Other Skills</h3>
-          <i class="fab fa-node-js skillsIcon"></i>
+          <i className="fab fa-node-js skillsIcon"></i>
         </span>
 
         <div className='skillSection'>
