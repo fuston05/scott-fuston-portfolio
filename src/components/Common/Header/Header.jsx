@@ -1,6 +1,4 @@
 import React from 'react';
-import {Canvas} from '../../Common';
-
 
 //styles
 import './Header.scss';
@@ -12,8 +10,6 @@ const Header = () => {
   return (
     <div className='headerCont'>
       <NavMain />
-      {/* Canvas= ParticlesJs */}
-      {/* <Canvas /> */}
     </div>
   )
 }//end Header
