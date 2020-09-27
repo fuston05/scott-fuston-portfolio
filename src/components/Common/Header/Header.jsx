@@ -1,5 +1,5 @@
 import React from 'react';
-import Canvas from '../components/Particles';
+import {Canvas} from '../../Common';
 
 
 //styles
@@ -12,7 +12,8 @@ const Header = () => {
   return (
     <div className='headerCont'>
       <NavMain />
-      <Canvas />
+      {/* Canvas= ParticlesJs */}
+      {/* <Canvas /> */}
     </div>
   )
 }//end Header

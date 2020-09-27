@@ -3,8 +3,8 @@ import React from 'react';
 //styles
 import './ProjectCard.scss';
 
-import NASA from '../assets/images/NASA.png';
-import comingSoon from '../assets/images/comingSoon.jpg';
+import NASA from '../../assets/images/NASA.png';
+import comingSoon from '../../assets/images/comingSoon.jpg';
 
 const ProjectCard = () => {
   return (

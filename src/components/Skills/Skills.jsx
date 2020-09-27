@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react';
 
 // ** utils **
 //used in skills map for unique keys
-import keyGen from '../utils/keyGen';
+import keyGen from '../../utils/keyGen';
 //alternates light and dark BG on skills lists in map below
-import alternateColor from '../utils/alternateColor';
+import alternateColor from '../../utils/alternateColor';
 
 //data
 import {
   skills,
   topSkills
-} from '../assets/data/skillsData';
+} from '../../assets/data/skillsData';
 
 //styles
 import './Skills.scss';

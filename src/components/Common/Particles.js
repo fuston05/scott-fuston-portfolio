@@ -67,10 +67,6 @@ const Canvas = () => {
         "interactivity": {
           "detect_on": "window",
           "events": {
-            // "onhover": {
-            //   "enable": true,
-            //   "mode": "repulse"
-            // },
             "onclick": {
               "enable": true,
               "mode": "repulse"
