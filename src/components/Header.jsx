@@ -1,10 +1,9 @@
 import React from 'react';
-import Particles from '../components/Particles';
+import Canvas from '../components/Particles';
 
 
 //styles
 import './Header.scss';
-
 
 //components
 import NavMain from './NavMain';
@@ -13,7 +12,7 @@ const Header = () => {
   return (
     <div className='headerCont'>
       <NavMain />
-      <Particles />
+      <Canvas />
     </div>
   )
 }//end Header

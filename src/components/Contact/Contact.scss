@@ -1,5 +1,5 @@
-@import '../sass/vars.scss';
-@import '../sass/mix-ins.scss';
+@import '../../sass/vars.scss';
+@import '../../sass/mix-ins.scss';
 
 .contactCont {
   @include dFlex(column, flex-start, center);
@@ -10,7 +10,7 @@
   background-color: #f7f7f7;
   position: relative;
 
-  @include media(650px){
+  @include media(650px) {
     padding: 0 25px 130px 25px;
   }
 
@@ -19,67 +19,81 @@
     width: 100%;
     position: relative;
 
-    @include media(750px){
+    @include media(750px) {
       @include dFlex(column, center, center);
     }
 
-    @include media(400px){
+    @include media(400px) {
       padding-bottom: 5%;
     }
-    
+
     .contactLeft {
       @include dFlex(column, flex-start, center);
       text-align: left;
       width: 50%;
 
-      @include media(750px){
+      @include media(750px) {
         width: 100%;
       }
-      
+
       .contactIcon {
         font-size: 4rem;
         margin-right: 5px;
 
-        @include media(1600px){
+        @include media(1600px) {
           font-size: 2.4rem;
         }
-      }//end contactIcon
+      }
+
+      //end contactIcon
 
       ul {
         width: 100%;
         list-style-type: none;
 
-        @include media(750px){
+        @include media(750px) {
           @include dFlex(row, space-evenly, center);
           flex-wrap: wrap;
         }
 
-        li{
+        li {
           margin: 0 10px 50px 0;
 
           a.contactLinks {
             color: $pColor;
             font-size: $aSize;
-      
+
             &:hover {
               cursor: pointer;
               color: #333;
             }
           }
-        }//end li
+        }
 
-      }//end ul
-    }//end contactSideBar
+        //end li
+
+      }
+
+      //end ul
+    }
+
+    //end contactSideBar
 
     .contactRight {
       width: 50%;
       @include dFlex(column, flex-start, center);
 
-      @include media(750px){
+      @include media(750px) {
         width: 100%;
         margin: 25px 0 0 0;
       }
-    }//end contactRight
+    }
 
-  }//end contactContentCont
-}//end contactCont
+    //end contactRight
+
+  }
+
+  //end contactContentCont
+}
+
+//end contactCont
