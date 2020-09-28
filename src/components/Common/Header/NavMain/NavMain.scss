@@ -2,29 +2,19 @@
 @import '../../../../sass/mix-ins.scss';
 
 .navMainCont {
-  position: absolute;
-  top: 30%;
-  left: auto;
-  right: auto;
-  height: 100%;
+  height: auto;
   width: 100%;
   max-width: 100%;
-  padding: 2%;
   margin: 0 auto;
-
-  @include media(600px) {
-    top: 5%;
-    width: 70%;
-  }
+  padding: 12% 0;
 
   .slogan {
-    max-width: 100%;
+    width: 100%;
     font-style: italic;
     margin-bottom: 10px;
 
-    @include media(380px) {
-      width: 70%;
-      margin: 0 auto;
+    @include media(320px) {
+      display: none;
     }
   }
 
@@ -38,9 +28,11 @@
 
   nav {
     width: 100%;
+    text-align: center;
+    @include dFlex(row, center, center);
+
 
     ul {
-      width: 100%;
       @include dFlex(row, center, center);
       list-style-type: none;
 
