@@ -49,9 +49,15 @@ h5 {
   font-size: $h5Size;
 }
 
-p, a, h1, h2, h3, h4, h5{
-  @include mediaMin('2056px'){
-    font-size:  + 3rem;
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @include mediaMin('2056px') {
+    font-size: + 3rem;
   }
 }
 
@@ -81,6 +87,35 @@ textarea {
   color: $pColor;
   width: 100%;
   resize: none;
+}
+
+// input placeholders
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: 'font-family: 'Roboto', sans-serif;';
+  font-size: $pSize;
+  color: $pColor;
+}
+
+textarea::-moz-placeholder, input::-moz-placeholder{
+  /* Firefox 19+ */
+  font-family: 'font-family: 'Roboto', sans-serif;';
+  font-size: $pSize;
+  color: $pColor;
+}
+
+textarea:-ms-input-placeholder, input:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: 'font-family: 'Roboto', sans-serif;';
+  font-size: $pSize;
+  color: $pColor;
+}
+
+textarea:-moz-placeholder, input:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: 'font-family: 'Roboto', sans-serif;';
+  font-size: $pSize;
+  color: $pColor;
 }
 
 form {
