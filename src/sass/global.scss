@@ -90,28 +90,36 @@ textarea {
 }
 
 // input placeholders
-textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {
+textarea::-webkit-input-placeholder, 
+input[type='text']::-webkit-input-placeholder, 
+input[type='email']::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   font-family: 'font-family: 'Roboto', sans-serif;';
   font-size: $pSize;
   color: $pColor;
 }
 
-textarea::-moz-placeholder, input::-moz-placeholder{
+textarea::-moz-placeholder, 
+input[type='text']::-moz-placeholder, 
+input[type='email']::-moz-placeholder{
   /* Firefox 19+ */
   font-family: 'font-family: 'Roboto', sans-serif;';
   font-size: $pSize;
   color: $pColor;
 }
 
-textarea:-ms-input-placeholder, input:-ms-input-placeholder {
+textarea:-ms-input-placeholder, 
+input[type='text']:-ms-input-placeholder, 
+input[type='email']:-ms-input-placeholder {
   /* IE 10+ */
   font-family: 'font-family: 'Roboto', sans-serif;';
   font-size: $pSize;
   color: $pColor;
 }
 
-textarea:-moz-placeholder, input:-moz-placeholder {
+textarea:-moz-placeholder, 
+input[type='text']:-moz-placeholder, 
+input[type='email']:-moz-placeholder {
   /* Firefox 18- */
   font-family: 'font-family: 'Roboto', sans-serif;';
   font-size: $pSize;
