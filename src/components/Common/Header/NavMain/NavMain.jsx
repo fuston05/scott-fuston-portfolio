@@ -7,9 +7,11 @@ import './NavMain.scss';
 const NavMain = () => {
   return (
     <div className='navMainCont'>
-      <div className='name'><h1>Scott Fuston</h1></div>
+      {/* <div className='name'><h1>Scott Fuston</h1></div>
       <hr />
-      <div className='slogan'><h3>Endless Possibilities </h3></div>
+      <div className='slogan'>
+        <h3>Endless Possibilities </h3>
+      </div> */}
       <nav>
         <ul>
           <li>

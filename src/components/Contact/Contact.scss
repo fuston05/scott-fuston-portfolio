@@ -8,12 +8,16 @@
   padding: 0 100px 5% 100px;
   background-color: #f7f7f7;
 
+  @include media('600px'){
+    padding: 0 20px 5% 20px;
+  }
+
 
   .contactContentCont {
     @include dFlex(row, space-evenly, flex-start);
     width: 100%;
 
-    @include media(750px) {
+    @include media('750px') {
       @include dFlex(column, center, center);
     }
 
@@ -22,7 +26,7 @@
       text-align: left;
       width: 50%;
 
-      @include media(750px) {
+      @include media('750px') {
         width: 100%;
       }
 
@@ -30,7 +34,7 @@
         font-size: 4rem;
         margin-right: 5px;
 
-        @include media(1600px) {
+        @include media('1600px') {
           font-size: 2.4rem;
         }
       }
@@ -41,7 +45,7 @@
         width: 100%;
         list-style-type: none;
 
-        @include media(750px) {
+        @include media('750px') {
           @include dFlex(row, space-evenly, center);
           flex-wrap: wrap;
         }
@@ -73,7 +77,7 @@
       width: 50%;
       @include dFlex(column, flex-start, center);
 
-      @include media(750px) {
+      @include media('750px') {
         width: 100%;
         margin: 25px 0 0 0;
       }

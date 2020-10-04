@@ -2,28 +2,15 @@
 @import '../../../../sass/mix-ins.scss';
 
 .navMainCont {
+  @include dFlex(row, center, center);
   height: auto;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 12% 0;
+  padding: 0 0 14% 0;
 
-  .slogan {
-    width: 100%;
-    font-style: italic;
-    margin-bottom: 10px;
-
-    @include media(320px) {
-      display: none;
-    }
-  }
-
-  hr {
-    background-image: linear-gradient(90deg, transparent, white, transparent);
-    border: 0;
-    height: 1px;
-    margin: 10px auto;
-    width: 60%;
+  @include media('320px') {
+    padding: 0 2%;
   }
 
   nav {
@@ -31,10 +18,18 @@
     text-align: center;
     @include dFlex(row, center, center);
 
-
+    @include media('400px'){
+      width: 80%;
+    }
+    
     ul {
       @include dFlex(row, center, center);
       list-style-type: none;
+      
+      @include media('320px'){
+        flex-wrap:wrap;
+
+      }
 
       li {
         margin-right: 15px;
@@ -47,15 +42,7 @@
         a:hover {
           color: $darkBlue;
         }
-      }
-
-      //end li
-    }
-
-    //end ul
-  }
-
-  //end nav
-}
-
-//end navMainCont
+      }//end li
+    }//end ul
+  }//end nav
+}//end navMainCont

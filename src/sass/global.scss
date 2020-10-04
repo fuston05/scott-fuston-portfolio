@@ -97,6 +97,8 @@ input[type='email']::-webkit-input-placeholder {
   font-family: 'font-family: 'Roboto', sans-serif;';
   font-size: $pSize;
   color: $pColor;
+  font-weight: normal;
+  font-style: inherit;
 }
 
 textarea::-moz-placeholder, 
@@ -106,6 +108,8 @@ input[type='email']::-moz-placeholder{
   font-family: 'font-family: 'Roboto', sans-serif;';
   font-size: $pSize;
   color: $pColor;
+  font-weight: normal;
+  font-style: inherit;
 }
 
 textarea:-ms-input-placeholder, 
@@ -115,6 +119,8 @@ input[type='email']:-ms-input-placeholder {
   font-family: 'font-family: 'Roboto', sans-serif;';
   font-size: $pSize;
   color: $pColor;
+  font-weight: normal;
+  font-style: inherit;
 }
 
 textarea:-moz-placeholder, 
@@ -124,6 +130,8 @@ input[type='email']:-moz-placeholder {
   font-family: 'font-family: 'Roboto', sans-serif;';
   font-size: $pSize;
   color: $pColor;
+  font-weight: normal;
+  font-style: inherit;
 }
 
 form {
