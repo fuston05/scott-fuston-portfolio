@@ -25,14 +25,14 @@ const ProjectCard = () => {
         <div className="linksCont">
           <a
             href="https://github.com/Lambda-School-Labs/Labs26-StorySquad-FE-TeamC"
-            target= '_blank'
+            target="_blank"
             rel="noreferrer noopener"
           >
             GitHub
           </a>
           <a
             href="https://c.storysquad.dev/"
-            target= '_blank'
+            target="_blank"
             rel="noreferrer noopener"
           >
             Live Site
@@ -58,7 +58,7 @@ const ProjectCard = () => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            View My Code
+            GitHub
           </a>
           <a
             href="https://nasa-apod-fun.netlify.app/"
@@ -85,14 +85,14 @@ const ProjectCard = () => {
         <div className="linksCont">
           <a
             href="https://github.com/fuston05/conways-game-of-life"
-            target= '_blank'
+            target="_blank"
             rel="noreferrer noopener"
           >
             GitHub
           </a>
           <a
             href="https://conwaygameoflife.netlify.app/"
-            target= '_blank'
+            target="_blank"
             rel="noreferrer noopener"
           >
             Live Site
