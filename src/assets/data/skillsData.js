@@ -28,7 +28,7 @@ export const topSkills = [
 export const skills = [
   "Redux",
   "Context",
-  "Reciol",
+  "Recoil",
   "GraphQL",
   "Apollo Server",
   "PostgreSQL",
