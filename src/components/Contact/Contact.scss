@@ -61,6 +61,12 @@
               cursor: pointer;
               color: #333;
             }
+
+            .contactDetail{
+              @include media('400px'){
+                display: none;
+              }
+            }
           }
         }
 

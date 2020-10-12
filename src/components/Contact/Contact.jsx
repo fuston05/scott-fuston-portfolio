@@ -25,7 +25,7 @@ const Contact = ({ sendEmail, message, setMessage }) => {
                 rel='noopener noreferrer'
               >
                 <i className="contactIcon fab fa-github"></i>
-                GitHub
+                <span className= 'contactDetail'>GitHub</span>
               </a>
             </li>
 
@@ -37,7 +37,7 @@ const Contact = ({ sendEmail, message, setMessage }) => {
                 rel='noopener noreferrer'
               >
                 <i className="contactIcon fab fa-linkedin"></i>
-                LinkedIn
+                <span className= 'contactDetail'>LinkedIn</span>
             </a>
             </li>
 
@@ -49,7 +49,7 @@ const Contact = ({ sendEmail, message, setMessage }) => {
                 rel='noopener noreferrer'
               >
                 <i className=" contactIcon fas fa-mobile-alt"></i>
-                (765)326-0293
+                <span className= 'contactDetail'>(765)326-0293</span>
               </a>
             </li>
 
@@ -61,7 +61,7 @@ const Contact = ({ sendEmail, message, setMessage }) => {
                 rel='noopener noreferrer'
               >
                 <i className="contactIcon fas fa-envelope-open-text"></i>
-                scott.a.fuston@gmail.com
+                <span className= 'contactDetail'>scott.a.fuston@gmail.com</span>
               </a>
             </li>
           </ul>
