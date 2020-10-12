@@ -4,7 +4,6 @@ import React from "react";
 import "./ProjectCard.scss";
 
 import NASA from "../../assets/images/NASA.png";
-import comingSoon from "../../assets/images/comingSoon.jpg";
 import storySquad from "../../assets/images/storySquad.png";
 import gameOfLife from "../../assets/images/gameOfLife.png";
 
