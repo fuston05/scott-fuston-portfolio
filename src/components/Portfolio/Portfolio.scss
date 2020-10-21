@@ -9,7 +9,7 @@
   .cardCont{
     padding: 10px;
     width: 100%;
-    @include dFlex(row, space-evenly, center);
+    @include dFlex(row, space-evenly, flex-start);
     flex-wrap: wrap;
   }
 

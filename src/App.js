@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* anchor used by the 'to top' arrow */}
+      {/* anchor used by the 'to-top' arrow */}
       {/* eslint-disable-next-line */}
       <a id='top' />
       <Header />

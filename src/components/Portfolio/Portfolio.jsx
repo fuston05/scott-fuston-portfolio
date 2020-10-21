@@ -7,6 +7,7 @@ import './Portfolio.scss';
 import ProjectCard from './ProjectCard';
 
 const Portfolio = () => {
+
   return (
     <div className= 'portfolioCont'>
       {/* eslint-disable-next-line */}

@@ -1,4 +1,5 @@
 @import '../../sass/mix-ins.scss';
+@import '~video-react/styles/scss/video-react';
 
 .projectCard{
   width: 30%;
@@ -23,6 +24,16 @@
   
   .linksCont{
     width: 100%;
+    padding: 0 1%;
     @include dFlex(row, space-evenly, center);
+    flex-wrap: wrap;
+
+    a{
+      margin-right: 1%;
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
   }
 }
