@@ -27,7 +27,7 @@ const Skills = () => {
   }, [tSkills, sk]);
 
   return (
-    <div className='skillsMainCont'>
+    <section className='skillsMainCont'>
       {/* eslint-disable-next-line */}
       <a id='skills'></a>
 
@@ -85,7 +85,7 @@ const Skills = () => {
         </div>
       </div>
 
-    </div> //end skillsCont
+    </section> //end skillsCont
   )
 }
 

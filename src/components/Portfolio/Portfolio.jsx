@@ -9,7 +9,7 @@ import ProjectCard from './ProjectCard';
 const Portfolio = () => {
 
   return (
-    <div className= 'portfolioCont'>
+    <section className= 'portfolioCont'>
       {/* eslint-disable-next-line */}
       <a id= 'portfolio'></a>
       <h4 className= 'sectionTitle'>Portfolio</h4>
@@ -17,7 +17,7 @@ const Portfolio = () => {
       <div className= 'cardCont'>
         <ProjectCard />
       </div>
-    </div>
+    </section>
   )
 }//end Portfolio
 

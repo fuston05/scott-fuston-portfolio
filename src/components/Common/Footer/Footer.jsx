@@ -5,9 +5,9 @@ import './Footer.scss';
 
 const Footer = () => {
   return (
-    <div className= 'footerCont'>
+    <footer className= 'footerCont'>
       <div className= 'copyCont'><span>&copy;</span> <p>Copyright Scott Fuston 2020</p></div>
-    </div>
+    </footer>
   )
 }//end Footer
 

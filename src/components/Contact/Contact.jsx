@@ -8,7 +8,7 @@ import ContactForm from './ContactForm';
 
 const Contact = ({ sendEmail, message, setMessage }) => {
   return (
-    <div className='contactCont'>
+    <section className='contactCont'>
       {/* eslint-disable-next-line */}
       <a id='contact'></a>
       <h4 className='sectionTitle'>Contact Me</h4>
@@ -75,7 +75,7 @@ const Contact = ({ sendEmail, message, setMessage }) => {
           />
         </div>
       </div>
-    </div>
+    </section>
   )
 }//end contact
 
