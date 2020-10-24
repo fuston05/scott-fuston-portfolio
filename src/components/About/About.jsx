@@ -13,8 +13,7 @@ const About = () => {
         <p>
           {" "}
           &nbsp;&nbsp;&nbsp; I am a Full-Stack Web Developer and recent Lambda
-          School Graduate. I am skilled in common front-end technologies such as
-          CSS, HTML, JavaScript, React, Recoil, and much more. As for back-end
+          School Graduate. I am skilled in front-end technologies including CSS, HTML, JavaScript, React, Recoil, and much more. As for back-end
           tech, I have experience with REST API, Express, SQLite, and
           PostgreSQL. See my portfolio for full details. I am always learning
           new technologies in an effort to stay on the cutting edge of web
