@@ -1,0 +1,14 @@
+.portfolioCont{
+  height: auto;
+  width: 100%;
+  padding: 0 10px 25px 10px;
+  @include dFlex(column, flex-start, center);
+
+  .cardCont{
+    padding: 10px;
+    width: 100%;
+    @include dFlex(row, space-evenly, flex-start);
+    flex-wrap: wrap;
+  }
+
+}

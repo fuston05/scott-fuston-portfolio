@@ -1,0 +1,19 @@
+
+.footerCont {
+  overflow: hidden;
+  padding: 3% 0;
+  min-width: 100%;
+  background-color: #292C36;
+
+  .copyCont{
+    height: 100%;
+    width: 100%;
+    @include dFlex(row, center, center);
+
+    span{
+      color: gray;
+      font-size: $pSize+1;
+      margin-right: 5px;
+    }
+  }//end copyCont
+}//end footerCont

@@ -1,0 +1,45 @@
+
+.navMainCont {
+  @include dFlex(row, center, center);
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 0 14% 0;
+
+  @include media('320px') {
+    padding: 0 2%;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+    @include dFlex(row, center, center);
+
+    @include media('400px'){
+      width: 80%;
+    }
+    
+    ul {
+      @include dFlex(row, center, center);
+      list-style-type: none;
+      
+      @include media('320px'){
+        flex-wrap:wrap;
+      }
+
+      li {
+        margin-right: 15px;
+        @include dFlex(row, space-evenly, center);
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a:hover {
+          color: $darkBlue;
+        }
+      }//end li
+    }//end ul
+  }//end nav
+}//end navMainCont
