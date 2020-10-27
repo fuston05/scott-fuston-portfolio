@@ -1,13 +1,8 @@
 import React from "react";
 
-//styles
-import "./ProjectCard.scss";
-
 import NASA from "../../assets/images/NASA.png";
 import storySquad from "../../assets/images/storySquad.png";
 import gameOfLife from "../../assets/images/gameOfLife.png";
-
-// import { Player } from 'video-react';
 
 const ProjectCard = () => {
   return (

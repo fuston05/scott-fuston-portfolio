@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 
-//styles
-import './ContactForm.scss';
-
 const ContactForm = ({sendEmail, message, setMessage}) => {
   const [formValue, setFormValue] = useState({
     name: '',

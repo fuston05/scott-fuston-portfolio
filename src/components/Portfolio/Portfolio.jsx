@@ -1,8 +1,5 @@
 import React from 'react';
 
-//styles
-import './Portfolio.scss';
-
 //components
 import ProjectCard from './ProjectCard';
 

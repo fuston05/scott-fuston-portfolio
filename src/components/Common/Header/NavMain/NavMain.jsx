@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-//styles
-import "./NavMain.scss";
-
 const NavMain = () => {
   return (
     <div className="navMainCont" data-testid="navMainCont">

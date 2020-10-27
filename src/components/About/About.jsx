@@ -1,8 +1,5 @@
 import React from "react";
 
-//styles
-import "./About.scss";
-
 const About = () => {
   return (
     <section className="aboutCont">

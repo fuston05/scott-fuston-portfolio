@@ -1,8 +1,5 @@
 import React from 'react';
 
-//styles
-import './Header.scss';
-
 //components
 import NavMain from './NavMain';
 

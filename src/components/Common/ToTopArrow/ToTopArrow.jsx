@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 
-//styles
-import './ToTopArrow.scss';
-
 const ToTopArrow = () => {
   //'to top' arrow render state
   const [scroll, setScroll] = useState(false);

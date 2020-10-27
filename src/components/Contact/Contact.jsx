@@ -1,8 +1,5 @@
 import React from 'react';
 
-//styles
-import './Contact.scss';
-
 //components
 import ContactForm from './ContactForm';
 

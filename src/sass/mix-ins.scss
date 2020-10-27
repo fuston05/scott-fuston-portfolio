@@ -7,8 +7,6 @@
   align-items: $align;
 }
 
-//end dFlex
-
 @mixin buttonStyles {
   width: 100%;
   padding: 8px;
@@ -22,8 +20,6 @@
     opacity: 0.8;
   }
 }
-
-//end buttonStyles
 
 //media queries
 @mixin media($width) {
