@@ -74,6 +74,16 @@
     @include dFlex(row, space-evenly, center);
     flex-wrap: wrap;
 
+    .videoButton {
+      font-size: $pSize;
+      color: $gray;
+  
+      &:hover{
+        cursor: pointer;
+        color: #333;
+      }
+    }
+
     a {
       margin-right: 1%;
 

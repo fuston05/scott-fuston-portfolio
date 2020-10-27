@@ -10,6 +10,10 @@ const Portfolio = () => {
     desc_3: 'closed',
   });
 
+  const videoUrls = {
+    storySquad: '/video/SS_overView.mp4',
+  }
+
   // toggles the 'description' panels for each proj card
   const toggleDescription = (desc) => {
     if (descriptionShow[desc] === 'closed') {
@@ -19,14 +23,24 @@ const Portfolio = () => {
     }
   }
 
+  // set state back to false for default
+  const [visible, setVisible] = useState(false);
+
+  const toggleModal = async () => {
+    setVisible(!visible);
+  }
+
   return (
     <section className= 'portfolioCont'>
       {/* eslint-disable-next-line */}
       <a id= 'portfolio'></a>
-      <h4 className= 'sectionTitle'>Portfolio</h4>
+      <h4 className='sectionTitle'>Portfolio</h4>
 
       <div className= 'cardCont'>
         <ProjectCard
+          toggleModal={toggleModal}
+          visible= {visible}
+          videoUrls= {videoUrls}
           toggleDescription={toggleDescription}
           descriptionShow={descriptionShow}
         />

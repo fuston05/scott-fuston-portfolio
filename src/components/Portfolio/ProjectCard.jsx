@@ -1,29 +1,41 @@
 import React from "react";
 
-// assets 
+// assets
 import NASA from "../../assets/images/NASA.png";
 import storySquad from "../../assets/images/storySquad.png";
 import gameOfLife from "../../assets/images/gameOfLife.png";
 
+// components
+import { VidModalContainer } from "../ModalVideoPlayer";
+
 const ProjectCard = ({
   toggleDescription,
-  descriptionShow
+  descriptionShow,
+  videoUrls,
+  toggleModal,
+  visible,
 }) => {
-  
 
   return (
     <>
       {/* ********************************** */}
       <div className="projectCard">
-
+        <VidModalContainer
+          toggleModal={toggleModal}
+          visible={visible}
+          url={videoUrls.storySquad}
+        />
         <h5>Story Squad</h5>
-        <span className= 'detailsButton'
-          onClick={() => {toggleDescription('desc_1')}}
+        <span
+          className="detailsButton"
+          onClick={() => {
+            toggleDescription("desc_1");
+          }}
         >
-          <i className="fas fa-info-circle"></i>
+          <i title="Description" className="fas fa-info-circle"></i>
         </span>
         {/* description panel */}
-        <div className= {`description ${descriptionShow.desc_1}`}>
+        <div className={`description ${descriptionShow.desc_1}`}>
           <h5>Description</h5>
           <p>
             This was a Lambda 'Labs' project with a real external stakeholder
@@ -40,6 +52,14 @@ const ProjectCard = ({
           >
             GitHub
           </a>
+          <span
+            onClick={() => {
+              toggleModal();
+            }}
+            className="videoButton"
+          >
+            <i title="Play Video" className="fas fa-play-circle"></i>
+          </span>
           <a
             href="https://c.storysquad.dev/"
             target="_blank"
@@ -54,13 +74,16 @@ const ProjectCard = ({
 
       <div className="projectCard">
         <h5>NASA APOD API</h5>
-        <span className= 'detailsButton'
-          onClick={() => {toggleDescription('desc_2')}}
+        <span
+          className="detailsButton"
+          onClick={() => {
+            toggleDescription("desc_2");
+          }}
         >
-          <i className="fas fa-info-circle"></i>
+          <i title="Description" className="fas fa-info-circle"></i>
         </span>
         {/* description panel */}
-        <div className= {`description ${descriptionShow.desc_2}`} >
+        <div className={`description ${descriptionShow.desc_2}`}>
           <h5>Description</h5>
           <p>
             This was a Lambda School project that I really liked and decided to
@@ -92,18 +115,23 @@ const ProjectCard = ({
 
       <div className="projectCard">
         <h5>Conway's Game of Life</h5>
-        <span className= 'detailsButton'
-          onClick={() => {toggleDescription('desc_3')}}
+        <span
+          className="detailsButton"
+          onClick={() => {
+            toggleDescription("desc_3");
+          }}
         >
-          <i className="fas fa-info-circle"></i>
+          <i title="Description" className="fas fa-info-circle"></i>
         </span>
         {/* description panel */}
-        <div className= {`description ${descriptionShow.desc_3}`}>
+        <div className={`description ${descriptionShow.desc_3}`}>
           <h5>Description</h5>
           <p>
             <i>
-              Disclaimer: The focus of this project was the algorithm, not the styles or responsiveness.
-            </i><br />
+              Disclaimer: The focus of this project was the algorithm, not the
+              styles or responsiveness.
+            </i>
+            <br />
             This was a Lambda School Computer Science project that I thought was
             so intriguing that I decided to use it in my portfolio.
           </p>
