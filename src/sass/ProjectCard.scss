@@ -55,13 +55,13 @@
   }
 
   p {
-    font-size: $pSizeSmall;
+    font-size: $pSize;
     padding: 4%;
     color: #ddd;
     z-index: 2;
 
     @include media('610px'){
-      font-size: $pSize;
+      font-size: $pSizeSmall;
     }
   }
 
