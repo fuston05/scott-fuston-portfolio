@@ -2,11 +2,10 @@
 
 
 ### About
-> This site is built using React, Javascript, Node-sass, and MaterialUI.
+> This site is built using React, Javascript, and Node-sass.
 I have a terrible eye for design, so I borrowed the theme from an HTML5Up template. I did build the site completely from scratch on my own, as the original was not built using React.
 ---
 ### Links
-- [MaterialUI](https://material-ui.com/)
 - [Tiny PNG](https://tinypng.com/)
 - [React-Scroll](https://www.npmjs.com/package/react-scroll)
 - [EmailJS](https://www.npmjs.com/package/emailjs-com)
