@@ -23,6 +23,14 @@ const projects= [
     gitHub: 'https://github.com/fuston05/conways-game-of-life',
     liveSite: 'https://conwaygameoflife.netlify.app/'
   },
+  {
+    projName: 'Scott Fuston Portfolio',
+    imageUrl: '/images/portfolio.png',
+    videoUrl: '',
+    description: 'This is my portfolio site. It\'s built on React, and Javascript. I do not have an eye for design, so I borrowed the concept from an HTL5UP template, but I built it all out myself from scratch. Site also implements EmailJS to handle the contact form, MaterialUI for the video player modal, and projects are all read in dynamically from projects.js.',
+    gitHub: 'https://github.com/fuston05/scott-fuston-portfolio',
+    liveSite: '',
+  },
 ]
 
 export default projects;
