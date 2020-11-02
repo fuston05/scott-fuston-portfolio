@@ -8,7 +8,6 @@ I have a terrible eye for design, so I borrowed the theme from an HTML5Up templa
 ### Links
 - [Tiny PNG](https://tinypng.com/)
 - [React-Scroll](https://www.npmjs.com/package/react-scroll)
-- [EmailJS](https://www.npmjs.com/package/emailjs-com)
 - [HTML5UP Templates](https://html5up.net/)
 - [Font Awesome](https://fontawesome.com/)
 ---
@@ -26,7 +25,7 @@ I have a terrible eye for design, so I borrowed the theme from an HTML5Up templa
 I decided to rank my skills by 2 categories: 'Top Skills' and 'Other Skills'. Top skills are those that I am fairly comfortable using and have had plenty of hands on experience with. The 'Other Skills' are those that I have learned and used maybe once, so I am not as fluent but do have some exposure to.
 ---
 ### Contact
-> Contact form implemented with Emailjs-com NPM package: [Emailjs-com. Bots can still get through and spam me (which happens often BTW), I plan to implement a Captcha in the future. For now, it's not really a big issue for the purposes of this portfolio.
+> I decided to exclude the contact form as it allows bot emails to come through without a captcha and I didn't want to build a back-end just so I could use a captcha.
 ---
 ### Testing
 > Unit testing with React-Testing-Library/Jest. Still adding test coverage in the future, this site is nowhere near fully tested.
