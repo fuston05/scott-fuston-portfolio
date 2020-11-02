@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 0 14% 0;
+  padding: 0 0 10% 0;
 
   @include media('320px') {
     padding: 0 2%;
@@ -21,21 +21,30 @@
     }
     
     ul {
+      width: 100%;
       @include dFlex(row, center, center);
       list-style-type: none;
       
-      @include media('320px'){
+      @include media('550px'){
         flex-wrap:wrap;
       }
 
       li {
-        margin-right: 15px;
+        margin-right: 5%;
         @include dFlex(row, space-evenly, center);
-
+        
         &:last-child {
           margin-right: 0;
         }
-
+        
+        a{
+          font-size: $h4Size;
+          
+          @include media('540px'){
+            font-size: $h5Size;
+          }
+        }
+        
         a:hover {
           color: $darkBlue;
         }
