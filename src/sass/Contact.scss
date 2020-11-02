@@ -11,15 +11,6 @@
     padding: 0 20px 5% 20px;
   }
 
-  // .contactContentCont {
-  //   @include dFlex(row, space-evenly, flex-start);
-  //   width: 100%;
-
-  //   @include media('750px') {
-  //     @include dFlex(column, center, center);
-  //   }
-  // }
-
   ul.contactLinksCont {
     @include dFlex(row, center, center);
     width: 100%;

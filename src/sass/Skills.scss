@@ -25,7 +25,7 @@
       @include dFlex(row, center, center);
 
       .skillsIcon {
-        font-size: $pSize;
+        font-size: $pSize + 1;
         color: $h4Color;
 
         @include media('2000px'){
@@ -33,7 +33,7 @@
         }
       }
 
-      h3 {
+      h5 {
         margin: 0 2%;
       }
     }
@@ -57,6 +57,7 @@
         margin: 0 2% 1% 0;
         white-space: nowrap;
         padding: 0 2%;
+        font-size: $pSize;
       }
 
       .dark {
