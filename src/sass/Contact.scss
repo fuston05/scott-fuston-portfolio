@@ -1,3 +1,4 @@
+// contact styles
 
 .contactCont {
   @include dFlex(column, flex-start, center);
@@ -6,92 +7,50 @@
   padding: 0 100px 5% 100px;
   background-color: #f7f7f7;
 
-  @include media('600px'){
+  @include media("600px") {
     padding: 0 20px 5% 20px;
   }
 
+  // .contactContentCont {
+  //   @include dFlex(row, space-evenly, flex-start);
+  //   width: 100%;
 
-  .contactContentCont {
-    @include dFlex(row, space-evenly, flex-start);
+  //   @include media('750px') {
+  //     @include dFlex(column, center, center);
+  //   }
+  // }
+
+  ul.contactLinksCont {
+    @include dFlex(row, center, center);
     width: 100%;
+    list-style-type: none;
 
-    @include media('750px') {
-      @include dFlex(column, center, center);
+    @include media("750px") {
+      @include dFlex(row, space-evenly, center);
+      flex-wrap: wrap;
     }
 
-    .contactLeft {
-      @include dFlex(column, flex-start, center);
-      text-align: left;
-      width: 50%;
+    li {
+      margin: 0 10% 50px 0;
+      list-style-type: none;
 
-      @include media('750px') {
-        width: 100%;
+      &:last-child {
+        margin-right: 0;
       }
 
       .contactIcon {
         font-size: 4rem;
-        margin-right: 5px;
-
-        @include media('1600px') {
-          font-size: 2.4rem;
-        }
       }
 
-      //end contactIcon
+      a.contactLinks {
+        color: $pColor;
+        font-size: $aSize;
 
-      ul {
-        width: 100%;
-        list-style-type: none;
-
-        @include media('750px') {
-          @include dFlex(row, space-evenly, center);
-          flex-wrap: wrap;
+        &:hover {
+          cursor: pointer;
+          color: #333;
         }
-
-        li {
-          margin: 0 10px 50px 0;
-
-          a.contactLinks {
-            color: $pColor;
-            font-size: $aSize;
-
-            &:hover {
-              cursor: pointer;
-              color: #333;
-            }
-
-            .contactDetail{
-              @include media('400px'){
-                display: none;
-              }
-            }
-          }
-        }
-
-        //end li
-
-      }
-
-      //end ul
-    }
-
-    //end contactSideBar
-
-    .contactRight {
-      width: 50%;
-      @include dFlex(column, flex-start, center);
-
-      @include media('750px') {
-        width: 100%;
-        margin: 25px 0 0 0;
       }
     }
-
-    //end contactRight
-
   }
-
-  //end contactContentCont
 }
-
-//end contactCont

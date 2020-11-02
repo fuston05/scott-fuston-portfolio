@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+// utils
+import { keyGen } from '../../utils';
+
 //components
 import ProjectCard from "./ProjectCard";
 
@@ -31,7 +34,7 @@ const Portfolio = () => {
         {projects.map((project) => {
           return (
             <ProjectCard
-              key={Date.now() * Math.random()}
+              key={keyGen()}
               toggleModal={toggleModal}
               visible={visible}
               project={project}

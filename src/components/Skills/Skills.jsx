@@ -12,9 +12,6 @@ import {
   topSkills
 } from '../../assets/data/skillsData';
 
-//styles
-import './Skills.scss';
-
 const Skills = () => {
   //skills from skillsData.js file
   const [tSkills, setTSkills] = useState();
