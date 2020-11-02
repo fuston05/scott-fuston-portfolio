@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 // components
-import { VidModalContainer } from "../ModalVideoPlayer";
+import { VidModalContainer } from "./ModalVideoPlayer";
 
 const ProjectCard = ({
   toggleModal,
