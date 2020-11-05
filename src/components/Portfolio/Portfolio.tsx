@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // utils
-import { keyGen } from '../../utils';
+import { keyGen } from "../../utils";
 
 //components
 import ProjectCard from "./ProjectCard";
@@ -9,20 +9,20 @@ import ProjectCard from "./ProjectCard";
 //data
 import projects from "../../assets/data/projects";
 
-const Portfolio = () => {
+const Portfolio: React.FC = () => {
   // set state back to false for default
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState<boolean>(false);
 
-  const toggleModal = async () => {
+  const toggleModal = () => {
     setVisible(!visible);
   };
 
   // closes video player modal when you click off of the player
-  window.addEventListener("click", (e) => {
-    if (visible && e.target.classList.contains('modalCont')) {
-      toggleModal();
-    }
-  });
+  // window.addEventListener("click", (e) => {
+  //   if (visible && e.target.classList.contains('modalCont')) {
+  //     toggleModal();
+  //   }
+  // });
 
   return (
     <section className="portfolioCont">
@@ -31,7 +31,7 @@ const Portfolio = () => {
       <h4 className="sectionTitle">Portfolio</h4>
 
       <div className="cardCont">
-        {projects.map((project) => {
+        {projects && projects.map((project) => {
           return (
             <ProjectCard
               key={keyGen()}

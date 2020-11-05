@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 
-const ToTopArrow = () => {
+const ToTopArrow: React.FC = () => {
   //'to top' arrow render state
-  const [scroll, setScroll] = useState(false);
+  const [scroll, setScroll] = useState<boolean>(false);
 
   window.addEventListener('scroll', () => {
     //if scrolled down render the up arrow

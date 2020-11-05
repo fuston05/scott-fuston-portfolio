@@ -3,7 +3,7 @@ import React from 'react';
 //components
 import NavMain from './NavMain';
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className='headerCont'>
       <div className='name'><h1>Scott Fuston</h1></div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <section className="aboutCont">
       {/* eslint-disable-next-line */}

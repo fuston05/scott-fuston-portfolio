@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-const NavMain = () => {
+const NavMain: React.FC = () => {
   return (
     <div className="navMainCont" data-testid="navMainCont">
       <nav>

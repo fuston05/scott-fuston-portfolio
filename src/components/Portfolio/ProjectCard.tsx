@@ -3,13 +3,28 @@ import React, {useState} from "react";
 // components
 import { VidModalContainer } from "./ModalVideoPlayer";
 
-const ProjectCard = ({
+type Project = {
+  projName: string;
+  imageUrl: string;
+  videoUrl?: string;
+  description: string;
+  gitHub: string;
+  liveSite?: string;
+}
+
+type CardProps = {
+  toggleModal: Function;
+  visible: boolean;
+  project: Project;
+}
+
+const ProjectCard: React.FC<CardProps> = ({
   toggleModal,
   visible,
   project
-}) => {
+}: CardProps) => {
 
-  const [descriptionShow, setDescritptionShow] = useState('closed');
+  const [descriptionShow, setDescritptionShow] = useState<'closed' | 'open'>('closed');
 
   // toggles the 'description' panels for each proj card
   const toggleDescription = () => {

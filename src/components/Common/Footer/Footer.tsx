@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer className= 'footerCont'>
       <div className= 'copyCont'><span>&copy;</span> <p>Copyright Scott Fuston 2020</p></div>

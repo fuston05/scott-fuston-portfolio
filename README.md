@@ -2,8 +2,9 @@
 
 
 ### About
-> This site is built using React, Javascript, and Node-sass.
+> This site is built using React, Javascript/TypeScript, and Node-sass.
 I have a terrible eye for design, so I borrowed the theme from an HTML5Up template. I did build the site completely from scratch on my own, as the original was not built using React.
+> I just started to learn TypeScript and I am slowly converting as I learn.
 ---
 ### Links
 - [Tiny PNG](https://tinypng.com/)

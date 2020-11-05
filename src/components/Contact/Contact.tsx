@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = () => {
+const Contact: React.FC = () => {
   return (
     <section className="contactCont">
       {/* eslint-disable-next-line */}
