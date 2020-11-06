@@ -25,6 +25,7 @@ export const skills = [
   "GraphQL",
   "Apollo Server",
   "PostgreSQL",
+  "TypeScript"
 ];
 
 
