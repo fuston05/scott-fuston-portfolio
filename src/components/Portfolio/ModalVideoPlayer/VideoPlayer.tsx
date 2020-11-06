@@ -1,7 +1,11 @@
 // VideoPlayer
 import React from "react";
 
-const VideoPlayer = ({ url }) => {
+type VideoProps = {
+  url: string;
+}
+
+const VideoPlayer: React.FC<VideoProps> = ({ url }) => {
 
   const extension = url.slice(url.indexOf('.')+1);
   
