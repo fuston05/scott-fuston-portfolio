@@ -35,7 +35,7 @@ const Skills: React.FC = () => {
           {/* FontAwesome Icon */}
           <i className="fab fa-git-alt skillsIcon"></i>
 
-          <h5>Top Skills</h5>
+          <h5 title= 'Comfortable Skills'>Top Skills</h5>
           <i className="fab fa-react skillsIcon"></i>
         </span>
 
@@ -61,7 +61,7 @@ const Skills: React.FC = () => {
       <div className='skills'>
         <span className='skillsHeader'>
           <i className="fab fa-js-square skillsIcon"></i>
-          <h5>Other Skills</h5>
+          <h5 title= 'Some Experience'>Other Skills</h5>
           <i className="fab fa-node-js skillsIcon"></i>
         </span>
 
