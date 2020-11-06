@@ -13,7 +13,7 @@ type Project = {
 }
 
 type CardProps = {
-  toggleModal: Function;
+  toggleModal: () => void;
   visible: boolean;
   project: Project;
 }

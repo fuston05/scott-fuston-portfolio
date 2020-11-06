@@ -10,7 +10,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
 
-function App() {
+const App: React.FC= () => {
 
   return (
     <div className="App">

@@ -12,10 +12,10 @@ import {
   topSkills
 } from '../../assets/data/skillsData';
 
-const Skills = () => {
+const Skills: React.FC = () => {
   //skills from skillsData.js file
-  const [tSkills, setTSkills] = useState();
-  const [sk, setSk] = useState();
+  const [tSkills, setTSkills] = useState<string[]>([]);
+  const [sk, setSk] = useState<string[]>([]);
 
   useEffect(() => {
     //set skills state on load

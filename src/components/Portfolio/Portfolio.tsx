@@ -17,13 +17,6 @@ const Portfolio: React.FC = () => {
     setVisible(!visible);
   };
 
-  // closes video player modal when you click off of the player
-  // window.addEventListener("click", (e) => {
-  //   if (visible && e.target.classList.contains('modalCont')) {
-  //     toggleModal();
-  //   }
-  // });
-
   return (
     <section className="portfolioCont">
       {/* eslint-disable-next-line */}
