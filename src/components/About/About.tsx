@@ -10,12 +10,9 @@ const About: React.FC = () => {
         <p>
           {" "}
           &nbsp;&nbsp;&nbsp; I am a Full-Stack Web Developer and recent Lambda
-          School Graduate. I am skilled in front-end technologies including CSS, HTML, JavaScript, React, Recoil, and much more. As for back-end
-          tech, I have experience with REST API, Nodejs, Express, SQLite, and
-          PostgreSQL. See my portfolio for full details. I am always learning
-          new technologies in an effort to stay on the cutting edge of web
-          development. I have a passion for code and the unlimited possibilities
-          that it offers me as a "creator".
+          School Graduate. I don't even have the words to express how excited I am to begin searching for my dream job! I am so passionate about every aspect of software development. For me It's not just about the code, cross-functional team collaboration is an incredible experience that has a way of bringing people together and building great friendships.
+          <br />
+          Check out my skills below, and get in touch with me. I look forward to discussing an amazing opportunity with you.
         </p>
       </div>
     </section>
