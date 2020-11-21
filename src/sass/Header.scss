@@ -6,6 +6,7 @@
   background-color: $black;
   margin-bottom: 5%;
   padding: 8% 2% 0 2%;
+  position: relative;
 
   .slogan {
     width: 100%;
@@ -15,6 +16,15 @@
     @include media(320px) {
       display: none;
     }
+  }
+
+  #tsparticles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
   }
 
   hr {

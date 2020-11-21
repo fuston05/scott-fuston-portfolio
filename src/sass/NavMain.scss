@@ -12,6 +12,7 @@
   }
 
   nav {
+    z-index: 2;
     width: 100%;
     text-align: center;
     @include dFlex(row, center, center);
