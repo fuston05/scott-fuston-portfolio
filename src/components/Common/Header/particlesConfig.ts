@@ -10,7 +10,7 @@ export const options={
     detectsOn: "canvas",
     events: {
       onClick: {
-        enable: true,
+        enable: false,
         mode: "push",
       },
       onHover: {
@@ -53,7 +53,7 @@ export const options={
       direction: "none",
       enable: true,
       outMode: "bounce",
-      random: false,
+      random: true,
       speed: 4,
       straight: false,
     },
@@ -62,7 +62,7 @@ export const options={
         enable: true,
         value_area: 800,
       },
-      value: 100,
+      value: 120,
     },
     opacity: {
       value: 0.7,
