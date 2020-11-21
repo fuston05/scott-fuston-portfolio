@@ -11,11 +11,28 @@
     padding: 0 2%;
   }
 
+  @keyframes moveRight{
+    from {margin-right: 200vw;}
+    to {margin-right: 0;}
+  }
+
+  @keyframes marginRight{
+    from {margin-right: 0;}
+    to {margin-right: 5%;}
+  }
+
   nav {
     z-index: 2;
     width: 100%;
     text-align: center;
     @include dFlex(row, center, center);
+    animation-name: moveRight;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+
+    @include media('600px'){
+      animation: none !important;
+    }
 
     @include media('400px'){
       width: 80%;
@@ -31,10 +48,17 @@
       }
 
       li {
+        animation-name: marginRight;
+        animation-duration: 2s;
         margin-right: 5%;
         @include dFlex(row, space-evenly, center);
+
+        @include media('600px'){
+          animation: none !important;
+        }
         
         &:last-child {
+          animation: none;
           margin-right: 0;
         }
         
