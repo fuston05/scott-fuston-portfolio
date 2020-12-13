@@ -17,6 +17,7 @@ export const topSkills = [
   "Express",
   "PostgreSQL",
   "SQL",
+  "JSON",
   "Database Schema Design",
   "RESTful API",
 ];

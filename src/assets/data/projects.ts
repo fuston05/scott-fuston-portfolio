@@ -23,7 +23,7 @@ const projects= [
   {
     projName: 'Scott Fuston Portfolio',
     imageUrl: '/images/portfolio.png',
-    description: 'This is my portfolio site. It\'s built on React, and Javascript. I do not have an eye for design, so I borrowed the concept from an HTL5UP template, but I built it all out myself from scratch. All projects are all read in dynamically from projects.js. See the GitHub README.md file for more info.',
+    description: 'This is my portfolio site. It\'s built on React, and Javascript. I do not have an eye for design, so I borrowed the concept from an HTL5UP template, but I built it all out myself from scratch. All projects are read in dynamically from projects.js. See the GitHub README.md file for more info.',
     gitHub: 'https://github.com/fuston05/scott-fuston-portfolio',
   },
 ]
