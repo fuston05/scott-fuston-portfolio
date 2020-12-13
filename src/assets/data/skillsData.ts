@@ -15,6 +15,9 @@ export const topSkills = [
   "Agile Development",
   "NodeJs",
   "Express",
+  "PostgreSQL",
+  "SQL",
+  "Database Schema Design",
   "RESTful API",
 ];
 
@@ -24,8 +27,5 @@ export const skills = [
   "Recoil",
   "GraphQL",
   "Apollo Server",
-  "PostgreSQL",
-  "TypeScript"
+  "TypeScript",
 ];
-
-
