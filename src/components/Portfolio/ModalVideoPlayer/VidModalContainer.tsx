@@ -7,9 +7,9 @@ import React from "react";
 import VideoPlayer from "./VideoPlayer";
 
 type VideoProps = {
-  url: string,
-  toggleModal: () => void,
-  visible: boolean,
+  url: string;
+  toggleModal: () => void;
+  visible: boolean;
 };
 
 const VidModalContainer: React.FC<VideoProps> = ({
@@ -21,13 +21,7 @@ const VidModalContainer: React.FC<VideoProps> = ({
     <>
       {visible && (
         // allows to click anywhere off of the video player to close it.
-        <div
-          onClick={() => {
-            toggleModal();
-          }}
-          data-testid="modalCont"
-          className="modalCont"
-        >
+        <div data-testid="modalCont" className="modalCont">
           <div
             // click the 'X' to also close video player
             onClick={() => {

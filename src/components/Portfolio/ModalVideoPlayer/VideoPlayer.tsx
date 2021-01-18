@@ -12,9 +12,10 @@ const VideoPlayer: React.FC<VideoProps> = ({ url }) => {
   return (
     <>
       <video
-        className= 'videoClose'
+        className= 'video'
         // also takes props: autoPlay
         controls
+        playsInline
       >
         <source
           src={url}
