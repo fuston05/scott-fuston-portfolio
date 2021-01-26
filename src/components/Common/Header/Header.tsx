@@ -15,7 +15,7 @@ const Header: React.FC = () => {
       </div>
       <hr />
       <div className="slogan">
-        <h3>Endless Possibilities </h3>
+        <h3><i>#not-a-designer</i></h3>
       </div>
       <NavMain />
 
