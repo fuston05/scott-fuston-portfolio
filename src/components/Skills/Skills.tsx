@@ -20,7 +20,7 @@ type SkillType=  {
 const Skills: React.FC = () => {
   //skills from skillsData.js file
   const [tSkills, setTSkills] = useState<SkillType[]>([]);
-  const [sk, setSk] = useState<string[]>([]);
+  const [sk, setSk] = useState<SkillType[]>([]);
 
   useEffect(() => {
     //set skills state on load
@@ -78,9 +78,10 @@ const Skills: React.FC = () => {
               let colorName = alternateColor();
               return (
                 <div
+                title= {`Proficiency: ${skill.proficiency}/10`}
                   className={`skill ${colorName}`}
                   key={keyGen()}
-                >{`${skill}`}
+                >{`${skill.name}`}
                 </div>
               )
             })

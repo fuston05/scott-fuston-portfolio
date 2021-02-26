@@ -23,10 +23,10 @@ export const topSkills = [
 ];
 
 export const skills = [
-  "Redux",
-  "Context",
-  "Recoil",
-  "GraphQL",
-  "Apollo Server",
-  "TypeScript",
+  {name: "Redux", proficiency: 3},
+  {name: "Context", proficiency: 3},
+  {name: "Recoil", proficiency: 5},
+  {name: "GraphQL", proficiency: 1},
+  {name: "Apollo Server", proficiency: 1},
+  {name: "TypeScript", proficiency: 3},
 ];
