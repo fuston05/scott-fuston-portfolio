@@ -1,30 +1,33 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 // components
 import { VidModalContainer } from "./ModalVideoPlayer";
 
 type Project = {
+  year: string;
+  tech: Array<string>;
   projName: string;
   imageUrl: string;
   videoUrl?: string;
   description: string;
   gitHub: string;
   liveSite?: string;
-}
+};
 
 type CardProps = {
   toggleModal: () => void;
   visible: boolean;
   project: Project;
-}
+};
 
 const ProjectCard: React.FC<CardProps> = ({
   toggleModal,
   visible,
-  project
+  project,
 }: CardProps) => {
-
-  const [descriptionShow, setDescritptionShow] = useState<'closed' | 'open'>('closed');
+  const [descriptionShow, setDescritptionShow] = useState<"closed" | "open">(
+    "closed"
+  );
 
   // toggles the 'description' panels for each proj card
   const toggleDescription = () => {
@@ -37,13 +40,27 @@ const ProjectCard: React.FC<CardProps> = ({
 
   return (
     <>
-      {project.videoUrl && <VidModalContainer url= {project.videoUrl} visible= {visible} toggleModal= {toggleModal} />}
+      {project.videoUrl && (
+        <VidModalContainer
+          url={project.videoUrl}
+          visible={visible}
+          toggleModal={toggleModal}
+        />
+      )}
       <div className="projectCard">
+        <div className="topInfo">
+          <span className="year">{project.year}</span>
+          <div className="tech">
+            {project.tech.map((t, i) => {
+              return <span key={i}>{` ${t}, `}</span>;
+            })}
+          </div>
+        </div>
         <h5>{project.projName}</h5>
         <span
           className="detailsButton"
           onClick={() => {
-            toggleDescription()
+            toggleDescription();
           }}
         >
           <i title="Description" className="fas fa-info-circle"></i>
@@ -51,35 +68,33 @@ const ProjectCard: React.FC<CardProps> = ({
         {/* description panel */}
         <div className={`description ${descriptionShow}`}>
           <h5>Description</h5>
-          <p>
-            {project.description}
-          </p>
+          <p>{project.description}</p>
         </div>
 
-        <img src= {project.imageUrl} alt= {`${project.projName}`} />
+        <img src={project.imageUrl} alt={`${project.projName}`} />
         <div className="linksCont">
-          <a
-            href= {project.gitHub}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
+          <a href={project.gitHub} target="_blank" rel="noreferrer noopener">
             GitHub
           </a>
-          {project.videoUrl && <span
-            onClick={() => {
-              toggleModal();
-            }}
-            className="videoButton"
-          >
-            <i className="fas fa-play-circle"></i>
-          </span>}
-          {project.liveSite && <a
-            href= {project.liveSite}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Live Site
-          </a>}
+          {project.videoUrl && (
+            <span
+              onClick={() => {
+                toggleModal();
+              }}
+              className="videoButton"
+            >
+              <i className="fas fa-play-circle"></i>
+            </span>
+          )}
+          {project.liveSite && (
+            <a
+              href={project.liveSite}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Live Site
+            </a>
+          )}
         </div>
       </div>
     </>
