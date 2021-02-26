@@ -5,11 +5,11 @@
   padding: 0 10px 25px 10px;
   @include dFlex(column, flex-start, center);
 
-  @include media('760px') {
+  @include media("760px") {
     width: 90%;
   }
 
-  @include media('560px') {
+  @include media("560px") {
     width: 98%;
   }
 
@@ -28,8 +28,7 @@
         font-size: $pSize + 1;
         color: $h4Color;
 
-        @include media('2000px'){
-
+        @include media("2000px") {
         }
       }
 
@@ -43,21 +42,27 @@
       font-size: $pSizeSmall;
       width: 90%;
       max-width: 100%;
-      
-      @include media('500px'){
+
+      @include media("500px") {
         width: 100%;
       }
 
-      @include mediaMin('2056px'){
-        font-size:  + 3rem;
+      @include mediaMin("2056px") {
+        font-size: +3rem;
       }
-      
+
       .skill {
         display: inline-table;
         margin: 0 2% 1% 0;
         white-space: nowrap;
         padding: 0 2%;
         font-size: $pSize;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .6);
+          zoom: 1.03;
+        }
       }
 
       .dark {

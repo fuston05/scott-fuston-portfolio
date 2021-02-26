@@ -12,9 +12,14 @@ import {
   topSkills
 } from '../../assets/data/skillsData';
 
+type SkillType=  {
+  name: string;
+  proficiency: number;
+}
+
 const Skills: React.FC = () => {
   //skills from skillsData.js file
-  const [tSkills, setTSkills] = useState<string[]>([]);
+  const [tSkills, setTSkills] = useState<SkillType[]>([]);
   const [sk, setSk] = useState<string[]>([]);
 
   useEffect(() => {
@@ -46,9 +51,10 @@ const Skills: React.FC = () => {
               let colorName = alternateColor();
               return (
                 <div
+                  title= {`Proficiency: ${skill.proficiency}/10`}
                   className={`skill ${colorName}`}
                   key={keyGen()}
-                >{`${skill}`}
+                >{`${skill.name}`}
                 </div>
               )
             })
