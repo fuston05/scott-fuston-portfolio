@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import { VidModalContainer } from "./ModalVideoPlayer";
 
 type Project = {
-  year: string;
-  tech: Array<string>;
   projName: string;
   imageUrl: string;
   videoUrl?: string;
@@ -48,14 +46,6 @@ const ProjectCard: React.FC<CardProps> = ({
         />
       )}
       <div className="projectCard">
-        <div className="topInfo">
-          <span className="year">{project.year}</span>
-          <div className="tech">
-            {project.tech.map((t, i) => {
-              return <span key={i}>{` ${t}, `}</span>;
-            })}
-          </div>
-        </div>
         <h5>{project.projName}</h5>
         <span
           className="detailsButton"

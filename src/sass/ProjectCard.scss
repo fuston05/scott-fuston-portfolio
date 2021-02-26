@@ -19,11 +19,6 @@
     margin: 0 auto 30px auto;
   }
 
-  .topInfo{
-    font-size: $pSizeSmall;
-    color: $gray;
-  }
-
   .detailsButton {
     font-size: $pSize;
     color: $gray;
@@ -60,7 +55,7 @@
   }
 
   p {
-    font-size: $pSize;
+    font-size: $pSizeSmall;
     padding: 4%;
     color: #ddd;
     z-index: 2;
