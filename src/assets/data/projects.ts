@@ -16,16 +16,6 @@ const projects = [
     gitHub: "https://github.com/fuston05/story-squad-fe-c",
   },
   {
-    year: "2020",
-    tech: [
-      "React",
-      "JavaScript",
-      "Axios",
-      "API",
-      "SCSS",
-      "Jest",
-      "React Testing Library",
-    ],
     projName: "NASA APOD API",
     imageUrl: "/images/NASA.png",
     description:
