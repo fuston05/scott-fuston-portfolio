@@ -15,13 +15,13 @@ $red: red;
 
 // FONT COLORS *****
 $pColor: $gray;
-$aColor: $blue;
- 
+$aColor: $orange;
+
 $h1Color: $white;
 $h2Color: $blue;
 $h3Color: $white;
-$h4Color: $blue; 
-$h5Color: $blue;
+$h4Color: $orange; 
+$h5Color: lighten($black, 30%);
 
 $labelColor: $black;
 $inputColor: $darkGray;

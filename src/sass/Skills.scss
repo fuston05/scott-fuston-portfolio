@@ -26,7 +26,7 @@
 
       .skillsIcon {
         font-size: $pSize + 1;
-        color: $h4Color;
+        color: $h5Color;
 
         @include media("2000px") {
         }
@@ -67,14 +67,22 @@
 
       .dark {
         border-radius: 3px;
-        background-color: $gray;
+        background-color: $orange;
         color: $white;
+
+        &:hover{
+          color: lighten($white, 20%);
+        }
       }
 
       .light {
         border-radius: 3px;
-        background-color: $white;
+        background-color: $darkGray;
         color: $gray;
+
+        &:hover{
+          color: lighten($gray, 30%);
+        }
       }
     }
 
