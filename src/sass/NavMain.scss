@@ -64,7 +64,7 @@
         
         a{
           font-size: $h4Size;
-          color: lighten($orange, 15%);
+          color: $orange;
           
           @include media('540px'){
             font-size: $h5Size;
@@ -72,7 +72,8 @@
         }
         
         a:hover {
-          color: darken($orange, 10%);
+          color: lighten($orange, 50%);
+          margin-top: -5px;
         }
       }//end li
     }//end ul
