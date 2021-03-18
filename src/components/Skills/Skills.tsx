@@ -33,7 +33,7 @@ const Skills: React.FC = () => {
       {/* eslint-disable-next-line */}
       <a id='skills'></a>
 
-      <h4 className='sectionTitle'>Skills</h4>
+      <h4 className='sectionTitle'>TOP SKILLS</h4>
 
       <div className='skills'>
         <span className='skillsHeader'>
@@ -67,7 +67,7 @@ const Skills: React.FC = () => {
       <div className='skills'>
         <span className='skillsHeader'>
           <i className="fab fa-js-square skillsIcon"></i>
-          <h5 title= 'Some Experience'>Other Skills</h5>
+          <h5 title= 'Some Experience'>SOME EXPOSURE</h5>
           <i className="fab fa-node-js skillsIcon"></i>
         </span>
 
