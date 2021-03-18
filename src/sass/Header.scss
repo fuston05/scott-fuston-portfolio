@@ -9,6 +9,7 @@
 
   .slogan {
     width: 20%;
+    max-width: 100%;
     font-style: italic;
     margin: 25px auto 25px auto;
     background-color: $orange;
@@ -16,6 +17,10 @@
     
     h3{
       color: $black;
+    }
+
+    @include media(810px) {
+      width: 40%;
     }
 
     @include media(320px) {
