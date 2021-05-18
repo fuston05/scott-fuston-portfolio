@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
       <h4 className="sectionTitle">Contact Me</h4>
 
       <ul className="contactLinksCont">
-        <li>
+        <li title= 'See my GitHub'>
           <a
             className="contactLinks"
             href="https://github.com/fuston05"
@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
           </a>
         </li>
 
-        <li>
+        <li title= 'LinkedIn'>
           <a
             className="contactLinks"
             href="https://www.linkedin.com/in/scott-fuston/"
@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
           </a>
         </li>
 
-        <li>
+        <li title= 'Call me'>
           <a
             className="contactLinks"
             href="tel:765-326-0293"
@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
           </a>
         </li>
 
-        <li>
+        <li title= 'email'>
           <a
             className="contactLinks"
             href="mailto:scott.a.fuston@gmail.com"
@@ -49,6 +49,15 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
           >
             <i className="contactIcon fas fa-envelope-open-text"></i>
+          </a>
+        </li>
+        <li title= 'Downloaad My Resume'>
+          <a
+            className="contactLinks"
+            href="/assets/scott-fuston-resume.pdf"
+            download
+          >
+            <i className="contactIcon far fa-file"></i>
           </a>
         </li>
       </ul>
