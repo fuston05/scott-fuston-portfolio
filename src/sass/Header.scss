@@ -8,20 +8,18 @@
   position: relative;
 
   .slogan {
-    width: 20%;
+    width: 100%;
     max-width: 100%;
     font-style: italic;
     margin: 25px auto 25px auto;
-    background-color: $orange;
-    border-radius: 10px;
     
     h3{
-      color: $black;
+      color: $white;
     }
 
-    @include media(810px) {
-      width: 40%;
-    }
+    // @include media(810px) {
+    //   width: 40%;
+    // }
 
     @include media(320px) {
       display: none;
