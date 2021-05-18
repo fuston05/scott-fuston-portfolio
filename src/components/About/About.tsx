@@ -8,11 +8,25 @@ const About: React.FC = () => {
       <div className="aboutText">
         <h4 className="sectionTitle">About Me</h4>
         <p>
-          {" "}
-          &nbsp;&nbsp;&nbsp; I am a Full-Stack Web Developer and recent Lambda
-          School Graduate. I don't even have the words to express how excited I am to begin searching for my dream job! I am so passionate about every aspect of software development. For me It's not just about the code, cross-functional team collaboration is an incredible experience that has a way of bringing people together and building great friendships.
-          <br />
-          Check out my skills below, and get in touch with me. I look forward to discussing an amazing opportunity with you.
+          I am a Full Stack Web Developer and recent Lambda School Graduate. I
+          don't even have the words to express how excited I am to begin
+          searching for my dream job! I am so passionate about every aspect of
+          software development. It's very gratifying to see a complex problem
+          solved in an elegant way. I love seeing a project come together after
+          all the hard work that goes into it! And probably most of all, I am always looking forward to learning new things!
+        </p>
+        <br />
+        <p>
+          For me It's not just about the code, cross-functional team
+          collaboration is an incredible experience that has a way of bringing
+          people together and building great friendships. A good, diverse team
+          leads to increased creativity, productivity, and often to some very
+          unique implementations.
+        </p>
+        <br />
+        <p>
+          Check out my skills below, and get in touch with me. I look forward to
+          discussing an amazing opportunity with you.
         </p>
       </div>
     </section>
