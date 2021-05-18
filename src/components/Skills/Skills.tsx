@@ -8,7 +8,6 @@ import alternateColor from '../../utils/alternateColor';
 
 //data
 import {
-  skills,
   topSkills
 } from '../../assets/data/skillsData';
 
@@ -20,13 +19,11 @@ type SkillType=  {
 const Skills: React.FC = () => {
   //skills from skillsData.js file
   const [tSkills, setTSkills] = useState<SkillType[]>([]);
-  const [sk, setSk] = useState<SkillType[]>([]);
 
   useEffect(() => {
     //set skills state on load
-    setSk(skills);
     setTSkills(topSkills);
-  }, [tSkills, sk]);
+  }, [tSkills]);
 
   return (
     <section className='skillsMainCont'>
@@ -52,33 +49,6 @@ const Skills: React.FC = () => {
               return (
                 <div
                   title= {`Proficiency: ${skill.proficiency}/10`}
-                  className={`skill ${colorName}`}
-                  key={keyGen()}
-                >{`${skill.name}`}
-                </div>
-              )
-            })
-          }
-        </div>
-      </div>
-
-      <br />
-
-      <div className='skills'>
-        <span className='skillsHeader'>
-          <i className="fab fa-js-square skillsIcon"></i>
-          <h5 title= 'Some Experience'>SOME EXPOSURE</h5>
-          <i className="fab fa-node-js skillsIcon"></i>
-        </span>
-
-        <div className='skillSection'>
-          {
-            sk && sk.map((skill) => {
-              //alternates light and dark list BG
-              let colorName = alternateColor();
-              return (
-                <div
-                title= {`Proficiency: ${skill.proficiency}/10`}
                   className={`skill ${colorName}`}
                   key={keyGen()}
                 >{`${skill.name}`}
