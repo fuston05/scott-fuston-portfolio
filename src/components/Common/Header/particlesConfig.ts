@@ -11,50 +11,29 @@ export const options={
     events: {
       onClick: {
         enable: false,
-        mode: "push",
       },
       onHover: {
-        enable: true,
-        mode: "repulse",
+        enable: false,
       },
-      resize: true,
-    },
-    modes: {
-      bubble: {
-        distance: 400,
-        duration: 2,
-        opacity: 0.8,
-        size: 40,
-      },
-      push: {
-        quantity: 4,
-      },
-      repulse: {
-        distance: 50,
-        duration: 0.4,
-      },
-    },
+      resize: false,
+    }
   },
   particles: {
     color: {
-      value: "#899CD8",
+      value: "#fff",
     },
     links: {
-      color: "#ffffff",
-      distance: 150,
-      enable: true,
-      opacity: 0.5,
-      width: 1,
+      enable: false,
     },
     collisions: {
-      enable: true,
+      enable: false,
     },
     move: {
-      direction: "none",
+      direction: "top-right",
       enable: true,
-      outMode: "bounce",
+      outMode: "out",
       random: true,
-      speed: 4,
+      speed: 0.1,
       straight: false,
     },
     number: {
@@ -65,14 +44,23 @@ export const options={
       value: 120,
     },
     opacity: {
-      value: 0.7,
+      value: 0.9,
     },
     shape: {
-      type: "polygon",
+      type: "star",
+      polygon: {
+        nb_sides: 6,
+
+      },
     },
     size: {
+      anim: {
+        enable: true,
+        speed: 4,
+        size_min: 0.1,
+      },
       random: true,
-      value: 3,
+      value: 1.5,
     },
   },
   detectRetina: true,
