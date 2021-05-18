@@ -57,31 +57,19 @@
         white-space: nowrap;
         padding: 0 2%;
         font-size: $pSize;
-
-        &:hover {
-          cursor: pointer;
-          box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .6);
-        }
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.6);
       }
 
       .dark {
         border-radius: 3px;
         background-color: $orange;
         color: $white;
-
-        &:hover{
-          color: lighten($white, 20%);
-        }
       }
 
       .light {
         border-radius: 3px;
-        background-color: $darkGray;
-        color: $gray;
-
-        &:hover{
-          color: lighten($gray, 30%);
-        }
+        background-color: $orange;
+        color: $white;
       }
     }
 
