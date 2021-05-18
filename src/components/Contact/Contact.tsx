@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
           <a
             className="contactLinks"
             href="/assets/scott-fuston-resume.pdf"
-            download
+            target= "_blank"
           >
             <i className="contactIcon far fa-file"></i>
           </a>
