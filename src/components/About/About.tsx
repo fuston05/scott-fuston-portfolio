@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-scroll";
 
 const About: React.FC = () => {
     return (
@@ -29,7 +30,16 @@ const About: React.FC = () => {
                 <p>
                     Check out my skills and links below. I look forward to
                     discussing an amazing opportunity with you. You can get in
-                    touch with me and download my resume below.
+                    touch with me and{" "}
+                    <Link
+                        data-testid="contactLink"
+                        to="contact"
+                        smooth={true}
+                        href="#contact"
+                    >
+                        download my resume below
+                    </Link>{" "}
+                    below.
                 </p>
             </div>
         </section>
