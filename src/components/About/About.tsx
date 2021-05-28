@@ -29,17 +29,24 @@ const About: React.FC = () => {
                 <br />
                 <p>
                     Check out my skills and links below. I look forward to
-                    discussing an amazing opportunity with you. You can get in
-                    touch with me and{" "}
+                    discussing an amazing opportunity with you. See my{" "}
                     <Link
                         data-testid="contactLink"
                         to="contact"
                         smooth={true}
                         href="#contact"
                     >
-                        download my resume below
-                    </Link>{" "}
-                    below.
+                        links{" "}
+                    </Link>
+                    below and
+                    <a
+                        className="contactLinks"
+                        href="/assets/scott-fuston-resume.pdf"
+                        target="_blank"
+                    >
+                        {" "}
+                        check out my resume.{" "}
+                    </a>
                 </p>
             </div>
         </section>
