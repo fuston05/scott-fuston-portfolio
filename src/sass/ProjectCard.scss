@@ -1,96 +1,108 @@
 // projectCard styles
 
 .projectCard {
-  width: 30%;
-  min-width: 30%;
-  margin-bottom: 30px;
-  padding-top: 2%;
-  border: 1px solid Green;
-  border-radius: 5px 5px 0 0;
-  position: relative;
+    width: 30%;
+    min-width: 30%;
+    margin-bottom: 30px;
+    padding-top: 2%;
+    border: 1px solid Green;
+    border-radius: 5px 5px 0 0;
+    position: relative;
 
-  @include media(870px) {
-    margin: 10px;
-    width: 45%;
-  }
-
-  @include media(610px) {
-    width: 100%;
-    margin: 0 auto 30px auto;
-  }
-
-  .detailsButton {
-    font-size: $pSize;
-    color: $gray;
-    position: absolute;
-    top: 0;
-    left: 5px;
-
-    &:hover{
-      cursor: pointer;
-      color: #333;
-    }
-  }
-
-  .description{
-    position: absolute;
-    border-radius: 0 0 3px 3px;
-    background-color: rgba(0, 0, 0, 0.9);
-    @include dFlex(column, center, center);
-    overflow: hidden;
-    width: 100%;
-    z-index: 2;
-  }
-
-  .open {
-    transition: max-height 0.8s ease-in;
-    height: auto;
-    max-height: 600px;
-  }
-
-  .closed {
-    transition: max-height 0.8s ease-out;
-    height: auto;
-    max-height: 0;
-  }
-
-  p {
-    font-size: $pSizeSmall;
-    padding: 4%;
-    color: #ddd;
-    z-index: 2;
-
-    @include media('610px'){
-      font-size: $pSizeSmall;
-    }
-  }
-
-  img {
-    width: 100%;
-  }
-
-  .linksCont {
-    width: 100%;
-    padding: 0 1%;
-    @include dFlex(row, space-evenly, center);
-    flex-wrap: wrap;
-
-    .videoButton {
-      font-size: $pSize;
-      color: $gray;
-  
-      &:hover{
-        cursor: pointer;
-        color: #333;
-      }
+    @include media(870px) {
+        margin: 10px;
+        width: 45%;
     }
 
-    a {
-      margin-right: 1%;
-
-      &:last-child {
-        margin-right: 0;
-      }
+    @include media(610px) {
+        width: 100%;
+        margin: 0 auto 30px auto;
     }
-  }
+
+    .detailsButton {
+        font-size: $pSize;
+        color: $gray;
+        position: absolute;
+        top: 0;
+        left: 5px;
+
+        &:hover {
+            cursor: pointer;
+            color: #333;
+        }
+    }
+
+    .description {
+        position: absolute;
+        border-radius: 0 0 3px 3px;
+        background-color: rgba(0, 0, 0, 0.9);
+        @include dFlex(column, center, center);
+        overflow: hidden;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .open {
+        transition: max-height 0.8s ease-in;
+        height: auto;
+        max-height: 600px;
+    }
+
+    .closed {
+        transition: max-height 0.8s ease-out;
+        height: auto;
+        max-height: 0;
+    }
+
+    p {
+        font-size: $pSizeSmall;
+        padding: 4%;
+        color: #ddd;
+        z-index: 2;
+
+        @include media("610px") {
+            font-size: $pSizeSmall;
+        }
+    }
+
+    p.privateRepo {
+        color: $aColor;
+        font-size: $aSize;
+        padding: 0;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+            color: $darkBlue;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .linksCont {
+        width: 100%;
+        padding: 0 1%;
+        @include dFlex(row, space-evenly, center);
+        flex-wrap: wrap;
+
+        .videoButton {
+            font-size: $pSize;
+            color: $gray;
+
+            &:hover {
+                cursor: pointer;
+                color: #333;
+            }
+        }
+
+        a {
+            margin-right: 1%;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
 }

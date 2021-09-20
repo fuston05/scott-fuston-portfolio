@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-scroll";
 
-const About: React.FC = () => {
+const About = () => {
     return (
         <section className="aboutCont">
             {/* eslint-disable-next-line */}
@@ -51,6 +51,6 @@ const About: React.FC = () => {
             </div>
         </section>
     );
-}; //end About
+};
 
 export default About;
