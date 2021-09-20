@@ -1,11 +1,7 @@
 import React from "react";
-import Particles from "react-tsparticles";
 
 //components
 import NavMain from "./NavMain";
-
-// config
-import { options as particlesConfig } from './particlesConfig';
 
 const Header: React.FC = () => {
   return (
@@ -18,11 +14,6 @@ const Header: React.FC = () => {
         <h3>Full Stack Web Developer</h3>
       </div>
       <NavMain />
-
-      <Particles
-        id="tsparticles"
-        options= {particlesConfig}
-      />
     </header>
   );
 }; //end Header
