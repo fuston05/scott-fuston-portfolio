@@ -54,8 +54,9 @@ const Contact = () => {
                 <li title="Downloaad My Resume">
                     <a
                         className="contactLinks"
-                        href="/assets/scott-fuston-resume.pdf"
+                        href="https://docs.google.com/document/d/1H4bAd8P8GZ4yuAOvKbwWI0H7iukQamzsGYYEHGe-3_M/edit?usp=sharing"
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <i className="contactIcon far fa-file"></i>
                     </a>
