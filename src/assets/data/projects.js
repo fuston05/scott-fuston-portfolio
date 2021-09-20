@@ -1,5 +1,13 @@
 const projects = [
     {
+        projName: "Ticket Avengers",
+        imageUrl: "/images/ticketavengers.png",
+        description:
+            "Built in 2021 using React, JavaScript, SCSS, Axios, API, Node, Express, Postgres",
+        gitHub: "private",
+        liveSite: "https://ticketavengers.com",
+    },
+    {
         projName: "Movie Award Nominations",
         imageUrl: "/images/movie-awards.png",
         description:

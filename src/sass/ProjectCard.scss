@@ -65,6 +65,18 @@
         }
     }
 
+    p.privateRepo {
+        color: $aColor;
+        font-size: $aSize;
+        padding: 0;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+            color: $darkBlue;
+        }
+    }
+
     img {
         width: 100%;
     }

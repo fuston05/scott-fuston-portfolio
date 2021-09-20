@@ -1,49 +1,48 @@
-
 body {
-  font-family: 'font-family: 'Roboto', sans-serif;';
-  min-height: 100vh;
-  max-width: 100%;
+    font-family: "font-family: " Roboto ", sans-serif;";
+    min-height: 100vh;
+    max-width: 100%;
 }
 
 p {
-  color: $pColor;
-  font-size: $pSize;
+    color: $pColor;
+    font-size: $pSize;
 }
 
 a {
-  color: $aColor;
-  font-size: $aSize;
+    color: $aColor;
+    font-size: $aSize;
 
-  &:hover {
-    cursor: pointer;
-    opacity: 0.8;
-    color: $darkBlue;
-  }
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        color: $darkBlue;
+    }
 }
 
 h1 {
-  color: $h1Color;
-  font-size: $h1Size;
+    color: $h1Color;
+    font-size: $h1Size;
 }
 
 h2 {
-  color: $h2Color;
-  font-size: $h2Size;
+    color: $h2Color;
+    font-size: $h2Size;
 }
 
 h3 {
-  color: $h3Color;
-  font-size: $h3Size;
+    color: $h3Color;
+    font-size: $h3Size;
 }
 
 h4 {
-  color: $h4Color;
-  font-size: $h4Size;
+    color: $h4Color;
+    font-size: $h4Size;
 }
 
 h5 {
-  color: $h5Color;
-  font-size: $h5Size;
+    color: $h5Color;
+    font-size: $h5Size;
 }
 
 p,
@@ -53,92 +52,91 @@ h2,
 h3,
 h4,
 h5 {
-  @include mediaMin('2056px') {
-    font-size: + 3rem;
-  }
+    @include mediaMin("2056px") {
+        font-size: +3rem;
+    }
 }
 
 // form styles //
 input,
-button[type='submit'] {
-  padding: 8px;
-  margin: 0 0 10px 0;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  font-size: $pSize;
-  color: $pColor;
-  width: 100%;
+button[type="submit"] {
+    padding: 8px;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: $pSize;
+    color: $pColor;
+    width: 100%;
 }
 
-button[type='submit'] {
-  background-color: $blue;
-  color: $black;
+button[type="submit"] {
+    background-color: $blue;
+    color: $black;
 }
 
 textarea {
-  padding: 8px;
-  margin: 0 0 10px 0;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  font-size: $pSize;
-  color: $pColor;
-  width: 100%;
-  resize: none;
+    padding: 8px;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: $pSize;
+    color: $pColor;
+    width: 100%;
+    resize: none;
 }
 
 // input placeholders
-textarea::-webkit-input-placeholder, 
-input[type='text']::-webkit-input-placeholder, 
-input[type='email']::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  font-family: 'font-family: 'Roboto', sans-serif;';
-  font-size: $pSize;
-  color: $pColor;
-  font-weight: normal;
-  font-style: inherit;
+textarea::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-family: "font-family: " Roboto ", sans-serif;";
+    font-size: $pSize;
+    color: $pColor;
+    font-weight: normal;
+    font-style: inherit;
 }
 
-textarea::-moz-placeholder, 
-input[type='text']::-moz-placeholder, 
-input[type='email']::-moz-placeholder{
-  /* Firefox 19+ */
-  font-family: 'font-family: 'Roboto', sans-serif;';
-  font-size: $pSize;
-  color: $pColor;
-  font-weight: normal;
-  font-style: inherit;
+textarea::-moz-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: "font-family: " Roboto ", sans-serif;";
+    font-size: $pSize;
+    color: $pColor;
+    font-weight: normal;
+    font-style: inherit;
 }
 
-textarea:-ms-input-placeholder, 
-input[type='text']:-ms-input-placeholder, 
-input[type='email']:-ms-input-placeholder {
-  /* IE 10+ */
-  font-family: 'font-family: 'Roboto', sans-serif;';
-  font-size: $pSize;
-  color: $pColor;
-  font-weight: normal;
-  font-style: inherit;
+textarea:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder {
+    /* IE 10+ */
+    font-family: "font-family: " Roboto ", sans-serif;";
+    font-size: $pSize;
+    color: $pColor;
+    font-weight: normal;
+    font-style: inherit;
 }
 
-textarea:-moz-placeholder, 
-input[type='text']:-moz-placeholder, 
-input[type='email']:-moz-placeholder {
-  /* Firefox 18- */
-  font-family: 'font-family: 'Roboto', sans-serif;';
-  font-size: $pSize;
-  color: $pColor;
-  font-weight: normal;
-  font-style: inherit;
+textarea:-moz-placeholder,
+input[type="text"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder {
+    /* Firefox 18- */
+    font-family: "font-family: " Roboto ", sans-serif;";
+    font-size: $pSize;
+    color: $pColor;
+    font-weight: normal;
+    font-style: inherit;
 }
 
 form {
+    label {
+        font-size: $pSize;
+        color: $labelColor;
+    }
 
-  label {
-    font-size: $pSize;
-    color: $labelColor;
-  }
-
-  button {
-    @include buttonStyles;
-  }
+    button {
+        @include buttonStyles;
+    }
 }
