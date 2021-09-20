@@ -9,9 +9,9 @@ import ProjectCard from "./ProjectCard";
 //data
 import projects from "../../assets/data/projects";
 
-const Portfolio: React.FC = () => {
+const Portfolio = () => {
     // set state back to false for default
-    const [visible, setVisible] = useState<boolean>(false);
+    const [visible, setVisible] = useState(false);
 
     const toggleModal = () => {
         setVisible(!visible);
@@ -38,6 +38,6 @@ const Portfolio: React.FC = () => {
             </div>
         </section>
     );
-}; //end Portfolio
+};
 
 export default Portfolio;
