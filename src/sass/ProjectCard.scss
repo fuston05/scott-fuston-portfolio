@@ -19,41 +19,6 @@
         margin: 0 auto 30px auto;
     }
 
-    .detailsButton {
-        font-size: $pSize;
-        color: $gray;
-        position: absolute;
-        top: 0;
-        left: 5px;
-
-        &:hover {
-            cursor: pointer;
-            color: #333;
-        }
-    }
-
-    .description {
-        position: absolute;
-        border-radius: 0 0 3px 3px;
-        background-color: rgba(0, 0, 0, 0.9);
-        @include dFlex(column, center, center);
-        overflow: hidden;
-        width: 100%;
-        z-index: 2;
-    }
-
-    .open {
-        transition: max-height 0.8s ease-in;
-        height: auto;
-        max-height: 600px;
-    }
-
-    .closed {
-        transition: max-height 0.8s ease-out;
-        height: auto;
-        max-height: 0;
-    }
-
     p {
         font-size: $pSizeSmall;
         padding: 4%;
