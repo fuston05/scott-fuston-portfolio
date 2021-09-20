@@ -4,8 +4,7 @@ import React, {useState} from "react";
 import {VidModalContainer} from "./ModalVideoPlayer";
 
 const ProjectCard = ({toggleModal, visible, project}) => {
-    const [descriptionShow, setDescritptionShow] =
-        (useState < "closed") | ("open" > "closed");
+    const [descriptionShow, setDescritptionShow] = useState("closed");
 
     // toggles the 'description' panels for each proj card
     const toggleDescription = () => {
@@ -18,13 +17,6 @@ const ProjectCard = ({toggleModal, visible, project}) => {
 
     return (
         <>
-            {project.videoUrl && (
-                <VidModalContainer
-                    url={project.videoUrl}
-                    visible={visible}
-                    toggleModal={toggleModal}
-                />
-            )}
             <div className="projectCard">
                 <h5>{project.projName}</h5>
                 <span
@@ -50,16 +42,7 @@ const ProjectCard = ({toggleModal, visible, project}) => {
                     >
                         GitHub
                     </a>
-                    {project.videoUrl && (
-                        <span
-                            onClick={() => {
-                                toggleModal();
-                            }}
-                            className="videoButton"
-                        >
-                            <i className="fas fa-play-circle"></i>
-                        </span>
-                    )}
+
                     {project.liveSite && (
                         <a
                             href={project.liveSite}
