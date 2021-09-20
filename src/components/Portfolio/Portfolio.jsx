@@ -10,13 +10,6 @@ import ProjectCard from "./ProjectCard";
 import projects from "../../assets/data/projects";
 
 const Portfolio = () => {
-    // set state back to false for default
-    const [visible, setVisible] = useState(false);
-
-    const toggleModal = () => {
-        setVisible(!visible);
-    };
-
     return (
         <section className="portfolioCont">
             {/* eslint-disable-next-line */}
@@ -26,14 +19,7 @@ const Portfolio = () => {
             <div className="cardCont">
                 {projects &&
                     projects.map((project) => {
-                        return (
-                            <ProjectCard
-                                key={keyGen()}
-                                toggleModal={toggleModal}
-                                visible={visible}
-                                project={project}
-                            />
-                        );
+                        return <ProjectCard key={keyGen()} project={project} />;
                     })}
             </div>
         </section>
