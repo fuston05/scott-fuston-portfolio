@@ -41,16 +41,10 @@
         flex-wrap: wrap;
 
         p.privateRepo {
-            color: $aColor;
+            color: $darkGray;
             font-size: $aSize;
             padding: 0;
             margin: 0;
-
-            &:hover {
-                cursor: pointer;
-                opacity: 0.8;
-                color: $darkBlue;
-            }
         }
 
         a {
