@@ -40,9 +40,6 @@
             .skillsIcon {
                 font-size: $pSize + 1;
                 color: $h5Color;
-
-                @include media("2000px") {
-                }
             }
 
             h5 {
