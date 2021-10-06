@@ -30,7 +30,7 @@ const Skills = () => {
                     {/* FontAwesome Icon */}
                     <i className="fab fa-git-alt skillsIcon"></i>
 
-                    <h5 title="Comfortable Skills">Top Skills</h5>
+                    <h5 title="Comfortable Skills">Check it out!</h5>
                     <i className="fab fa-react skillsIcon"></i>
                 </span>
 
