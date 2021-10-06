@@ -41,10 +41,10 @@ const About = () => {
                     below and
                     <a
                         className="contactLinks"
-                        href="/assets/scott-fuston-resume.pdf"
+                        href="https://docs.google.com/document/d/1H4bAd8P8GZ4yuAOvKbwWI0H7iukQamzsGYYEHGe-3_M/edit?usp=sharing"
                         target="_blank"
+                        rel="noreferrer"
                     >
-                        {" "}
                         check out my resume.{" "}
                     </a>
                 </p>
