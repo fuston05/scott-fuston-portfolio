@@ -23,7 +23,7 @@ const Skills = () => {
             {/* eslint-disable-next-line */}
             <a id="skills"></a>
 
-            <h4 className="sectionTitle">TOP SKILLS</h4>
+            <h4 className="sectionTitle">SKILLS</h4>
 
             <div className="skills">
                 <span className="skillsHeader">
