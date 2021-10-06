@@ -15,6 +15,7 @@ const Portfolio = () => {
             {/* eslint-disable-next-line */}
             <a id="portfolio"></a>
             <h4 className="sectionTitle">Portfolio</h4>
+            <p>* See GitHub notes for more info on each project</p>
 
             <div className="cardCont">
                 {projects &&
