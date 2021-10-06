@@ -1,5 +1,6 @@
 export const topSkills = [
-    {name: "ReactJS", proficiency: 8},
+    {name: "React", proficiency: 8},
+    {name: "Vue", proficiency: 3},
     {name: "JavaScript(ES6)", proficiency: 8},
     {name: "HTML5", proficiency: 10},
     {name: "CSS/LESS/SCSS", proficiency: 10},
@@ -11,6 +12,7 @@ export const topSkills = [
     {name: "JSON", proficiency: 10},
     {name: "Git", proficiency: 9},
     {name: "GitHub", proficiency: 9},
+    {name: "NPM", proficiency: 9},
     {name: "Python", proficiency: 3},
     {name: "RESTful API", proficiency: 8},
     {name: "Algorithms", proficiency: 5},
