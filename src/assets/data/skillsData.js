@@ -14,7 +14,7 @@ export const topSkills = [
     {name: "GitHub", proficiency: 9},
     {name: "NPM", proficiency: 9},
     {name: "Python", proficiency: 3},
-    {name: "RESTful API", proficiency: 8},
+    {name: "REST API", proficiency: 8},
     {name: "Algorithms", proficiency: 5},
     {name: "Data-Structures", proficiency: 5},
     {name: "Redux", proficiency: 3},
