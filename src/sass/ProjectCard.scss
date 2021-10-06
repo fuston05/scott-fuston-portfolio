@@ -19,28 +19,16 @@
         margin: 0 auto 30px auto;
     }
 
-    p {
-        font-size: $pSizeSmall;
-        padding: 4%;
-        color: #ddd;
-        z-index: 2;
+    // p {
+    //     font-size: $pSizeSmall;
+    //     padding: 4%;
+    //     color: #ddd;
+    //     z-index: 2;
 
-        @include media("610px") {
-            font-size: $pSizeSmall;
-        }
-    }
-
-    p.privateRepo {
-        color: $aColor;
-        font-size: $aSize;
-        padding: 0;
-
-        &:hover {
-            cursor: pointer;
-            opacity: 0.8;
-            color: $darkBlue;
-        }
-    }
+    //     @include media("610px") {
+    //         font-size: $pSizeSmall;
+    //     }
+    // }
 
     img {
         width: 100%;
@@ -52,14 +40,11 @@
         @include dFlex(row, space-evenly, center);
         flex-wrap: wrap;
 
-        .videoButton {
-            font-size: $pSize;
-            color: $gray;
-
-            &:hover {
-                cursor: pointer;
-                color: #333;
-            }
+        p.privateRepo {
+            color: $darkGray;
+            font-size: $aSize;
+            padding: 0;
+            margin: 0;
         }
 
         a {

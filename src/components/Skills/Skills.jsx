@@ -23,15 +23,15 @@ const Skills = () => {
             {/* eslint-disable-next-line */}
             <a id="skills"></a>
 
-            <h4 className="sectionTitle">TOP SKILLS</h4>
+            <h4 className="sectionTitle">SKILLS</h4>
 
             <div className="skills">
                 <span className="skillsHeader">
                     {/* FontAwesome Icon */}
-                    <i className="fab fa-git-alt skillsIcon"></i>
+                    <i className="fab fa-git-alt skillsIcon rotate"></i>
 
-                    <h5 title="Comfortable Skills">Top Skills</h5>
-                    <i className="fab fa-react skillsIcon"></i>
+                    <h5 title="Comfortable Skills">Check it out!</h5>
+                    <i className="fab fa-react skillsIcon rotate"></i>
                 </span>
 
                 <div className="skillSection">

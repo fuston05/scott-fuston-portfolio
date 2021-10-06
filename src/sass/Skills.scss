@@ -1,80 +1,93 @@
 // skills styles
 .skillsMainCont {
-  min-height: 100%;
-  max-width: 100%;
-  padding: 0 10px 25px 10px;
-  @include dFlex(column, flex-start, center);
-
-  @include media("760px") {
-    width: 90%;
-  }
-
-  @include media("560px") {
-    width: 98%;
-  }
-
-  .skills {
-    width: 100%;
+    min-height: 100%;
     max-width: 100%;
-    margin-bottom: 5%;
+    padding: 0 10px 25px 10px;
     @include dFlex(column, flex-start, center);
 
-    .skillsHeader {
-      width: 100%;
-      margin-bottom: 2%;
-      @include dFlex(row, center, center);
-
-      .skillsIcon {
-        font-size: $pSize + 1;
-        color: $h5Color;
-
-        @include media("2000px") {
-        }
-      }
-
-      h5 {
-        margin: 0 2%;
-      }
+    @include media("760px") {
+        width: 90%;
     }
 
-    .skillSection {
-      list-style-type: none;
-      font-size: $pSizeSmall;
-      width: 90%;
-      max-width: 100%;
+    @include media("560px") {
+        width: 98%;
+    }
 
-      @include media("500px") {
+    .skills {
         width: 100%;
-      }
+        max-width: 100%;
+        margin-bottom: 5%;
+        @include dFlex(column, flex-start, center);
 
-      @include mediaMin("2056px") {
-        font-size: +3rem;
-      }
+        .skillsHeader {
+            width: 100%;
+            margin-bottom: 2%;
+            @include dFlex(row, center, center);
 
-      .skill {
-        display: inline-table;
-        margin: 0 2% 1% 0;
-        white-space: nowrap;
-        padding: 0 2%;
-        font-size: $pSize;
-        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.6);
-      }
+            .rotate {
+                animation: rotate 30s infinite linear;
+            }
 
-      .dark {
-        border-radius: 3px;
-        background-color: $orange;
-        color: $white;
-      }
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(359deg);
+                }
+            }
 
-      .light {
-        border-radius: 3px;
-        background-color: $orange;
-        color: $white;
-      }
+            .skillsIcon {
+                font-size: $pSize + 1;
+                color: $h5Color;
+
+                @include media("2000px") {
+                }
+            }
+
+            h5 {
+                margin: 0 2%;
+            }
+        }
+
+        .skillSection {
+            list-style-type: none;
+            font-size: $pSizeSmall;
+            width: 90%;
+            max-width: 100%;
+
+            @include media("500px") {
+                width: 100%;
+            }
+
+            @include mediaMin("2056px") {
+                font-size: +3rem;
+            }
+
+            .skill {
+                display: inline-table;
+                margin: 0 2% 1% 0;
+                white-space: nowrap;
+                padding: 0 2%;
+                font-size: $pSize;
+                box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.6);
+            }
+
+            .dark {
+                border-radius: 3px;
+                background-color: $orange;
+                color: $white;
+            }
+
+            .light {
+                border-radius: 3px;
+                background-color: $orange;
+                color: $white;
+            }
+        }
+
+        h5 {
+            text-align: center;
+        }
     }
-
-    h5 {
-      text-align: center;
-    }
-  }
 }

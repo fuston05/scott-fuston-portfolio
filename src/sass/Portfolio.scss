@@ -1,16 +1,22 @@
-
-.portfolioCont{
-  height: auto;
-  text-align: center;
-  width: 100%;
-  padding: 0 10px 25px 10px;
-  @include dFlex(column, flex-start, center);
-
-  .cardCont{
-    padding: 10px;
+.portfolioCont {
+    height: auto;
+    text-align: center;
     width: 100%;
-    @include dFlex(row, space-evenly, flex-start);
-    flex-wrap: wrap;
-  }
+    padding: 0 10px 25px 10px;
+    @include dFlex(column, flex-start, center);
 
+    .sectionTitle {
+        margin: 50px 0 10px 0;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+
+    .cardCont {
+        padding: 10px;
+        width: 100%;
+        @include dFlex(row, space-evenly, flex-start);
+        flex-wrap: wrap;
+    }
 }
