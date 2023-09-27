@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 
 const About = () => {
     return (
@@ -9,12 +9,12 @@ const About = () => {
             <div className="aboutText">
                 <h4 className="sectionTitle">About Me</h4>
                 <p>
-                    I am a Full Stack Web Developer and Lambda School Graduate.
-                    I am so passionate about every aspect of software
-                    development. It's very gratifying to see a complex problem
-                    solved in an elegant way. I love seeing a project come
-                    together after all the hard work that goes into it! And
-                    probably most of all, I am always looking forward to
+                    I am currently an Automation Engineer working in both web
+                    and mobile automation. I am so passionate about every aspect
+                    of software development. It's very gratifying to see a
+                    complex problem solved in an elegant way. I love seeing a
+                    project come together after all the hard work that goes into
+                    it! And probably most of all, I am always looking forward to
                     learning new things!
                 </p>
                 <br />
@@ -42,8 +42,7 @@ const About = () => {
                         data-testid="contactLink"
                         to="contact"
                         smooth={true}
-                        href="#contact"
-                    >
+                        href="#contact">
                         links{" "}
                     </Link>
                     below and{" "}
@@ -51,8 +50,7 @@ const About = () => {
                         className="contactLinks"
                         href="https://docs.google.com/document/d/1H4bAd8P8GZ4yuAOvKbwWI0H7iukQamzsGYYEHGe-3_M/edit?usp=sharing"
                         target="_blank"
-                        rel="noreferrer"
-                    >
+                        rel="noreferrer">
                         check out my resume.{" "}
                     </a>
                 </p>
