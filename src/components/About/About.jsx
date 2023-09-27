@@ -8,18 +8,18 @@ const About = () => {
             <div className="aboutText">
                 <h4 className="sectionTitle">About Me</h4>
                 <p>
-                    I am currently an Automation Engineer working in both web
-                    and mobile test automation. I helpled architect and build
-                    our current automation frameworks for both web and mobile.
-                    Some of the technologies used are Cypress, Appium,
-                    Webdriver.io, and Saucelabs.
+                    I am currently an Automation Engineer working with both web
+                    and mobile. I helped architect and build our current
+                    automation frameworks for both web and mobile. Some
+                    technologies used are Cypress, Appium, Webdriver.io, and
+                    Saucelabs.
                 </p>
                 <br />
                 <p>
-                    For me It's not just about the code, cross-functional team
+                    For me, It's not just about the code. Cross-functional team
                     collaboration is an incredible experience that has a way of
                     bringing people together and building great friendships. A
-                    good, diverse team leads to increased creativity,
+                    good, diverse team leads to increased creativity and
                     productivity, and often to some very unique implementations.
                 </p>
                 <br />
