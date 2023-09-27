@@ -33,7 +33,7 @@ const Contact = () => {
                 <li title="Call me">
                     <a
                         className="contactLinks"
-                        href="tel:765-326-0293"
+                        href="tel:765-605-1740"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
