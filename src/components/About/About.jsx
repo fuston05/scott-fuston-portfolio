@@ -10,12 +10,10 @@ const About = () => {
                 <h4 className="sectionTitle">About Me</h4>
                 <p>
                     I am currently an Automation Engineer working in both web
-                    and mobile automation. I am so passionate about every aspect
-                    of software development. It's very gratifying to see a
-                    complex problem solved in an elegant way. I love seeing a
-                    project come together after all the hard work that goes into
-                    it! And probably most of all, I am always looking forward to
-                    learning new things!
+                    and mobile test automation. I helpled architect and build
+                    our current automation frameworks for both web and mobile.
+                    Some of the technologies used are Cypress, Appium,
+                    Webdriver.io, and Saucelabs.
                 </p>
                 <br />
                 <p>
@@ -26,16 +24,15 @@ const About = () => {
                     productivity, and often to some very unique implementations.
                 </p>
                 <br />
-                <p>
-                    I am seeking a remote Junior developer role. Unfortunately,
-                    I am not able to relocate at this time. I'd love for my
-                    first role to be with a great company that is doing
-                    meaningful work. A team oriented culture that supports
-                    continued learning and growth of it's developers is also
+                {/* <p>
+                    I am seeking a remote Automation Engineer or Junior developer role.
+                    I am not willing to relocate at this time. I'd love to work for a 
+                    great company that is doing meaningful work. A team oriented culture 
+                    that supports continued learning and growth of it's developers is also
                     very important to me.
-                </p>
+                </p> */}
                 <br />
-                <p>
+                {/* <p>
                     Check out my skills and links below. I look forward to
                     discussing an amazing opportunity with you. See my{" "}
                     <Link
@@ -53,7 +50,7 @@ const About = () => {
                         rel="noreferrer">
                         check out my resume.{" "}
                     </a>
-                </p>
+                </p> */}
             </div>
         </section>
     );
