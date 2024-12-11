@@ -1,7 +1,6 @@
 export const topSkills = [
     { name: "Cypress Automation", proficiency: 9 },
-    { name: "Mobile Automation", proficiency: 9 },
-    { name: "JavaScript(ES6)", proficiency: 9 },
+    { name: "Mobile Automation (Android/IOS)", proficiency: 9 },
     { name: "TypeScript", proficiency: 9 },
     { name: "NodeJs", proficiency: 9 },
     { name: "Python", proficiency: 3 },
