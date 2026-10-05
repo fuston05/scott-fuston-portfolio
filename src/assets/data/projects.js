@@ -5,7 +5,7 @@ const projects = [
         description:
             "Built in 2021 using React, JavaScript, SCSS, Axios, API, Node, Express, Postgres",
         gitHub: "private",
-        liveSite: "https://www.ticketavengers.com/",
+        liveSite: "",
     },
     {
         projName: "Movie Award Nominations",
