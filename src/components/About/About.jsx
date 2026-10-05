@@ -11,16 +11,19 @@ const About = () => {
                     I am currently an Automation Engineer working with both web
                     and mobile. I helped architect and build our current
                     automation frameworks for both web and mobile. Some
-                    technologies used are Cypress, Appium, Webdriver.io, and
+                    technologies used are Cypress, Webdriver.io, and
                     Saucelabs.
                 </p>
                 <br />
                 <p>
-                    For me, It's not just about the code. Cross-functional team
-                    collaboration is an incredible experience that has a way of
-                    bringing people together and building great friendships. A
-                    good, diverse team leads to increased creativity and
-                    productivity, and often to some very unique implementations.
+                    I also build scripts that streamline QA workflows. One
+                    script gathers all issues linked to a Jira rollout card
+                    and adds them as test cases to the corresponding TestRail
+                    rollout. I have also created scripts that generate weekly
+                    reports comparing automated tests with TestRail cases,
+                    helping the team keep both in sync. These are just a couple
+                    of examples of the scripts I’ve built to streamline QA
+                    workflows.
                 </p>
                 <br />
                 {/* <p>
@@ -31,25 +34,9 @@ const About = () => {
                     very important to me.
                 </p> */}
                 <br />
-                {/* <p>
-                    Check out my skills and links below. I look forward to
-                    discussing an amazing opportunity with you. See my{" "}
-                    <Link
-                        data-testid="contactLink"
-                        to="contact"
-                        smooth={true}
-                        href="#contact">
-                        links{" "}
-                    </Link>
-                    below and{" "}
-                    <a
-                        className="contactLinks"
-                        href="https://docs.google.com/document/d/1H4bAd8P8GZ4yuAOvKbwWI0H7iukQamzsGYYEHGe-3_M/edit?usp=sharing"
-                        target="_blank"
-                        rel="noreferrer">
-                        check out my resume.{" "}
-                    </a>
-                </p> */}
+                <p>
+                    Check out some of my skills and contact information below. I look forward to discussing an amazing opportunity with you.
+                </p>
             </div>
         </section>
     );
