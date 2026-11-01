@@ -1,29 +1,95 @@
-#### Scott Fuston Portfolio
-old package.json react versioning code
-// "react": "^16.13.1",
-// "react-dom": "^16.13.1",
-// "react-scripts": "^3.4.4",
+# Scott Fuston Portfolio
 
-### About
-> This site is built using React, Javascript/TypeScript, and Node-sass.
-I have a terrible eye for design, so I borrowed the theme from an HTML5Up template. I did build the site completely from scratch on my own, as the original was not built using React.
----
-### Links
-- [Tiny PNG](https://tinypng.com/)
-- [React-Scroll](https://www.npmjs.com/package/react-scroll)
-- [HTML5UP Templates](https://html5up.net/)
+A personal portfolio website built to showcase my experience as an Automation Engineer and developer, including featured projects, technologies, and contact information.
+
+## Overview
+
+This project is a React-based single-page portfolio designed to present:
+
+- Work experience and background
+- Technical skills and proficiency levels
+- Project highlights with GitHub and live links
+- A clean, responsive layout for desktop and mobile
+
+## Tech Stack
+
+- React 17
+- React Scripts
+- JavaScript
+- Sass
+- React Scroll
+- Jest + React Testing Library
+
+## Features
+
+- Smooth-scrolling navigation
+- Responsive layout for multiple screen sizes
+- Dynamic project and skills data loading
+- GitHub links for each portfolio project
+- Conditionally rendered live site links
+- Clean, modern styling inspired by an HTML5UP template
+
+## Project Structure
+
+```bash
+src/
+├── App.jsx
+├── index.jsx
+├── assets/
+│   └── data/
+│       ├── projects.js
+│       └── skillsData.js
+├── components/
+│   ├── About/
+│   ├── Common/
+│   ├── Contact/
+│   ├── Portfolio/
+│   └── Skills/
+├── utils/
+└── __test__/
+```
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the app in development mode:
+
+```bash
+npm start
+```
+
+4. Build for production:
+
+```bash
+npm run build
+```
+
+## Testing
+
+```bash
+npm test
+```
+
+This project includes basic React testing with Jest and Testing Library.
+
+## Notes
+
+- Project data is loaded dynamically from the data files in `src/assets/data`.
+- Images are optimized for performance and kept under the target size for quick loading.
+- The design uses a template-inspired aesthetic while maintaining a custom React implementation.
+
+## Credits
+
+- [React](https://react.dev/)
+- [React Scroll](https://www.npmjs.com/package/react-scroll)
+- [Sass](https://sass-lang.com/)
+- [HTML5UP](https://html5up.net/)
+- [TinyPNG](https://tinypng.com/)
 - [Font Awesome](https://fontawesome.com/)
----
-### Features
-- Smooth scroll was implemented using the React-Scroll NPM package. 
-- All GitHub repos are linked for each project
----
-### Projects
-> Projects are read in dynamically from 'projects.js'. The 'Live Site' link is conditionally rendered if there is an associated live site. All images are compressed to be under 1MB using tinyPng website.
----
-### Skills
-> Skills are dynamically parsed in from skillsData.js file. They maintain their positioning through the use of css rule: 'display: table'.
-I decided to rank my skills by 2 categories: 'Top Skills' and 'Other Skills'. Top skills are those that I am fairly comfortable using and have had plenty of hands on experience with. The 'Other Skills' are those that I have learned and used maybe once, so I am not as fluent but do have some exposure to.
----
-### Testing
-> Unit testing with React-Testing-Library/Jest. Still adding test coverage in the future, this site is nowhere near fully tested.
+
