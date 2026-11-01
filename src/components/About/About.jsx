@@ -1,45 +1,45 @@
 import React from "react";
 
 const About = () => {
-    return (
-        <section className="aboutCont">
-            {/* eslint-disable-next-line */}
-            <a id="about"></a>
-            <div className="aboutText">
-                <h4 className="sectionTitle">About Me</h4>
-                <p>
-                    I am currently an Automation Engineer working with both web
-                    and mobile. I helped architect and build our current
-                    automation frameworks for both web and mobile. Some
-                    technologies used are Cypress, Webdriver.io, and
-                    Saucelabs.
-                </p>
-                <br />
-                <p>
-                    I also build scripts that streamline QA workflows. One
-                    script gathers all issues linked to a Jira rollout card
-                    and adds them as test cases to the corresponding TestRail
-                    rollout. I have also created scripts that generate weekly
-                    reports comparing automated tests with TestRail cases,
-                    helping the team keep both in sync. These are just a couple
-                    of examples of the scripts I’ve built to streamline QA
-                    workflows.
-                </p>
-                <br />
-                {/* <p>
-                    I am seeking a remote Automation Engineer or Junior developer role.
-                    I am not willing to relocate at this time. I'd love to work for a 
-                    great company that is doing meaningful work. A team oriented culture 
-                    that supports continued learning and growth of it's developers is also
-                    very important to me.
-                </p> */}
-                <br />
-                <p>
-                    Check out some of my skills and contact information below. I look forward to discussing an amazing opportunity with you.
-                </p>
-            </div>
-        </section>
-    );
+  return (
+    <section className="aboutCont">
+      {/* eslint-disable-next-line */}
+      <a id="about"></a>
+      <div className="aboutText">
+        <h4 className="sectionTitle">About Me</h4>
+        <p>
+          For the past 5 years, I have worked as an Automation Engineer, where I
+          designed and built automation frameworks from the ground up for both web
+          and mobile applications. I have developed scalable test automation
+          solutions using tools such as Cypress, Cucumber/Gherkin, WebdriverIO,
+          TypeScript, and Sauce Labs, helping teams improve software quality and
+          streamline QA workflows.
+        </p>
+        <br />
+        <p>
+          Beyond writing tests, I was responsible for architecting the
+          frameworks, establishing best practices, and creating reusable systems
+          that supported efficient, reliable automation across projects. I also
+          built scripts to streamline QA operations, including gathering linked
+          Jira issues into TestRail and generating weekly reports comparing
+          automated tests with TestRail cases to keep the team aligned.
+        </p>
+        <br />
+        <p>
+          I am seeking a <b>remote</b> Automation Engineer or Junior Developer
+          role, and I am especially interested in opportunities where I can
+          continue growing as a developer while contributing to meaningful work in
+          a collaborative environment. I value strong team culture, continued
+          learning, and work that supports both quality and innovation.
+        </p>
+        <br />
+        <p>
+          Check out some of my skills and contact information below. I look
+          forward to discussing an amazing opportunity with you.
+        </p>
+      </div>
+    </section>
+  );
 };
 
 export default About;
